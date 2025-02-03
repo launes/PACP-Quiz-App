@@ -1,0 +1,1324 @@
+{
+  "261": {
+    "id": "261",
+    "type": "Modules",
+    "text": "What can you do to indicate that a module entity should be treated as private? Choose two.",
+    "code": "",
+    "options": {
+      "a": "You can mark the entity with the __ (double underscore) prefix.",
+      "b": "Nothing - all module entities are private by default.\nc; You can mark the entity with the # (hashtag) prefix.",
+      "d": "You can mark the entity with the _ (single underscore) prefix."
+    },
+    "answer": "ad",
+    "details": ""
+  },
+  "294": {
+    "id": "294",
+    "type": "OOP",
+    "text": "What is the expected output of the following code?",
+    "code": "class Aircraft:\n    def start(self):\n        return \"default\"\n \n    def take_off(self):\n        self.start()\n \n \nclass FixedWing(Aircraft):\n    pass\n \n \nclass RotorCraft(Aircraft):\n    def start(self):\n        return \"spin\"\n \n \nfleet = [FixedWing(), RotorCraft()]\nfor airship in fleet:\n    print(airship.start(), end=\" \")",
+    "options": {
+      "a": "default spin",
+      "b": "default default",
+      "c": "spin default",
+      "d": "spin spin"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "281": {
+    "id": "281",
+    "type": "Control Flow",
+    "text": "What is the expected output of the following code?",
+    "code": "plane = \"Blackbird\"\ncounter = 0\nfor c in plane + 2:\n    if c in [\"1\", \"2\"]:\n        counter += 1\nprint(counter)",
+    "options": {
+      "a": "1 | 2",
+      "b": "1 | 0",
+      "c": "The code is erroneous and cannot be run.",
+      "d": "1 | 4"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "236": {
+    "id": "236",
+    "type": "Error Handling",
+    "text": "What is the expected output of the following code?",
+    "code": "try:\n    raise Exception(1, 2, 3)\nexcept Exception as e:\n    print(len(e.args))",
+    "options": {
+      "a": "The code is erroneous.",
+      "b": "2",
+      "c": "3",
+      "d": "1"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "277": {
+    "id": "277",
+    "type": "Data Types",
+    "text": "Which of the following are not valid Python string literals? (Select two answers.)",
+    "code": "",
+    "options": {
+      "a": "'''To be, or not to be,\n    that is the question\"\"\"",
+      "b": "\"\\\\\"",
+      "c": "\"this is a quote: \\\"\"",
+      "d": "'Whether 'tis nobler in the mind to suffer'"
+    },
+    "answer": "ad",
+    "details": ""
+  },
+  "206": {
+    "id": "206",
+    "type": "Operators",
+    "text": "What is the expected output of the following code?",
+    "code": "print(1 // 2 * 3)",
+    "options": {
+      "a": "0.0",
+      "b": "0.16666666666666666",
+      "c": "4.5",
+      "d": "0"
+    },
+    "answer": "d",
+    "details": ""
+  },
+  "213": {
+    "id": "213",
+    "type": "Functions",
+    "text": "What is the expected output of the following code?",
+    "code": "def func(message, num=1):\n    print(message * num)\n\nfunc('Hello')\nfunc('Welcome', 3)",
+    "options": {
+      "a": "Hello\nWelcome,Welcome,Welcome",
+      "b": "Hello\nViewers",
+      "c": "Hello",
+      "d": "Hello\nWelcomeWelcomeWelcome",
+      "e": "Hello\nWelcome Welcome Welcome"
+    },
+    "answer": "d",
+    "details": ""
+  },
+  "211": {
+    "id": "211",
+    "type": "Control Flow",
+    "text": "Which of the following sentences correctly describes the output of the below Python code?",
+    "code": "data = [4, 2, 3, 2, 1]\nres = data[0]\n\nfor d in data:\n    if d < res:\n        res = d\n \nprint(res)",
+    "options": {
+      "a": "res is the smallest number in the list.",
+      "b": "None of the above.",
+      "c": "res is the average of all the number in the list.",
+      "d": "res is the sum of all the number in the list.",
+      "e": "res is the largest number in the list."
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "285": {
+    "id": "285",
+    "type": "Error Handling",
+    "text": "The errno.ENOENT symbol refers to an error described as:",
+    "code": "",
+    "options": {
+      "a": "Operation not permitted",
+      "b": "Permission denied",
+      "c": "No such file or directory",
+      "d": "No child processes"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "243": {
+    "id": "243",
+    "type": "Control Flow",
+    "text": "What is the expected output of the following snippet?",
+    "code": "s = 'python'\nfor i in range(len(s)):\n    i = s[i].upper()\nprint(s, end='')",
+    "options": {
+      "a": "Python",
+      "b": "python",
+      "c": "PYTHON",
+      "d": "The code is erroneous",
+      "e": "P Y T H O N",
+      "f": "P y t h o n"
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "225": {
+    "id": "225",
+    "type": "Data Aggregates",
+    "text": "What is the expected output of the following code?",
+    "code": "data = set([1, 2, 2, 3, 3, 3, 4, 4, 4, 4])\nprint(len(data))",
+    "options": {
+      "a": "10",
+      "b": "1",
+      "c": "0",
+      "d": "4",
+      "e": "2",
+      "f": "3"
+    },
+    "answer": "d",
+    "details": ""
+  },
+  "253": {
+    "id": "253",
+    "type": "Functions",
+    "text": "What is the expected output of the following code?",
+    "code": "def func(data):\n    for d in data[::2]:\n        yield d\n \nfor x in func('abcdef'):\n    print(x, end='')",
+    "options": {
+      "a": "An empty line.",
+      "b": "ace",
+      "c": "abcdef",
+      "d": "bdf"
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "274": {
+    "id": "274",
+    "type": "Error Handling",
+    "text": "What is the expected result of the following code?",
+    "code": "try:\n    raise Exception\nexcept:\n    print(\"c\")\nexcept BaseException:\n    print(\"a\")\nexcept Exception:\n    print(\"b\")",
+    "options": {
+      "a": "1",
+      "b": "a",
+      "c": "The code will cause a syntax error.",
+      "d": "b"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "296": {
+    "id": "296",
+    "type": "OOP",
+    "text": "What is true about object-oriented programming (OOP)? (Select two answers.)",
+    "code": "",
+    "options": {
+      "a": "Polymorphism is a phenomenon which allows you to have many classes of the same name.",
+      "b": "A relation between superclass and its subclass is known as fraternity.",
+      "c": "A class may exist without its objects, while objects cannot exist without their class.",
+      "d": "A class is like a blueprint used to construct objects."
+    },
+    "answer": "cd",
+    "details": ""
+  },
+  "212": {
+    "id": "212",
+    "type": "Functions",
+    "text": "Which of the following items are present in the function header?",
+    "code": "",
+    "options": {
+      "a": "return value",
+      "b": "function name and parameter list",
+      "c": "function name",
+      "d": "parameter list"
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "256": {
+    "id": "256",
+    "type": "Control Flow",
+    "text": "The ABC Video company needs a way to determine the cost that a customer will pay for renting a DVD.\nThe cost is dependent on the time of day the DVD is returned.\nHowever, there are also special rates on Thursdays and Sundays.\nThe fee structure is shown in the following list:\nThe cost is $1.59 per night.\nIf the DVD is returned after 8 PM, the customer will be charged an extra day.\nIf the video is rented on a Sunday,\nthe customer gets 30% off for as long as they keep the video.\nIf the video is rented on a Thursday,\nthe customer gets 50% off for as long as they keep the video.\nYou need to write code to meet the requirements. What should you insert instead of XXX, YYY and ZZZ?",
+    "code": "# ABC Video, DVD Rental Calculator\n\nontime = input('Was the video returned before 8 pm? y or n').lower()\ndays_rented = int(input('How many days was the video rented?'))\nday_rented = input('What day was the video rented?').capitalize()\n \ncost_per_day = 1.59\n \nif ontime XXX\n    days_rented += 1\nif day_rented YYY\n    total = (days_rented * cost_per_day) * .7\nelif day_rented ZZZ\n    total = (days_rented * cost_per_day) * .5\nelse:\n    total = (days_rented * cost_per_day)\n \nprint('Cost of the DVD rental is: $', total)",
+    "options": {
+      "a": "XXX -> == 'y':\nYYY -> >= 'Sunday':\nZZZ -> >= 'Thursday':",
+      "b": "XXX -> != 'n':\nYYY -> is 'Sunday':\nZZZ -> is 'Thursday':",
+      "c": "XXX -> == 'n':\nYYY -> == 'Sunday':\nZZZ -> == 'Thursday':",
+      "d": "XXX -> == 'y':\nYYY -> == 'Sunday':\nZZZ -> == 'Thursday':",
+      "e": "XXX -> == 'n':\nYYY -> is 'Sunday':\nZZZ -> is 'Thursday':"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "275": {
+    "id": "275",
+    "type": "Basics",
+    "text": "Which of the following statements are true? (Select two answers.)",
+    "code": "",
+    "options": {
+      "a": "The variable named __name__ is a string containing the module name.",
+      "b": "The .pby extension marks files that contain Python semi-compiled byte-code.",
+      "c": "A programmer is obliged to manually create a directory/folder named __pycache__ inside every package.",
+      "d": "A source file named __init__.py is used to mark a directory/folder as containing a Python package, and to initiate the package."
+    },
+    "answer": "ad",
+    "details": ""
+  },
+  "229": {
+    "id": "229",
+    "type": "Data Types",
+    "text": "What is the expected output of the following code?",
+    "code": "print(chr(ord('z') - 2))",
+    "options": {
+      "a": "z",
+      "b": "y",
+      "c": "x",
+      "d": "a"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "217": {
+    "id": "217",
+    "type": "Functions",
+    "text": "What is the expected output of the following code?",
+    "code": "data = {}\n \ndef func(d, key, value):\n    d[key] = value\n \n \nprint(func(data, '1', 'Peter'))",
+    "options": {
+      "a": "value",
+      "b": "The code is erroneous",
+      "c": "Peter",
+      "d": "None",
+      "e": "1"
+    },
+    "answer": "d",
+    "details": ""
+  },
+  "293": {
+    "id": "293",
+    "type": "OOP",
+    "text": "What is the expected output of the following code?",
+    "code": "class Ceil:\n    Token = 1\n \n    def get_token(self):\n        return 1\n \n \nclass Floor(Ceil):\n    def get_token(self):\n        return 2\n \n    def set_token(self):\n        pass\n \n \nholder = Floor()\nprint(hasattr(holder, \"Token\"), hasattr(Ceil, \"set_token\"))",
+    "options": {
+      "a": "True False",
+      "b": "False True",
+      "c": "True True",
+      "d": "False False"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "246": {
+    "id": "246",
+    "type": "Functions",
+    "text": "Which of the following function headers is correct?",
+    "code": "",
+    "options": {
+      "a": "def func(a=1, b=1, c=2):",
+      "b": "def func(a=1, b, c=2):",
+      "c": "def func(a=1, b=1, c=2, d):",
+      "d": "def func(a=1, b):"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "248": {
+    "id": "248",
+    "type": "OOP",
+    "text": "Consider the following code. Which of the assignments below is invalid?",
+    "code": "class Test:\n    def __init__(self, x=0):\n        self.x = x",
+    "options": {
+      "a": "obj = Test(1, 2)",
+      "b": "obj = Test(1)",
+      "c": "obj = Test('1')",
+      "d": "obj = Test()"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "203": {
+    "id": "203",
+    "type": "Data Aggregates",
+    "text": "What is the expected output of the following code?",
+    "code": "a = [1, 2, 3, 4, 5]\nprint(a[3:0:-1])",
+    "options": {
+      "a": "[4, 3, 2, 1]",
+      "b": "[4, 3]",
+      "c": "[4, 3, 2]",
+      "d": "The code is erroneous"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "269": {
+    "id": "269",
+    "type": "Modules",
+    "text": "What is the expected output of the following code?",
+    "code": "import os\n \nos.mkdir('thumbnails')\nos.chdir('thumbnails')\n \nsizes = ['small', 'medium', 'large']\n \nfor size in sizes:\n    os.mkdir(size)\n \nprint(os.listdir())",
+    "options": {
+      "a": "['.', '..', 'large', 'medium', 'small']",
+      "b": "[]",
+      "c": "['large', 'medium', 'small']",
+      "d": "['.', 'large', 'medium', 'small']"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "227": {
+    "id": "227",
+    "type": "Basics",
+    "text": "What is the expected output of the following code?",
+    "code": "x = '\\\\\\\\'\nprint(len(x))",
+    "options": {
+      "a": "The code is erroneous",
+      "b": "4",
+      "c": "1",
+      "d": "2"
+    },
+    "answer": "d",
+    "details": ""
+  },
+  "255": {
+    "id": "255",
+    "type": "Data Aggregates",
+    "text": "What is the expected output of the following code?",
+    "code": "data = [[0, 1, 2, 3] for i in range(2)]\nprint(data[2][0])",
+    "options": {
+      "a": "2",
+      "b": "The code is erroneous",
+      "c": "1",
+      "d": "0"
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "2001": {
+    "id": "2001",
+    "type": "OOP",
+    "text": "Which of the following lines of code will work flawlessly when put independently inside the dup() method in order to make the snippet's output equal to [0, 1, 1]? (Select two answers)",
+    "code": "class MyClass:\n    def __init__(self, initial):\n        self.store = initial\n\n    def put(self, new):\n        self.store.append(new)\n\n    def get(self):\n        return self.store\n\n    def dup(self):\n        # insert the line of code here\n \nobject_1 = MyClass([0])\nobject_1.put(1)\nobject_1.dup()\nprint(object_1.get())",
+    "options": {
+      "a": "self.put(self.store[1])",
+      "b": "put(self.store(1))",
+      "c": "self.put.store(1)",
+      "d": "self.put(self.get()[-1])"
+    },
+    "answer": "ad",
+    "details": ""
+  },
+  "239": {
+    "id": "239",
+    "type": "Modules",
+    "text": "Consider the following code. The code causes the import of ...",
+    "code": "from x.y import z",
+    "options": {
+      "a": "entity x from module y from package z",
+      "b": "entity y from module x from package z",
+      "c": "entity z from module x from package y",
+      "d": "entity z from module y from package x"
+    },
+    "answer": "d",
+    "details": ""
+  },
+  "280": {
+    "id": "280",
+    "type": "Data Aggregates",
+    "text": "How many elements does the my_list list contain?",
+    "code": "my_list = [0 for i in range(1, 3)]",
+    "options": {
+      "a": "one",
+      "b": "three",
+      "c": "two"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "230": {
+    "id": "230",
+    "type": "Data Types",
+    "text": "What is the expected output of the following code?",
+    "code": "print(float('1.3'))",
+    "options": {
+      "a": "The code is erroneous",
+      "b": "1, 3",
+      "c": "13",
+      "d": "1.3"
+    },
+    "answer": "d",
+    "details": ""
+  },
+  "286": {
+    "id": "286",
+    "type": "Error Handling",
+    "text": "What is the expected output of the following code?",
+    "code": "x, y = 3.0, 0.0\ntry:\n    z = x / y\nexcept ArithmeticError:\n    z = -1\nelse:\n    z = -2\nprint(z)",
+    "options": {
+      "a": "An error message appears on the screen",
+      "b": "-1",
+      "c": "-2",
+      "d": "-INF"
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "254": {
+    "id": "254",
+    "type": "Operators",
+    "text": "What is the expected output of the following code?",
+    "code": "x = 9\ny = 12\nresult = x // 2 * 2 / 2 + y % 2 ** 3\nprint(result)",
+    "options": {
+      "a": "7.0",
+      "b": "9.0",
+      "c": "8.0",
+      "d": "9"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "240": {
+    "id": "240",
+    "type": "Modules",
+    "text": "You know that a function named func() resides in a module named mod. The module has been imported using the following line. How can you invoke the function?",
+    "code": "import mod",
+    "options": {
+      "a": "mod.func()",
+      "b": "mod‑>func()",
+      "c": "func()",
+      "d": "mod::func()"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "234": {
+    "id": "234",
+    "type": "Data Types",
+    "text": "What is the expected output of the following code if the user enters 11 and 4 ?",
+    "code": "x = int(input())\ny = int(input())\nx = x % y\nx = x % y\ny = y % x\nprint(y)",
+    "options": {
+      "a": "1",
+      "b": "2",
+      "c": "3",
+      "d": "4"
+    },
+    "answer": "1",
+    "details": ""
+  },
+  "238": {
+    "id": "238",
+    "type": "Modules",
+    "text": "Which of the following functions immediately terminates a program?",
+    "code": "",
+    "options": {
+      "a": "sys.exit()",
+      "b": "sys.stop()",
+      "c": "sys.terminate()",
+      "d": "sys.halt()",
+      "e": "none"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "242": {
+    "id": "242",
+    "type": "Operators",
+    "text": "What is the expected output of the following code?",
+    "code": "x = 1 + 1 // 2 + 1 / 2 + 2\nprint(x)",
+    "options": {
+      "a": "3",
+      "b": "3.5",
+      "c": "4.0",
+      "d": "4"
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "223": {
+    "id": "223",
+    "type": "OOP",
+    "text": "What is the expected output of the following code?",
+    "code": "class A:\n    def __init__(self, v=2):\n        self.v = v\n\n    def set(self, v=1):\n        self.v += v\n        return self.v\n\na = A()\nb = a\nb.set()\nprint(a.v)",
+    "options": {
+      "a": "3",
+      "b": "2",
+      "c": "1",
+      "d": "0"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "290": {
+    "id": "290",
+    "type": "Modules",
+    "text": "A programmer needs to use the following functions:\nmachine(), choice(), and system().\nWhich modules have to be imported to make this possible? (Select two answers.)",
+    "code": "",
+    "options": {
+      "a": "math",
+      "b": "random",
+      "c": "platform",
+      "d": "tkinter"
+    },
+    "answer": "bc",
+    "details": ""
+  },
+  "291": {
+    "id": "291",
+    "type": "OOP",
+    "text": "Given the code below, complete the print() method body in a way that will ensure that the get() method is properly invoked. (Select two answers.)",
+    "code": "class Storage:\n    def __init__(self):\n        self.rack = 1\n\n    def get(self):\n        return self.rack\n\n    def print(self):\n        # Insert a method here\n\nstuff = Storage()\nstuff.print()",
+    "options": {
+      "a": "print(self.get())",
+      "b": "print(Storage.get(self))",
+      "c": "print(get())",
+      "d": "print(Storage.get())"
+    },
+    "answer": "ab",
+    "details": ""
+  },
+  "299": {
+    "id": "299",
+    "type": "I/O",
+    "text": "Which of the following statement are true? (Select two answers)",
+    "code": "",
+    "options": {
+      "a": "If open()’s second argument is 'w' and the invocation succeeds, the previous file’s content is lost.",
+      "b": "Closing an open file is performed by the closefile() function.",
+      "c": "The second open() argument describes the open mode and defaults to 'w'",
+      "d": "If open()‘s second argument is 'r' the file must exist or open will fail."
+    },
+    "answer": "ad",
+    "details": ""
+  },
+  "279": {
+    "id": "279",
+    "type": "Operators",
+    "text": "Which of the following expressions evaluates to True and raises no exception? (Select two answers.)",
+    "code": "",
+    "options": {
+      "a": "'' not in ''",
+      "b": "'xyz' not in 'uvwxyz'",
+      "c": "'' in 'alphabet'",
+      "d": "'bc' in 'abc'"
+    },
+    "answer": "cd",
+    "details": ""
+  },
+  "268": {
+    "id": "268",
+    "type": "Error Handling",
+    "text": "Which of the following is an example of a Python built-in concrete exception?",
+    "code": "",
+    "options": {
+      "a": "LookupError",
+      "b": "ArithmeticError",
+      "c": "BaseException",
+      "d": "IndexError"
+    },
+    "answer": "d",
+    "details": ""
+  },
+  "231": {
+    "id": "231",
+    "type": "Data Types",
+    "text": "What is the expected output of the following code?",
+    "code": "print('Peter' 'Wellert')",
+    "options": {
+      "a": "PeterWellert",
+      "b": "The code is erroneous",
+      "c": "Peter",
+      "d": "Wellert"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "252": {
+    "id": "252",
+    "type": "Data Aggregates",
+    "text": "What is the expected output of the following code?",
+    "code": "data = [1, 2, 3, 4, 5, 6]\nfor i in range(1, 6):\n    data[i - 1] = data[i]\n\nfor i in range(0, 6):\n    print(data[i], end=' ')",
+    "options": {
+      "a": "2 3 4 5 6 1",
+      "b": "2 3 4 5 6 6",
+      "c": "1 2 3 4 5 6",
+      "d": "1 1 2 3 4 5"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "214": {
+    "id": "214",
+    "type": "Functions",
+    "text": "Which of the following function calls can be used to invoke the below function definition? (Choose three.)",
+    "code": "def test(a, b, c, d):",
+    "options": {
+      "a": "test(a=1, 2, c=3, 4)",
+      "b": "test(a=1, b=2, c=3, d=4)",
+      "c": "test(a=1, 2, 3, 4)",
+      "d": "test(1, 2, 3, 4)",
+      "e": "test(a=1, b=2, c=3, 4)",
+      "f": "test(1, 2, 3, d=4)"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "202": {
+    "id": "202",
+    "type": "Data Types",
+    "text": "What is the expected output of the following code?",
+    "code": "data = 'abbabadaadbbaccabc'\nprint(data.count('ab', 1))",
+    "options": {
+      "a": "5",
+      "b": "2",
+      "c": "4",
+      "d": "3"
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "259": {
+    "id": "259",
+    "type": "Modules",
+    "text": "A list of package's dependencies can be obtained from pip using its command named:",
+    "code": "",
+    "options": {
+      "a": "show",
+      "b": "dir",
+      "c": "deps",
+      "d": "list"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "228": {
+    "id": "228",
+    "type": "Basics",
+    "text": "What is the expected output of the following code?",
+    "code": "x = \"\"\"\n\"\"\"\nprint(len(x))",
+    "options": {
+      "a": "0",
+      "b": "The code is erroneous",
+      "c": "2",
+      "d": "1"
+    },
+    "answer": "d",
+    "details": ""
+  },
+  "271": {
+    "id": "271",
+    "type": "I/O",
+    "text": "What is the expected result of the following code?",
+    "code": "b = bytearray(3)\nprint(b)",
+    "options": {
+      "a": "bytearray(b'\\x00\\x00\\x00')",
+      "b": "bytearray(0, 0, 0)",
+      "c": "3",
+      "d": "bytearray(b'3')"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "207": {
+    "id": "207",
+    "type": "Operators",
+    "text": "Consider the following code.\nWhat is the value eventually assigned to x?",
+    "code": "x = 1\nx = x == x",
+    "options": {
+      "a": "True",
+      "b": "1",
+      "c": "0",
+      "d": "False"
+    },
+    "answer": "d",
+    "details": ""
+  },
+  "208": {
+    "id": "208",
+    "type": "Operators",
+    "text": "What is the expected output of the following code?",
+    "code": "x = True\ny = False\nx = x or y\ny = x and y\nx = x or y\nprint(x, y)",
+    "options": {
+      "a": "False False",
+      "b": "True False",
+      "c": "False True",
+      "d": "True True"
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "262": {
+    "id": "262",
+    "type": "Modules",
+    "text": "PyPI is often referred to as:",
+    "code": "",
+    "options": {
+      "a": "Cheese Shop",
+      "b": "pyTT",
+      "c": "Py Software Store",
+      "d": "Python Play"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "264": {
+    "id": "264",
+    "type": "Basics",
+    "text": "A code point is:",
+    "code": "",
+    "options": {
+      "a": "A code containing a point.",
+      "b": "A point used to write a code.",
+      "c": "A number which makes up a character."
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "219": {
+    "id": "219",
+    "type": "Functions",
+    "text": "What is the expected output of the following code?",
+    "code": "data = 'abcdefg'\ndef func(text):\n    del text[2]\n    return text\n\nprint(func(data))",
+    "options": {
+      "a": "abdef",
+      "b": "The code is erroneous.",
+      "c": "acdef",
+      "d": "abcef"
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "201": {
+    "id": "201",
+    "type": "Operators",
+    "text": "What is the expected output of the following code?",
+    "code": "print(1 / 1)",
+    "options": {
+      "a": "This can not be evaluated.",
+      "b": "1",
+      "c": "1.0",
+      "d": "This can not be predicted."
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "288": {
+    "id": "288",
+    "type": "Error Handling",
+    "text": "What is the expected behavior of the following program?",
+    "code": "foo = (1, 2, 3)\nfoo.index(0)",
+    "options": {
+      "a": "The program will cause a SyntaxError exception.",
+      "b": "The program will cause a TypeError exception.",
+      "c": "The program will output 1 to the screen.",
+      "d": "The program will cause a AttributeError exception.",
+      "e": "The program will cause a ValueError exception."
+    },
+    "answer": "e",
+    "details": ""
+  },
+  "270": {
+    "id": "270",
+    "type": "Functions",
+    "text": "Select the true statements. (Choose two.)",
+    "code": "",
+    "options": {
+      "a": "The lambda function can accept any number of arguments.",
+      "b": "The lambda function can evaluate only one expressions.",
+      "c": "The lambda function can evaluate multiple expressions.",
+      "d": "The lambda function can accept a maximum of two arguments."
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "205": {
+    "id": "205",
+    "type": "Operators",
+    "text": "Which of the following statements is false?",
+    "code": "",
+    "options": {
+      "a": "The result of the / operator is always an integer value.",
+      "b": "The ** operator has right-to-left associativity.",
+      "c": "The right argument of the % operator can not be zero.",
+      "d": "Multiplication precedes addition."
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "258": {
+    "id": "258",
+    "type": "Data Aggregates",
+    "text": "You develop a Python application for your company. A list named employees contains 200 employee names, the last five being company management.\nYou need to slice the list to display all employees excluding management.\nWhich code segments can you use? (Choose two.)",
+    "code": "",
+    "options": {
+      "a": "employees[1:-4]",
+      "b": "employees[1:-5]",
+      "c": "employees[:-5]",
+      "d": "employees[0:-5]",
+      "e": "employees[0:-4]"
+    },
+    "answer": "cd",
+    "details": ""
+  },
+  "263": {
+    "id": "263",
+    "type": "Error Handling",
+    "text": "The part of your code where the handling of an exception takes place should be placed inside:",
+    "code": "",
+    "options": {
+      "a": "the except: branch",
+      "b": "the try: branch",
+      "c": "the exception: branch"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "2000": {
+    "id": "2000",
+    "type": "OOP",
+    "text": "What is true about Object-Oriented Programming in Python? (Select two answers)",
+    "code": "",
+    "options": {
+      "a": "Encapsulation allows you to protect some data from uncontrolled access.",
+      "b": "Inheritance is the relation between a superclass and a subclass.",
+      "c": "The arrows on a class diagram are always directed from a superclass towards its subclass.",
+      "d": "An object is a recipe for a class."
+    },
+    "answer": "bd",
+    "details": ""
+  },
+  "292": {
+    "id": "292",
+    "type": "OOP",
+    "text": "Assuming that the following code has been executed successfully, indicate the expressions which evaluate to True and don't raise any exceptions.",
+    "code": "class Collection:\n    stamps = 2\n\n    def __init__(self, stuff):\n        self.stuff = stuff\n\n    def dispose(self):\n        del self.stuff\n\nbinder = Collection(1)\nbinder.dispose()",
+    "options": {
+      "a": "'stuff' in binder.__dict__",
+      "b": "len(binder.__dict__) > 0",
+      "c": "'stamps' in Collection.__dict__",
+      "d": "len(binder.__dict__) != len(Collection.__dict__)"
+    },
+    "answer": "cd",
+    "details": ""
+  },
+  "260": {
+    "id": "260",
+    "type": "Modules",
+    "text": "If you want to import pi from math, which line will you use?",
+    "code": "",
+    "options": {
+      "a": "import pi from math",
+      "b": "from pi import math",
+      "c": "from math import pi"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "251": {
+    "id": "251",
+    "type": "Data Aggregates",
+    "text": "What is the expected output of the following code?",
+    "code": "data = {'1': '0', '0': '1'}\n \nfor d in data.vals():\n    print(d, end=' ')",
+    "options": {
+      "a": "The code is erroneous.",
+      "b": "1 0",
+      "c": "0 1",
+      "d": "0 0"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "247": {
+    "id": "247",
+    "type": "Data Aggregates",
+    "text": "What is the expected output of the following snippet?",
+    "code": "lst = [1, 2, 3, 4]\nlst = lst[-3:2]\nlst = lst[-1]\nprint(lst)",
+    "options": {
+      "a": "1",
+      "b": "2",
+      "c": "4",
+      "d": "3"
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "237": {
+    "id": "237",
+    "type": "Error Handling",
+    "text": "The following statement ...",
+    "code": "assert x == 0",
+    "options": {
+      "a": "will stop the program if x is not equal to 0",
+      "b": "will stop the program if x is equal to 0",
+      "c": "has no effect.",
+      "d": "is erroneous."
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "224": {
+    "id": "224",
+    "type": "Modules",
+    "text": "Consider the following code. Which of the following statements best describes the behavior of the random.shuffle() method?",
+    "code": "import random\ndata = [10, 20, 30]\nrandom.shuffle(data)\nprint(data)",
+    "options": {
+      "a": "It returns a list where the elements 10, 20 and 30 would be at a random positions.",
+      "b": "It shuffles the elements of the list in-place.",
+      "c": "It will not modify the list. This function is just a placeholder and yet to be implemented."
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "257": {
+    "id": "257",
+    "type": "Error Handling",
+    "text": "Which of the following is false?",
+    "code": "",
+    "options": {
+      "a": "A try statement can have a finally clause and an except clause.",
+      "b": "A try statement can have one or more finally clauses.",
+      "c": "A try statement can have one or more except clauses.",
+      "d": "A try statement can have a finally clause without an except clause."
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "265": {
+    "id": "265",
+    "type": "Operators",
+    "text": "The += operator, when applied to strings, performs:",
+    "code": "",
+    "options": {
+      "a": "Subtraction",
+      "b": "Concatenation",
+      "c": "Multiplication"
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "272": {
+    "id": "272",
+    "type": "Data Aggregates",
+    "text": "You need data which can act as a simple telephone directory. You can obtain it with the following clauses. (choose two relevant variants; assume that no other items have been created before)",
+    "code": "",
+    "options": {
+      "a": "dir={'Mom':5551234567, 'Dad':5557654321}",
+      "b": "dir={Mom:'5551234567', Dad:'5557654321'}",
+      "c": "dir={'Mom':'5551234567', 'Dad':'5557654321'}",
+      "d": "dir={Mom:5551234567, Dad:5557654321}"
+    },
+    "answer": "ac",
+    "details": ""
+  },
+  "220": {
+    "id": "220",
+    "type": "OOP",
+    "text": "What is the expected output of the following code?",
+    "code": "def increment(c, num):\n    c.count += 1\n    num += 1\n \n \nclass Counter:\n    def __init__(self):\n        self.count = 0\n \n \ncounter = Counter()\nnumber = 0\n \nfor i in range(0, 100):\n    increment(counter, number)\n \nprint(\n    \"counter is \"\n    + str(counter.count)\n    + \", number of times is \"\n    + str(number)\n)",
+    "options": {
+      "a": "counter is 100, number of times is 0",
+      "b": "counter is 101, number of times is 0",
+      "c": "counter is 101, number of times is 101",
+      "d": "counter is 100, number of times is 100"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "297": {
+    "id": "297",
+    "type": "Control Flow",
+    "text": "What will be the value of the i variable when the while loop finishes its execution?",
+    "code": "i = 0\nwhile i != 0:\n    i = i - 1\nelse:\n    i = i + 1\n \nprint(i)",
+    "options": {
+      "a": "The variable becomes unavailable.",
+      "b": "2",
+      "c": "0",
+      "d": "1"
+    },
+    "answer": "d",
+    "details": ""
+  },
+  "216": {
+    "id": "216",
+    "type": "Control Flow",
+    "text": "How many stars will the following code print to the monitor?",
+    "code": "x = 1\nwhile x < 10:\n    print('*')\n    x = x << 1",
+    "options": {
+      "a": "two",
+      "b": "eight",
+      "c": "four",
+      "d": "one"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "298": {
+    "id": "298",
+    "type": "Functions",
+    "text": "What is the expected output of the following code?",
+    "code": "def foo(x,y,z):\n    return x(y) - x(z)\n \nprint(foo(lambda x: x % 2, 2, 1))",
+    "options": {
+      "a": "1",
+      "b": "An exception is raised.",
+      "c": "-1",
+      "d": "0"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "276": {
+    "id": "276",
+    "type": "Basics",
+    "text": "Which of the following statements are true? (Select two answers.)",
+    "code": "",
+    "options": {
+      "a": "The open() function returns False when its operation fails.",
+      "b": "stdin, stdout, stderr are names of pre-opened streams.",
+      "c": "The second argument of the open() function is an integer value.",
+      "d": "The print() function writes its output to the stdout stream."
+    },
+    "answer": "bd",
+    "details": ""
+  },
+  "282": {
+    "id": "282",
+    "type": "Functions",
+    "text": "What is the expected output of the following code?",
+    "code": "def f(a, b):\n    return a(b)\n \n \nprint(f(lambda x: x and True, 1 > 0))",
+    "options": {
+      "a": "False",
+      "b": "True",
+      "c": "0",
+      "d": "None"
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "226": {
+    "id": "226",
+    "type": "Basics",
+    "text": "UTF‑8 is ...",
+    "code": "",
+    "options": {
+      "a": "UTF-8 is not a synonym for \"byte.\" It is a specific character encoding scheme used to represent text in computers.",
+      "b": "the 9th version of the UTF Standard.",
+      "c": "an encoding form of the Unicode Standard.",
+      "d": "a Python version name."
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "249": {
+    "id": "249",
+    "type": "Data Types",
+    "text": "Which of the following statements is false?",
+    "code": "",
+    "options": {
+      "a": "The None value can be compared with variables.",
+      "b": "The None value can not be used as an argument of arithmetic operators.",
+      "c": "The None value can be assigned to variables.",
+      "d": "The None value may not be used outside functions."
+    },
+    "answer": "d",
+    "details": ""
+  },
+  "273": {
+    "id": "273",
+    "type": "OOP",
+    "text": "If the class’s constructor is declared as below, which one of the assignments is valid?",
+    "code": "class Class:\n    def __init__(self):\n        pass",
+    "options": {
+      "a": "object_1 = Class(self)",
+      "b": "object_1 = Class",
+      "c": "object_1 = Class(object_1)",
+      "d": "object_1 = Class()"
+    },
+    "answer": "d",
+    "details": ""
+  },
+  "250": {
+    "id": "250",
+    "type": "Basics",
+    "text": "Which of the following variable names is illegal?",
+    "code": "",
+    "options": {
+      "a": "tRUE",
+      "b": "True",
+      "c": "TRUE",
+      "d": "true"
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "235": {
+    "id": "235",
+    "type": "Error Handling",
+    "text": "What is the expected output of the following code?",
+    "code": "try:\n    print('try')\nexcept:\n    print('except')\nfinally:\n    print('finally')",
+    "options": {
+      "a": "finally\nexcept",
+      "b": "except\nfinally",
+      "c": "try\nfinally",
+      "d": "finally\ntry"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "266": {
+    "id": "266",
+    "type": "OOP",
+    "text": "Is there a way to check if a class is a subclass of another class?",
+    "code": "",
+    "options": {
+      "a": "It may be possible, but only under special conditions.",
+      "b": "Yes, there is a function able to do that.",
+      "c": "No."
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "204": {
+    "id": "204",
+    "type": "Data Aggregates",
+    "text": "What is the expected output of the following code?",
+    "code": "data = [\n    [1, 2, 3, 4],\n    [5, 6, 7, 8],\n    [9, 10, 11, 12],\n    [13, 14, 15, 16]\n]\nfor i in range(0, 4):\n    print(data[i].pop(), end=' ')",
+    "options": {
+      "a": "13 14 15 16",
+      "b": "1 2 3 4",
+      "c": "4 8 12 16",
+      "d": "1 5 9 13"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "221": {
+    "id": "221",
+    "type": "OOP",
+    "text": "What is the expected output of the following code?",
+    "code": "class Test:\n    def __init__(self, s):\n        self.s = s\n \n    def print(self):\n        print(s)\n \n \nx = Test('Hello Python')\nx.print()",
+    "options": {
+      "a": "NameError: name 's' is not defined",
+      "b": "AttributeError: 'Test' object has no attribute 's'",
+      "c": "TypeError: Test() takes no arguments",
+      "d": "Hello Python"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "284": {
+    "id": "284",
+    "type": "I/O",
+    "text": "Which of the following statements are true? (Select two answers.)",
+    "code": "",
+    "options": {
+      "a": "The second argument of the open() function is a string.",
+      "b": "The open() function raises an exception when its operation fails.",
+      "c": "Trying to write a file opened in read-only mode removes its contents.",
+      "d": "read, write, and delete are the names of file open modes."
+    },
+    "answer": "ab",
+    "details": ""
+  },
+  "233": {
+    "id": "233",
+    "type": "I/O",
+    "text": "What is the expected output of the following code?",
+    "code": "with open('data.txt', 'w') as f:\n    f.write(\"I'm gonna make him an offer he can't refuse.\")\n \nwith open('data.txt', 'r') as f:\n    data = f.readlines()\n    for line in data:\n        words = line.split()\n        print(words)",
+    "options": {
+      "a": "I'm gonna make him an offer he can't refuse.",
+      "b": "I",
+      "c": "The code is erroneous.",
+      "d": "[\"I'm\", 'gonna', 'make', 'him', 'an', 'offer', 'he', \"can't\", 'refuse.']"
+    },
+    "answer": "d",
+    "details": ""
+  },
+  "215": {
+    "id": "215",
+    "type": "Functions",
+    "text": "What is the expected output of the following code?",
+    "code": "people = {}\n\ndef add_person(index):\n    if index in people:\n        people[index] += 1\n    else:\n        people[index] = 1\n \n \nadd_person('Peter')\nadd_person('Paul')\nadd_person('peter')\n \nprint(len(people))",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "1",
+      "d": "The code is erroneous."
+    },
+    "answer": "b",
+    "details": ""
+  },
+  "283": {
+    "id": "283",
+    "type": "Functions",
+    "text": "What is the expected output of the following code?",
+    "code": "vect = [\"alpha\", \"bravo\", \"charlie\"]\nnew_vect = filter(lambda s: s[-1].upper() in [\"A\", \"O\"], vect)\nfor x in new_vect:\n    print(x[1], end=\"\")",
+    "options": {
+      "a": "lr",
+      "b": "RH",
+      "c": "LR",
+      "d": "rh"
+    },
+    "answer": "a",
+    "details": ""
+  },
+  "218": {
+    "id": "218",
+    "type": "Control Flow",
+    "text": "Consider the following code. What would you insert instead of ??? so that the program prints the following pattern to the monitor?\n11111\n22222\n33333\n44444\n55555",
+    "code": "for n in range(1, 6, 1):\n    print(??? * 5)",
+    "options": {
+      "a": "-1",
+      "b": "1",
+      "c": "str(n)",
+      "d": "n",
+      "e": "2"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "241": {
+    "id": "241",
+    "type": "Operators",
+    "text": "What value will be assigned to the x variable?",
+    "code": "z = 3\ny = 7\nx = y == z and y > z or z > y and z != y",
+    "options": {
+      "a": "0",
+      "b": "True",
+      "c": "False",
+      "d": "1"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "267": {
+    "id": "267",
+    "type": "Functions",
+    "text": "Select the true statements about the filter() function. (Choose two.)",
+    "code": "",
+    "options": {
+      "a": "The filter() function returns an iterator.",
+      "b": "The filter() function does not return an iterator.",
+      "c": "The filter() function has the following syntax:\n    filter(function, iterable)",
+      "d": "The filter() function has the following syntax:\n    filter(iterable, function)"
+    },
+    "answer": "ac",
+    "details": ""
+  },
+  "222": {
+    "id": "222",
+    "type": "OOP",
+    "text": "What is the expected output of the following code?",
+    "code": "class A:\n\n    A = 7\n\n    def __init__(self):\n        self.a = 0\n \n \nprint(hasattr(A, 'A'))",
+    "options": {
+      "a": "The code is erroneous.",
+      "b": "False",
+      "c": "True",
+      "d": "0"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "289": {
+    "id": "289",
+    "type": "Modules",
+    "text": "What is the expected output of the following code?",
+    "code": "import math\n \nx = -1.7\nprint(-abs(math.floor(x) + math.ceil(x)))",
+    "options": {
+      "a": "3",
+      "b": "-2",
+      "c": "-3",
+      "d": "2"
+    },
+    "answer": "c",
+    "details": ""
+  },
+  "287": {
+    "id": "287",
+    "type": "Error Handling",
+    "text": "What is the expected output of the following code if there is no file named non_existing_file in the working directory/folder, and the open() function invocation is successful?",
+    "code": "try:\n    f = open(\"non_existing_file\", \"w\")\n    print(1, end=\" \")\n    s = f.readline()\n    print(2, end=\" \")\nexcept IOError as error:\n    print(3, end=\" \")\nelse:\n    f.close()\n    print(4, end=\" \")",
+    "options": {
+      "a": "2 4",
+      "b": "1 3",
+      "c": "1 2 4",
+      "d": "1 2 3 4"
+    },
+    "answer": "b",
+    "details": ""
+  }
+}

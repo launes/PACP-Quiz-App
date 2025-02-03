@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Python Quiz App</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        /* Grundlegendes Layout */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+        }
+        
+        #loading {
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2em;
+        }
+        
+        #quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">Lade Quiz-App...</div>
+    <div id="quiz-container"></div>
+
+    <!-- Flutter Runtime -->
+    <script src="flutter.js" defer></script>
+    <script>
+        window.addEventListener('load', function() {
+            // Flutter Initialisierung
+            _flutter.loader.loadEntrypoint({
+                serviceWorker: {
+                    serviceWorkerVersion: 3654876340,
+                    serviceWorkerUrl: 'flutter_service_worker.js'
+                },
+                onEntrypointLoaded: async function(engineInitializer) {
+                    try {
+                        let appRunner = await engineInitializer.initializeEngine();
+                        await appRunner.runApp();
+                        document.getElementById('loading').style.display = 'none';
+                    } catch (error) {
+                        console.error('Fehler beim Starten der App:', error);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

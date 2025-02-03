@@ -1,0 +1,2420 @@
+{
+  "255": {
+    "id": "255",
+    "text": "What will be the value of the i variable when the while loop finishes its execution? ",
+    "code": "i = 0 \nwhile i != 0: \n\ti = i - 1 \nelse: \n\ti = i + 1 ",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "2",
+      "D": "the variable becomes unavailable"
+    },
+    "answer": "A",
+    "details": ""
+  },
+  "256": {
+    "id": "256",
+    "text": "Operator able to perform bitwise shifts is coded as (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "--",
+      "B": "++",
+      "C": "<<",
+      "D": ">>"
+    },
+    "answer": "CD",
+    "details": ""
+  },
+  "257": {
+    "id": "257",
+    "text": "What will the value of the i variable be when the following loop finishes its execution? ",
+    "code": "for i in range(10):\n\tpass ",
+    "options": {
+      "A": "10",
+      "B": "the variable becomes unavailable",
+      "C": "11",
+      "D": "9"
+    },
+    "answer": "D",
+    "details": "# Question 257\nimport math\n\nfor i in range(10):\n    pass\n\nprint(i)\n\n# Was ist i? \n# 9 \n# range(10) ist exklusive 10 und das i bleibt in Python auch nach\n# der Schleife erhalten. "
+  },
+  "258": {
+    "id": "258",
+    "text": "The expression 1+-2 is: ",
+    "code": "",
+    "options": {
+      "A": "equal to 1",
+      "B": "invalid",
+      "C": "equal to 2",
+      "D": "equal to -1"
+    },
+    "answer": "D",
+    "details": "# Question 258:\n# ganz normale Rechnung\n# 1+-2 = -1\n# -2 ist ein Literal, + ein Operator"
+  },
+  "259": {
+    "id": "259",
+    "text": "A compiler is a program designed to (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "rearrange the source code to make it clearer",
+      "B": "check the source code in order to see of it's correct",
+      "C": "execute the source code",
+      "D": "translate the source code into machine code"
+    },
+    "answer": "BD",
+    "details": "# Question 259:\n# A compiler is a program designed to (Choose two.)\n\n# A. rearrange the source code to make it clearer\n# B. check the source code in order to see of it's correct\n# C. execute the source code\n# D. translate the source code into machine code\n\n# Compiler: Übersetzen, Syntax\n# B D"
+  },
+  "260": {
+    "id": "260",
+    "text": "What is the output of the following piece of code? ",
+    "code": "a = 'ant' \nb = \"bat\" \nc = 'camel' \nprint(a, b, c, sep='\"') # '+\"+' ",
+    "options": {
+      "A": "ant'bat'camel",
+      "B": "ant\"bat\"camel",
+      "C": "antbatcamel",
+      "D": "print(a,b,c,sep='\"')"
+    },
+    "answer": "B",
+    "details": "# What is the output of the following piece of code?\n\na = 'ant'\nb = \"bat\"\nc = 'camel'\nprint(a, b, c, sep='\"') # '+\"+ '\n\n# A. ant'bat'camel\n# B. ant\"bat\"camel (X) - korrekt\n# C. antbatcamel\n# D. print(a, b, c, sep= '\"')\n\n# Lösung: B\n"
+  },
+  "261": {
+    "id": "261",
+    "text": "What is the expected output of the following snippet? ",
+    "code": "i = 5 \nwhile i > 0:\n\ti = i // 2 \n\tif i % 2 = 0:\n\t\tbreak \nelse: \n\ti += 1 \nprint(i) ",
+    "options": {
+      "A": "the code is erroneous",
+      "B": "3",
+      "C": "7",
+      "D": "15"
+    },
+    "answer": "A",
+    "details": "# QUESTION 261\n# What is the expected output of the following snippet?\ni = 5\n\nwhile i > 0:\n    i = i // 2 # Ganzzahldivision führt zu 2, da Nachkommastellen abgeschnitten werden\n    if i % 2 = 0:\n    # if i % 2 == 0: # 2 % 2 == 0 => True 5 % 2 1, da 2*2 = 4, Rest 1\n        break # Abbruch der Schleife (KEIN else)\nelse:\n    i += 1\n\nprint(i)\n\n# A. the code is erroneous\n# B. 3\n# C. 7\n# D. 15\n\n# Lösung: A"
+  },
+  "262": {
+    "id": "262",
+    "text": "How many lines does the following snippet output? ",
+    "code": "for i in range(1,3):\n\tprint(\"*\",end=\"\") \nelse: \n\tprint(\"*\") ",
+    "options": {
+      "A": "three",
+      "B": "one",
+      "C": "two",
+      "D": "four"
+    },
+    "answer": "B",
+    "details": "# Question 262:\n#  How many lines does the following snippet output?\nfor i in range(1, 3):\n    print(\"x\", end=\"\") # end=\"\" erzeugt kein newline\nelse:\n    print(\"x\") # newline gehört noch zur ersten Zeile\n\n# A. three\n# B. one\n# C. two\n# D. four\n\n# Lösung: B"
+  },
+  "263": {
+    "id": "263",
+    "text": "Which of the following literals reflect the value given as 34.23? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": ".3423e2",
+      "B": "3423e-2",
+      "C": ".3423e-2",
+      "D": "3423e2"
+    },
+    "answer": "AB",
+    "details": "# Question 263:\n\n# Which of the following literals reflect the value given as 34.23? (Choose two.)\n# A. .3423e2\n# B. 3423e-2\n# C. .3423e-2\n# D. 3423e2\n\na = 34.23\nprint(.3423e2 == a)\nprint(3423e-2 == a) # 500.-\n\n# positiver Wert hinter e verschiebt das Komma nach rechts,\n# negativer Wert verschiebt das Komma nach links \n"
+  },
+  "264": {
+    "id": "264",
+    "text": "What is the expected output of the following snippet? ",
+    "code": "a = 2 \nif a > 0: \n\ta += 1 \n\telse: \n\t\ta -= 1 \nprint(a) ",
+    "options": {
+      "A": "3",
+      "B": "1",
+      "C": "2",
+      "D": "the code is erroneous"
+    },
+    "answer": "D",
+    "details": "# QUESTION 264\n# What is the expected output of the following snippet?\n\na = 2\nif a > 0:\n    a += 1\n    else: # Einrückung\n        a -= 1\nprint(a)\n\n# A. 3\n# B. 1\n# C. 2\n# D. the code is erroneous\n\n# Lösung: D"
+  },
+  "265": {
+    "id": "265",
+    "text": "Assuming that the following snippet has been successfully executed, which of the equations are True? (Choose two.) ",
+    "code": "a = [1] \nb = a \na[0] = 0 ",
+    "options": {
+      "A": "len(a) == len(b)",
+      "B": "b[0] +1 == a[0]",
+      "C": "a[0] == b[0]",
+      "D": "a[0] + 1 == b[0]"
+    },
+    "answer": "AC",
+    "details": "# QUESTION 265\n# Assuming that the following snippet has been successfully executed,\n# which of the equations are True?\n# (Choose two.)\n\na = [1] # Wir erzeugen eine Liste mit einem Element\nb = a # Referenzen werden kopiert (mutable)\n# b = a[:] # hier wären a und b zwei UNABHÄNGIGE Kopien der Liste, durch slicing\n# a is b # Referenzen gleich? Bei Ausführung von Zeile 8 False\na[0] = 0 # a[1] = 0 : Zugriff auf nicht vorhandene Indizes sind in Python nicht zulässig.\n\n# del a # löscht die Referenza auf die Liste, aber b bleibt bestehen\n# del a[0] # Referenzen a und b existieren weiter, aber a[0] wird innerhalb\n# der Liste gelöscht UND die Änderung ist sichtbar in a und b  \n\n# Antwortmöglichkeiten\n# A. len(a) == len(b) : True\n# B. b[0] +1 == a[0] \n# C. a[0] == b[0] : True\n# D. a[0] + 1 == b[0]\n\n# Listen sind mutable\n"
+  },
+  "266": {
+    "id": "266",
+    "text": "Assuming that the following snippet has been successfully executed, which of the equations are False? (Choose two.) ",
+    "code": "a = [0] \nb = a[:] \na[0] = 1 ",
+    "options": {
+      "A": "len(a) == len(b)",
+      "B": "a[0] - 1 == b[0]",
+      "C": "a[0] == b[0]",
+      "D": "b[0] - 1 == a[0]"
+    },
+    "answer": "CD",
+    "details": "# QUESTION 266\n# Assuming that the following snippet has been successfully executed, \n# which of the equations are False?\n# (Choose two.)\n\na = [0]\nb = a[:] # es wird eine \"echte\" Kopie erstellt \n# b = [0], a = [0], a is b = False\na[0] = 1 \n# b[0] = 0, a[0] = 1\n\n# A. len(a) == len(b) # True\n# B. a[0] - 1 == b[0] # True\n# C. a[0] == b[0] # False\n# D. b[0] - 1 == a[0] # False \n\n# Lösung: C und D (weil in der Frage nach False gefragt wird)\n"
+  },
+  "267": {
+    "id": "267",
+    "text": "Which of the following statements are true?(Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "Python strings are actually lists",
+      "B": "Python strings can be concatenated",
+      "C": "Python strings can be sliced like lists",
+      "D": "Python strings are mutable"
+    },
+    "answer": "BC",
+    "details": "# Question 267:\ntext = \"Ein Text\"\nprint(id(text))\nprint(text[0:3]) # slicing wie bei Listen\n# Strings sind immutable !\n# Strings haben andere Funktionen als Listen\n# Konkatenation\n# Strings sind WIE listen, aber es sind keine Listen !\n# Strings haben ANDERE Methoden als Listen\ntext = text + \" Noch ein Text\"\nprint(id(text)) # Strings sind immutable !\n\n# lists sind mutable\na = [ 8 ]\nprint(id(a))\na.append(7)\nprint(id(a))"
+  },
+  "268": {
+    "id": "268",
+    "text": "Which of the following sentences are true? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "Lists may not be stored inside tuples",
+      "B": "Tuples may be stored inside lists",
+      "C": "Tuples may not be stored inside tuples",
+      "D": "Lists may be stored inside lists"
+    },
+    "answer": "BD",
+    "details": "# QUESTION 268\n# Which of the following sentences are true? (Choose two.)\n\n# A. Lists may not be stored inside tuples : False\n# a = [8,9,10]\n# (a,)\n# B. Tuples may be stored inside lists : True\n# C. Tuples may not be stored inside tuples : False\n# ((8,9),(7,5))\n# D. Lists may be stored inside lists : True (siehe z.B. Wetter-Aufgabe)\n\n"
+  },
+  "269": {
+    "id": "269",
+    "text": "Assuming that String is six or more letters long, the slice string[1:-2] is shorter than the original string by: ",
+    "code": "",
+    "options": {
+      "A": "four chars",
+      "B": "three chars",
+      "C": "one char",
+      "D": "two chars"
+    },
+    "answer": "B",
+    "details": "# QUESTION 269\n# Assuming that String is six or more letters long, the following slice\n# string[1:-2]\n# is shorter than the original string by:\n\n# A. four chars\n# B. three chars\n# C. one char\n# D. two chars\n\nstring = \"Matthias\"\n# weggeschnitten wird: M sowie as, weil -2 schon EXKLUSIVE bei der Extraktion ist\n# Insgesamt müssen also immer genau 3 Buchstaben wegfallen\nprint(string[1:-2]) # \"atthi\" \n\n# Lösung: B\n"
+  },
+  "270": {
+    "id": "270",
+    "text": "What is the expected output of the following snippet? ",
+    "code": "lst = [1, 2, 3, 4] \nlst = lst[-3:-2] \nlst = lst[-1] \nprint(lst) ",
+    "options": {
+      "A": "1",
+      "B": "4",
+      "C": "2",
+      "D": "3"
+    },
+    "answer": "C",
+    "details": "# QUESTION 270\n# What is the expected output of the following snippet?\n\nlst = [1, 2, 3, 4]\nprint(\"Vor -3,-2\", lst)\n# -2 ist das erste Element, was NICHT MEHR extrahiert wird\nlst = lst[-3:-2] # [2], kein int-Literal, slicing liefert immer eine Liste\nprint(\"vor -1\", lst)\nlst = lst[-1] # Listenelement wird extrahiert \n# hier wird lst einem int zugewisen (lst wechselt den Datentypen)\nprint(lst) # 2\n\n# A. 1\n# B. 4\n# C. 2\n# D. 3\n\n# Lösung: C\n"
+  },
+  "271": {
+    "id": "271",
+    "text": "What is the expected output of the following snippet? ",
+    "code": "s = 'abc' \nfor i in len(s): \n\ts[i] = s[i].upper() \nprint(s) ",
+    "options": {
+      "A": "abc",
+      "B": "The code will cause a runtime exception",
+      "C": "ABC",
+      "D": "123"
+    },
+    "answer": "B",
+    "details": "# QUESTION 271\n# What is the expected output of the following snippet?\n\ns = 'abc'\nfor i in len(s): # hinter dem in muss immer eine iterierbare Struktur stehen, z.B.\n    # liste, range, string \n    # len(s) ist eine Zahl und daher nicht iterierbar, TypeError\n    s[i] = s[i].upper() # str does not support item assignment s[0] = 'a'\n    # Strings sind immutabel\nprint(s)\n\n# Lösung: B\n\n\nfor i in s: # hinter dem in muss immer eine iterierbare Struktur stehen, z.B.\n    # liste, range, string \n    # len(s) ist eine Zahl und daher nicht iterierbar, TypeError\n    s[i] = s[i].upper() \nprint(s)\n\n# A. abc\n# B. The code will cause a runtime exception\n# C. ABC\n# D. 123\n\n\nfor i in range(1,10):\n    pass\n\nprint(i) # i is available\n\n\n\n\ns = 'abc'\n# s = s.upper() # :-)\n\nfor i, v in enumerate(s): # hinter dem in muss immer eine iterierbare Struktur stehen, z.B.\n    print(i,v) # 0 a, 1 b 2 c\n    # liste, range, string \n    # len(s) ist eine Zahl und daher nicht iterierbar, TypeError\n    s[i] = s[i].upper() # s[0] = s[0].upper() 'a' => 'A' ??\n  # s['a'] = s['a'].upper()\n\nprint(s)\n\n\n# s = 'abc'\n\n# for i in s: # hinter dem in muss immer eine iterierbare Struktur stehen, z.B.\n#     # liste, range, string \n#     # len(s) ist eine Zahl und daher nicht iterierbar, TypeError\n#     s[i] = s[i].upper() # s['a']\n#   # s['a'] = s['a'].upper()\n\n# print(s)\n\nliste = [8,9,10]\nfor index, wert in enumerate(liste):\n    print(index, wert)\n\nliste2 = [8,(1,2),10]\n# enumerate = Aufzählung\nfor index, wert in enumerate(liste2):\n    print(index, wert)\n    if isinstance(wert, tuple):\n        for i,v in enumerate(wert):\n            print(i, v)\n\n\nliste = [8,9,10, (1,2,3,4,5,6,7)]\nfor index, wert in enumerate(liste[3]):\n    print(index, wert)\n\n "
+  },
+  "272": {
+    "id": "272",
+    "text": "How many elements will the list2 list contain after execution of the following snippet? ",
+    "code": "list1 = [False for i in range(1, 10)] \nlist2 = list1[-1:1:-1] ",
+    "options": {
+      "A": "zero",
+      "B": "five",
+      "C": "seven",
+      "D": "three"
+    },
+    "answer": "C",
+    "details": "# Question 272:\n# How many elements will the list2 list contain after execution \n# of the following snippet?\nlist1 = [False for i in range(1, 10)]\n# [ False, False, False, False, False, False, False, False, False ]\nlist2 = list1[-1:1:-1]\nprint(len(list2))\n# A. zero\n# B. five\n# C. seven\n# D. three"
+  },
+  "273": {
+    "id": "273",
+    "text": "What would you use instead of XXX if you want to check weather a certain 'key' exists in a dictionary called dict? (Choose two.) ",
+    "code": "if XXX: \n\tprint(\"Key exists\") ",
+    "options": {
+      "A": "'key' in dict",
+      "B": "dict['key'] != None",
+      "C": "dict.exists('key')",
+      "D": "'key' in dict.keys( )"
+    },
+    "answer": "AD",
+    "details": "# QUESTION 273\n# What would you used instead of XXX if you want to check whether a certain \n# 'key' exists in a dictionary\n# called dict? (Choose two.)\n\nif 'Name' in dict.keys():\n# if dict['key'] != None:\n# Wenn dict['key'] nicht vorhanden ist, wird ein KeyError Exception ausgelöst.\n    print(\"Key exists\")\n\n# print(dict.get('key')) \n# mit get() erhalten wir sicheren Zugriff, d.h. wenn key nicht\n# existiert, wird keine Exception geworfen. \n\n# A. 'key' in dict\n# B. dict['key'] != None\n# C. dict.exists('key')\n# D. 'key' in dict.keys( )\n\n# Lösung: A, D\n\n\n\n\nm = dict() # Erzeugt ein Objekt von Typ dict => Konstruktor\nprint(type(dict))\n\ndict = { \n    \"Name\" : \"Deutschland\",\n    \"Einwohner\" : 82_500_000,\n    # 0 : \"Test\"\n}\n\n# for i in range(10): # 0, 1, 2, 3, ...\n#     print(dict[i]) # KeyError\n\nprint(type(dict))\na = dict() # Zugriff nicht mehr möglich auf dict(), da dict durch das dictionairy\n\n# überschrieben wurde => name shadowing \n\nprint(dict.keys()) # Name, Einwohner\nprint(dict.values()) # Deutschland, 82_500_000\n\nprint(\"Ländername\", dict['Name'])"
+  },
+  "274": {
+    "id": "274",
+    "text": "You need data which can act as a simple telephone directory. You can obtain it with the following clauses (Choose two.) (assume that no other items have been created before) ",
+    "code": "",
+    "options": {
+      "A": "dir={'Mom': 5551234567, 'Dad': 5557654321}",
+      "B": "dir= {'Mom': '5551234567', 'Dad': '5557654321'}",
+      "C": "dir= {Mom: 5551234567, Dad: 5557654321}",
+      "D": "dir= {Mom: '5551234567', Dad: '5557654321'}"
+    },
+    "answer": "AB",
+    "details": "# QUESTION 274\n# You need data which can act as a simple telephone directory. You can obtain it with the following clauses\n# (Choose two.) (assume that no other items have been created before)\n\n# A. \ndir={'Mom': 5551234567, 'Dad': 5557654321}\n# B. \ndir= {'Mom': '5551234567', 'Dad': '5557654321'}\n# C. \ndir= {Mom: 5551234567, Dad: 5557654321}\n# D. \ndir= {Mom: '5551234567', Dad: '5557654321'}\n\n# C und D sind ungültige Literale für String\n# A und B möglich (int nur bei amerikanischen Telefonnummern)"
+  },
+  "275": {
+    "id": "275",
+    "text": "Can a module run like regular code? ",
+    "code": "",
+    "options": {
+      "A": "yes, and it can differentiate its behavior between the regular launch and import",
+      "B": "it depends on the Python version",
+      "C": "yes, but in cannot differentiate its behavior between the regular launch and import",
+      "D": "no, it is not possible; a module can be imported, not run"
+    },
+    "answer": "A",
+    "details": "# siehe helper.py und helper_main.py\n# QUESTION 275\n# Can a module run like regular code?\n\n# A. yes, and it can differentiate its behavior between the regular launch and import\n# B. it depends on the Python version\n# C. yes, but in cannot differentiate its behavior between the regular launch and\n#  import\n# D. no, it is not possible; a module can be imported, not run\n\n# Lösung: A ! __main__"
+  },
+  "276": {
+    "id": "276",
+    "text": "Select the valid fun() invocations: (Choose two.) ",
+    "code": "def fun(a, b=0): \n\treturn a * b ",
+    "options": {
+      "A": "fun(b=1)",
+      "B": "fun(a=0)",
+      "C": "fun(b=1, 0)",
+      "D": "fun(1)"
+    },
+    "answer": "BD",
+    "details": "# QUESTION 276\n# Select the valid fun () invocations:\n# (Choose two.)\n\ndef fun(a, b=0):\n    return a * b\n\n# bis Zeile 15 alle gültige Aufrufe\nfun(0, b=1)\nfun(1,1)\n# fun(1,1,1) # in Python muss die Anzahl der Argumente übereinstimmen\nfun(b=1, a=2)\nfun(a=3, b=2) \nfun(a=8) # b=0\nfun(8) # b=0\n\n# fun()\n\n# A. \nfun(b=1) # keyword für b, a fehlt\n# B. \nfun(a=0) # keyword und default \n# C. \n# fun(b=1, 0) # positionale Argumente vor Keyword !\n# D. \nfun(1) # a positional, b Default\n\n"
+  },
+  "277": {
+    "id": "277",
+    "text": "A filename like this one below says that: (Choose three.) ",
+    "code": "services.cpython-36.pyc ",
+    "options": {
+      "A": "the interpreter used to generate the file is version 3.6",
+      "B": "it has been produced by CPython",
+      "C": "it is the 36 version of the file",
+      "D": "the file comes from the services.py source file"
+    },
+    "answer": "ABD",
+    "details": "# QUESTION 277\n# A file name like this one below says that:\n# (Choose three.)\n\nservices.cpython-36.pyc\n\n# A. the interpreter used to generate the file is version 3.6\n# B. it has been produced by CPython\n# C. it is the 36 version of the file\n# D. the file comes from the services.py source file\n\n# Namenskonvention: <source file>.<Programm>-<Version>.pyc\n\n# Lösungen: A,B,D "
+  },
+  "278": {
+    "id": "278",
+    "text": "What is the expected behavior of the following snippet?",
+    "code": "def a(x, y):\n\treturn x[y]\nprint(a(0, [1]))",
+    "options": {
+      "A": "cause a runtime exception",
+      "B": "print 1",
+      "C": "print 0,[1]",
+      "D": "print [1]"
+    },
+    "answer": "A",
+    "details": "# QUESTION 278\n# What is the expected behavior of the following snippet?\ndef a(x, y):\n    return x[y] # int is not iterable\n\nprint(a(0, [1])) # x,y sind vertauscht\n# [1] ist eine Liste\n\n# A. cause a runtime exception\n# B. print 1\n# C. print 0,[1]\n# D. print [1]"
+  },
+  "279": {
+    "id": "279",
+    "text": "What can you do if you don't like a long package path like this one? ",
+    "code": "import alpha.beta.gamma.delta.epsilon.zeta ",
+    "options": {
+      "A": "you can make an alias for the name using the alias keyword",
+      "B": "nothing, you need to come to terms with it",
+      "C": "you can shorten it to alpha.zeta and Python will find the proper connection",
+      "D": "you can make an alias for the name using the as keyword"
+    },
+    "answer": "D",
+    "details": "# Question 279:\n# Packages sind in Ordnern organisiert und können viele Unterordner haben\n# Dies führt zu langen import-Bezeichnern\n# Diese können mit dem Alias abgekürzt werden\n# Schlüsselwort as\nimport math as ma\n# math.pi => ma.pi\nprint(ma.pi)\n\n# Beispiel: siehe zeta.py im Ordner alpha\n"
+  },
+  "280": {
+    "id": "280",
+    "text": "What is the expected output of the following code? ",
+    "code": "str = 'abcdef'\ndef fun(s):\n\tdel s[2] \n\treturn s\n\nprint(fun(str)) ",
+    "options": {
+      "A": "abcef",
+      "B": "The program will cause a runtime exception/error",
+      "C": "acdef",
+      "D": "abdef"
+    },
+    "answer": "B",
+    "details": "# Question 280:\n# What is the expected output of the following code?\n\n# A. abcef\n# B. The program will cause a runtime exception/error\n# C. acdef\n# D. abdef\n\nstr = 'abcdef'\ndef fun(s):\n    del s[2] # selbe Logik wie in Frage 271\n    # Strings sind immutable, Zugriffe über den Index \n    # für Änderungen sind verboten\n    # Immutabilität sorgt dafür, dass derman mit subscript-Operator []\n    # keine Änderungen oder Löschung vornehmen kann.\n    # subscript darf aber lesen !\n    return s\n    # __str__\n# str überschreibt die Konvertierung in string => name shadowing\nprint(fun(str))\n\n# Lösung: B"
+  },
+  "281": {
+    "id": "281",
+    "text": "What is the expected output of the following code? ",
+    "code": "def f(n): \n\tif n == 1: \n\t\treturn '1'\n\treturn str(n) + f(n - 1)\n\nprint(f(2))",
+    "options": {
+      "A": "21",
+      "B": "2",
+      "C": "3",
+      "D": "12"
+    },
+    "answer": "A",
+    "details": "# Question 281:\n# What is the expected output of the following code?\n\ndef f(n):\n    if n == 1:\n        return '1'\n    # String-Umwandlung sorgt für Konkatenation\n    return str(n) + f(n-1)\n\nprint(f(2))\n\n# A. 21\n# B. 2\n# C. 3\n# D. 12\n\n# Lösung: A"
+  },
+  "282": {
+    "id": "282",
+    "text": "What is the expected behavior of the following snippet? ",
+    "code": "def x():\t# line 01 \n\treturn 2\t# line 02 \nx = 1 + x()\t# line 03 \nprint(x)\t# line 04 ",
+    "options": {
+      "A": "cause a runtime exception on line 02",
+      "B": "cause a runtime exception on line 01",
+      "C": "cause a runtime exception on line 03",
+      "D": "print 3"
+    },
+    "answer": "D",
+    "details": "# QUESTION 282\n# What is the expected behavior of the following snippet?\ndef x(): # line 01\n    return 2 # line 02\nx = 1 + x() # line 03, x wird von einer Funktion zu int durch Zuweisung \n# x() # int is not callable, name shadowing\nprint(x) # line 04\n\n# A. cause a runtime exception on line 02\n# B. cause a runtime exception on line 01\n# C. cause a runtime exception on line 03\n# D. print 3\n\n# Lösung: D"
+  },
+  "283": {
+    "id": "283",
+    "text": "What is the expected behavior of the following code? ",
+    "code": "def f(n): \n\tfor i in range(1, n + 1): \n\t\tyield i \nprint(f(2)) ",
+    "options": {
+      "A": "print 4321",
+      "B": "print <generator object f at (some hex digits)>",
+      "C": "cause a runtime exception",
+      "D": "print 1234"
+    },
+    "answer": "B",
+    "details": "# QUESTION 283\n# What is the expected behavior of the following code?\ndef f(n):\n    for i in range(1, n + 1):\n        yield i\nprint(f(2))\n\n# Um Werte abzurufen, wird next() benötigt.\ngen = f(2)\n\nprint(next(f(2))) # 1\nprint(next(f(2))) # 1, da ein NEUER Generator erzeugt wird (u.U. sogar an selber Speicheradresse)\nprint(next(gen)) # 1\nprint(next(gen)) # 2\n\n# try:\n#     print(next(gen)) # StopIteration Exception\n# except StopIteration:\n#     print(\"Der Generator liefert keine neuen Werte mehr\")\n\n# print(\"Hallo\")\n\n# A. print 4321\n# B. print <generator object f at (some hex digits)>\n# C. cause a runtime exception\n# D. print 1234\n\n# Lösung: B"
+  },
+  "284": {
+    "id": "284",
+    "text": "If you need a function that does nothing, what would you use instead of XXX?(Choose two.) ",
+    "code": "def idler(): \n\tXXXX \n",
+    "options": {
+      "A": "pass",
+      "B": "return",
+      "C": "exit",
+      "D": "None"
+    },
+    "answer": "AB",
+    "details": "# QUESTION 284\n# If you need a function that does nothing, \n# what would you use instead of XXX? (Choose two.)\n\ndef idler():\n    XXXXX\n    # None ist eine Anweisung, daher macht die Funktion nicht nichts mehr.\n    # Dieses None sorgt auch nicht dafür, dass None zurückgegeben wird.\n    # Sondern dies macht eine Funktion implizit, wenn kein return verwendet wird.\n    # Es muss aber in Funktionen immer min. 1 Anweisung stehen.  \n    # kein return => None\n\nidler()\n# A. pass\n# B. return\n# C. exit\n# D. None\n\n# exit ist ein Funktionsname, mit dem man das Programm beenden.\n# exit()\n# None \ndef nichts():\n    2+3\n    # break (Beenden nur für Schleife, Funktionen mit return)\n    # continue (geht nicht, da keine nächste Iteration => Funktion ist keine Interation)\n\na = nichts()\nprint(a) # führt zu None \n# Lösung: AB\n\n"
+  },
+  "285": {
+    "id": "285",
+    "text": "Is it possible to safely check if a class/object has a certain attribute? ",
+    "code": "",
+    "options": {
+      "A": "yes, by using the hasattr attribute",
+      "B": "yes, by using the hasattr( ) method",
+      "C": "yes, by using the hasattr( ) function",
+      "D": "no, it is not possible"
+    },
+    "answer": "C",
+    "details": "# QUESTION 285\n# Is it possible to safely check if a class/object has a certain attribute?\n\n# A. yes, by using the hasattr attribute\n# B. yes, by using the hasattr( ) method\n# C. yes, by using the hasattr( ) function\n# D. no, it is not possible\n\n# Lösung: C, da hasattr() KEINE Objektbindung hat (daher Funktion)\n# bmw.hasattr() wäre B \n\n# In Python kann man zur Laufzeit abfragen, welche Attribute \n# (u.a. Instanzvariable) in einer Klasse / Objekt vorhanden sind.\n\nclass Auto:\n    def __init__(self, bez, ps):\n        self.bez = bez\n        self.ps = ps\n\n    def start(self):\n        pass\n\nbmw = Auto(\"BMW 118d\", 150)\n\n# Zur Laufzeit abfragen, welche Attribute hier in dem Objekt vorhanden sind.\n# Hat das Objekt bmw das Attribut bez?\n# hasattr arbeitet objektbezogen und klassenbezogen.\nprint(hasattr(bmw, \"bez\")) # True\nprint(hasattr(bmw, \"preis\")) # False \n\n# Man kann dynamisch Attribute zur Laufzeit auf Objektebene hinzufügen !\n# Wir definieren hier eine Eigenschaft NUR für bmw\n# AUSSERHALB der Klassenlogik ! \nbmw.preis = 50_000\nprint(hasattr(bmw, \"preis\")) # True \n# Dieser Mechanismus funktioniert auch mit Methoden, da diese quasi\n# auch Variablen sind \nprint(hasattr(bmw, \"start\")) # True\n\n# Komplette Eigenschaften von bmw zur Laufzeit abrufen\n# Funktion dir\nprint(dir(bmw)) "
+  },
+  "286": {
+    "id": "286",
+    "text": "The first parameter of each method: ",
+    "code": "",
+    "options": {
+      "A": "holds a reference to the currently processed object",
+      "B": "is always set to None",
+      "C": "is set to a unique random value",
+      "D": "is set by the first argument's value"
+    },
+    "answer": "A",
+    "details": "# QUESTION 286\n# The first parameter of each method:\n\n# A. holds a reference to the currently processed object\n# B. is always set to None\n# C. is set to a unique random value\n# D. is set by the first argument's value\n\nclass Auto:\n    # hirsebrei ist self, man kann es nennen, wie es will. \n    def __init__(hirsebrei, bez, ps):\n        print(id(hirsebrei)) \n        # Der Kontext, mit dem __init__ aufgerufen wird, ist bmw\n        # Beide ids sind gleich\n        hirsebrei.bez = bez\n        hirsebrei.ps = ps\n\n    def start(self):\n        print(id(self)) # Diese Methode wird im Kontext von einem Objekt verwendet\n        # z.B. bmw.start() => self hat die id von der Variable bmw\n        # Damit kann ich auch NUR dieses soezifische Objekt ändern / lesen \n        # und die anderen unberührt lassen. \n        pass\n\nbmw = Auto(\"BMW 118d\", 150)\nprint(id(bmw))\nbmw.start()"
+  },
+  "287": {
+    "id": "287",
+    "text": "The simplest possible class definition in Python can be expressed as: ",
+    "code": "",
+    "options": {
+      "A": "class X:",
+      "B": "class X: pass",
+      "C": "class X: return",
+      "D": "class X: { }"
+    },
+    "answer": "B",
+    "details": "# QUESTION 287\n# The simplest possible class definition in Python can be expressed as:\n\n# A. class X: # hier fehlt eine Anweisung, da in Python Blöcke immer mindestens eine \n# Anweisung benötigen\n# B. \nclass X: pass\n# C. class X: return # return ist nur für Funktionen und Methoden definiert.\n# D. class X: { } # { } sind in Python dicts oder sets, es gibt keine Abtrennung mit {}\n# z.B. wie in JavaScript\n\n# Lösung: B "
+  },
+  "288": {
+    "id": "288",
+    "text": "If you want to access an exception object's components and store them in an object called e, you have to use the following form of exception statement: ",
+    "code": "",
+    "options": {
+      "A": "except Exception(e):",
+      "B": "except e = Exception:",
+      "C": "except Exception as e:",
+      "D": "such an action is not possible in Python"
+    },
+    "answer": "C",
+    "details": "# QUESTION 288\n# If you want to access an exception object's components and store them in an object called e, you have to\n# use the following form of exception statement:\n\n# A. except Exception(e):\n# B. except e = Exception:\n# C. except Exception as e: # Syntax ist so definiert und konsistent zu den imports\n# D. such an action is not possible in Python \n\ntry:\n    print( 8 / 0)\nexcept ZeroDivisionError as e:\n    print(e)\n\n# Exception-Objekte beinhalten zusätzliche Informationen zum Fehler\n# oder StackTrace\n# Wir benutzen Exception-Objekte auch gerne, um diese in einer eigenen \n# Implementierung zu erweitern.\n\nclass MyFancyDivisionError(ZeroDivisionError):\n    def __init__(self, *args):\n        super().__init__(*args)\n        print(args)\n        self.errormsg = args[0]\n        self.errorcode = args[1]\n\nclass MyFancyDivisionErrorSpec(ZeroDivisionError):\n    def __init__(self, *args):\n        super().__init__(*args)\n        self.dividend = args[0]\n        if dividend == 8:\n            print(\"Fehler 404: Die 8 ist böse\")\n        else:\n            print(\"Teile nie durch 0\")\n\n\n\ndiv = 1\ndividend = 1\ntry:\n    if div == 0 and dividend != 8:\n        # raise löst direkt die Ausnahme aus\n        # raise kann aber auch durch darunterliegende Funktionsaufrufe\n        # ausgelöst werden, aber HIER abgefangen werden in dem try-except\n        raise MyFancyDivisionError(f\"Teile nie {dividend} durch 0\", 400)\n    elif div == 0 and dividend == 8:\n        raise MyFancyDivisionError(f\"Die 8 ist ganz böse\", 404, 8)\n    elif div == 1 and dividend == 1:\n        raise BaseException(f\"1 und 1\")\n    else:\n        print( dividend / div)\n# Unterschiedliche Exceptions sind wie if .. elif und else\nexcept MyFancyDivisionError as e:\n    print(e.errormsg)\n    print(e.errorcode)\n\n\ndiv = 0\ndividend = 8\ntry:\n    if div == 0:\n        raise MyFancyDivisionErrorSpec(\"\")\nexcept MyFancyDivisionErrorSpec as e:\n    print(e)"
+  },
+  "289": {
+    "id": "289",
+    "text": "A variable stored separately in every object is called: ",
+    "code": "",
+    "options": {
+      "A": "there are no such variables, all variables are shared among objects",
+      "B": "a class variable",
+      "C": "an object variable",
+      "D": "an instance variable"
+    },
+    "answer": "D",
+    "details": "# Question 289:\n\n# A variable stored separately in every object is called:\n\n# A. there are no such variables, all variables are shared among objects\n# B. a class variable\n# C. an object variable\n# D. an instance variable\n# Lösung: D\n\nclass Auto:\n    # Klassenvariable\n    counter = 0 # gemeinsamer Speicher für alle Objekte des Typs Auto\n    def __init__(self, name):\n        self.name = name # individuell für jedes Auto\n    # ERSTER Parameter immer Objektkontext !\n    # Kann beliebig heissen\n    def gibt_laut(senf):\n        print(senf.name)\n\nauto1 = Auto(\"BMW\")\nauto2 = Auto(\"Porsche\")\nauto1.gibt_laut()\nauto2.gibt_laut()\n\n# ist eine Instanzvariable vom Typ Auto\nprint(isinstance(auto1, Auto)) # Ist auto1 vom Typ Auto?\n# object ist Mutter aller Klassen\nprint(isinstance(auto1, object)) # Ist auto1 vom Typ object?\n# Ja, denn ein Auto IST AUCH ein object"
+  },
+  "290": {
+    "id": "290",
+    "text": "There is a stream named s open for writing. What option will you select to write a line to the stream? ",
+    "code": "",
+    "options": {
+      "A": "s.write(\"Hello\\n\")",
+      "B": "write(s, \"Hello\")",
+      "C": "s.writeln(\"Hello\")",
+      "D": "s.writeline(\"Hello\")"
+    },
+    "answer": "A",
+    "details": "# QUESTION 290\n# There is a stream named s open for writing. What option will you select to write a line to the stream?\n\n# A. s.write(\"Hello\\n\")\n# B. write(s, \"Hello\")\n# C. s.writeln(\"Hello\")\n# D. s.writeline(\"Hello\")\n\n# Lösung: A\n\nf = open('test.txt', 'w') # w ist ein der Modi, um eine Datei zu öffnen\n# Zu welchem Zweck soll die Datei geöffnet werden? \nf.write(\"Hallo\")\nf.writelines([\"Dies ist\", \"eine mehrzeilige\", \"Datei\"])\n# f.writeline f.writeln gibt es nicht \nf.close() # Wichtig, wenn \n\n\nf = open('test.txt', 'rb') # w ist ein der Modi, um eine Datei zu öffnen\n# Zu welchem Zweck soll die Datei geöffnet werden? \nlines = f.readlines()\nprint(lines)\n"
+  },
+  "291": {
+    "id": "291",
+    "text": "You are going to read just one character from a stream called s. Which statement would you use? ",
+    "code": "",
+    "options": {
+      "A": "ch = read(s,1)",
+      "B": "ch = s.input(1)",
+      "C": "ch = input(s, 1)",
+      "D": "ch = s.read(1)"
+    },
+    "answer": "D",
+    "details": "# QUESTION 291\n# You are going to read just one character from a stream called s. \n# Which statement would you use?\n\n# A. ch = read(s, 1)\n# B. ch = s.input(1)\n# C. ch = input(s, 1)\n# D. ch = s.read(1)\n\n# Lösung: D \n\nf = open('test.txt') # w ist ein der Modi, um eine Datei zu öffnen\n# Zu welchem Zweck soll die Datei geöffnet werden? \n# HalloDies isteine mehrzeiligeDatei\nchara = f.read(1)\nprint(chara) # 'H'\nchara = f.read(3) \n# Der Lesekopf geht dann nach dem H weiter\nprint(chara) # 'all'"
+  },
+  "292": {
+    "id": "292",
+    "text": "What can you deduce from the following statement? (Choose two.) ",
+    "code": "str = open('file.txt', 'rt') ",
+    "options": {
+      "A": "str is a string read in from the file named file.txt",
+      "B": "a newline character translation will be performed during the reads",
+      "C": "if file. txt does not exist, it will be created",
+      "D": "the opened file cannot be written with the use of the str variable"
+    },
+    "answer": "BD",
+    "details": "# QUESTION 292\n# What can you deduce from the following statement? (Choose two.)\n\n# with open(csv_datei_pfad, \"r\") as csv_datei:\n\nstr = open('file.txt', 'rt') \nstr.write() # Fehler, da Lesemodus r\n\n# A. str is a string read in from the file named file.txt\n# str ist ein stream, kein string\n\n# B. a newline character translation will be performed during the reads\n# Automatische Übersetzung des Zeilenumbruchs in das jeweilige Format \n# des Zielsystem. \n\n# C. if file. txt does not exist, it will be created\n# Wir befinden uns im Lesemodus, es wird deswegen keine neue Datei erzeugt\n# die wäre sowieso leer...\n\n# D. the opened file cannot be written with the use of the str variable\n# Wir können die Datei nicht beschreiben, da sie im Lesemodus ist. \n\n# Lösung: B und D"
+  },
+  "293": {
+    "id": "293",
+    "text": "The following class hierarchy is given. What is the expected out of the code? ",
+    "code": "class A: \n\tdef a(self): \n\t\tprint(\"A\", end=' ') \n\n\tdef b(self): \n\t\tself.a()\n\nclass B(A): \n\tdef a(self): \n\t\tprint(\"B\", end='')\n\n\tdef do(self): \n\t\tself.b()\n\nclass C(A): \n\tdef a(self): \n\t\tprint(\"C\", end='')\n\n\tdef do(self): \n\t\tself.b() \n\nB().do() \nC().do() ",
+    "options": {
+      "A": "B B",
+      "B": "C C",
+      "C": "A A",
+      "D": "B C"
+    },
+    "answer": "D",
+    "details": "# QUESTION 293\n# The following class hierarchy is given. What is the expected out of the code?\nclass A:\n    def a(self):\n        print(\"A\", end=' ')\n    def b(self): \n        print(type(self))\n        self.a() # Aufruf an Methode a in B bzw. C, weil self immernoch\n        # vom Typ B bzw. C ist. Nur, weil wir eine Methode einer Elternklasse\n        # verwenden, ändert sich der Datentyp von self nicht.\n\nclass B(A):\n    def a(self):\n        print(\"B\", end=' ')\n    def do(self):\n        self.b() # Es existiert keine Methode b() in Klasse B, sodass wir die\n        # Methode b() aus Klasse A benutzen müssen\n\nclass C(A):\n    def a(self):\n        print(\"C\", end=' ')\n    def do(self):\n        self.b()\n\nB().do() # Wir rufen do in B auf. Das anonyme Objekt B() wird zu self,\n# da do() mit dem Objekt verknüpft ist.  \n# Dies ist kein name shadowing, sondern eine Referenz auf das Objekt B().\n# Die wird weiter verwendet. \nC().do()\n\n# A. B B\n# B. C C\n# C. A A\n# D. B C"
+  },
+  "294": {
+    "id": "294",
+    "text": "Python's built in function named open() tries to open a file and returns: ",
+    "code": "",
+    "options": {
+      "A": "an integer value identifying an opened file",
+      "B": "an error code (0 means success)",
+      "C": "a stream object",
+      "D": "always None"
+    },
+    "answer": "C",
+    "details": "# QUESTION 294\n# Python's built in function named open() tries to open a file and returns:\n\n# A. an integer value identifying an opened file\n# B. an error code (0 means success)\n# C. a stream object \n# D. always None\n\n# Lösung: C\n\nf = open('test.txt', 'rt') # f ist hier ein STREAM, kein string\n\n# Stream ist eine Klasse, die Methoden bereitstellt, um mit Datenflüssen umzugehen\n# => Dateien, Netzwerk, Konsole, ... \n# Eingabe / Ausgabe \n# ganz normale Klasse, aus der Objekte erzeugt werden können. "
+  },
+  "295": {
+    "id": "295",
+    "text": "Which of the following words can be used as a variable name? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "for",
+      "B": "True",
+      "C": "true",
+      "D": "For"
+    },
+    "answer": "CD",
+    "details": "# QUESTION 295\n# Which of the following words can be used as a variable name? (Choose two.)\n\n# A. for\n# B. True\n# C. true\n# D. For\n\n# Lösung: C,D, weil A,B reservierte Wörter in Python sind\n# for => for Schleifen\n# True => Boolsches Literal\n\n# meine_variable"
+  },
+  "296": {
+    "id": "296",
+    "text": "Python strings can be `glued` together using the operator: ",
+    "code": "",
+    "options": {
+      "A": ".",
+      "B": "&",
+      "C": "_",
+      "D": "+"
+    },
+    "answer": "D",
+    "details": "# QUESTION 296\n# Python strings can be `glued` together using the operator:\n\n# A. . # PHP: String-Konkatenator \n# B. & # bitweise AND-Operator\n# C. _ # Namen und Tausenderpunkte\n# D. + # Python Konkatenator\n\n# Lösung: D\n"
+  },
+  "297": {
+    "id": "297",
+    "text": "A keyword (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "can be used as an identifier",
+      "B": "is defined by Python's lexis",
+      "C": "is also known as a reserved word",
+      "D": "cannot be used in the user's code"
+    },
+    "answer": "BC",
+    "details": "# QUESTION 297\n# A keyword (Choose two.)\n\n# A. can be used as an identifier\n# B. is defined by Python's lexis # lexis: Wörterbuch (z.B. in Syntax Highlighting)\n# C. is also known as a reserved word # reserviertes Wort \n# D. cannot be used in the user's code\n\n# Lösung: B,C\n"
+  },
+  "298": {
+    "id": "298",
+    "text": "How many stars (*) does the snippet print? ",
+    "code": "s = '*****' \ns = s - s[2] \nprint(s) ",
+    "options": {
+      "A": "the code is erroneous",
+      "B": "five",
+      "C": "four",
+      "D": "two"
+    },
+    "answer": "A",
+    "details": "# QUESTION 298\n# How many stars (*) does the snippet print?\n\ns = '*****'\ns = s - s[2] # es gibt kein - Operator für Strings\n# Neuzuweisung\n# s = s + s[2] # dies funktioniert, da Neuzuweisung und read only auf s[2]\n# in s steht jetzt: '******'\n\nprint(s)\n\n# A. the code is erroneous\n# B. five\n# C. four\n# D. two\n\n# Strings sind immutable \n# s[2] = 'ä' # \n\n# s = s[:] # echte Kopie mit unterschiedlichen ids vorher und nachher"
+  },
+  "299": {
+    "id": "299",
+    "text": "Which line can be used instead of the comment to cause the snippet to produce the following expected output? (Choose two.) ",
+    "code": "Expected output: \n123 \nCode: \nc, b, a = 1, 3, 2 \n# put line here \nprint(a, b, c) ",
+    "options": {
+      "A": "c, b, a = b, a, c",
+      "B": "c, b, a = a, c, b",
+      "C": "a, b, c = c, a, b",
+      "D": "a, b, c = a, b, c"
+    },
+    "answer": "AC",
+    "details": "# QUESTION 299\n# Which line can be used instead of the comment to cause the snippet to produce \n# the following expected\n# output? (Choose two.)\n# Expected output:\n# 1 2 3\n\n# Code:\nc, b, a = 1, 3, 2\n# put line here\nprint(a, b, c) # 1, 2, 3\n\nprint(b, a, c) # 2, 1, 3\nprint(c, b, a) # 3, 2, 1 \n# a 2\n# b 3\n# c 1\n            \n# A. c, b, a = b, a, c\n# Dies ist äquivalent zu:\n# c = b (c = 3)\n# b = a (b = 2)\n# a = c (a = 1)\n\n# B. c, b, a = a, c, b\n# C. a, b, c = c, a, b\n# D. a, b, c = a, b, c # hat keinen Effekt"
+  },
+  "300": {
+    "id": "300",
+    "text": "Assuming that the V variable holds an integer value to 2, which of the following operators should be used instead of OPER to make the expression equal to 1? ",
+    "code": "V OPER 1 ",
+    "options": {
+      "A": "<<<",
+      "B": ">>>",
+      "C": ">>",
+      "D": "<<"
+    },
+    "answer": "C",
+    "details": "# QUESTION 300\n# Assuming that the V variable holds an integer value to 2, which of the following operators should be used\n# instead of OPER to make the expression equal to 1?\n\n# V OPER 1\n# A. <<<\n# B. >>>\n# C. >>\n# D. <<\n\n# Lösung: C\n\n# 10 (Dezimal: 2)\n# 01 (Dezimal: 1)\n2 >> 1 # Zahl >> Stellen\n2 << 1 # Zahl << Stellen \n# Bit-Operator\n#   10 # 2\n#  100 # 4      # 2 << 1\n# 1000 # 8      # 2 << 2\n\n\n# 101  # 4+0+1 = 5"
+  },
+  "301": {
+    "id": "301",
+    "text": "How many stars (*) does the following snippet print? ",
+    "code": "i = 3 \nwhile i > 0: \n\ti -= 1 \n\tprint(\"*\") \nelse: \n\tprint(\"*\") ",
+    "options": {
+      "A": "the code is erroneous",
+      "B": "five",
+      "C": "three",
+      "D": "four"
+    },
+    "answer": "D",
+    "details": "# QUESTION 301\n# How many stars (*) does the following snippet print?\ni = 3\nwhile i > 0:\n    i -= 1\n    print(\"*\")\n# Unter welchen Bedingungen gehen wir in else?\n# Wenn Bedingung (Zeile 4) False wird.\n# else, wenn die Schleife vorher NICHT mit break abgebrochen wurde\nelse:\n    print(\"*\")\n\n# A. the code is erroneous\n# B. five\n# C. three\n# D. four\n\n# Lösung: D"
+  },
+  "302": {
+    "id": "302",
+    "text": "UNICODE is: ",
+    "code": "",
+    "options": {
+      "A": "the name of an operating system",
+      "B": "a standard for encoding and handling texts",
+      "C": "the name of a programming language",
+      "D": "the name of a text processor"
+    },
+    "answer": "B",
+    "details": "# QUESTION 302\n# UNICODE is:\n\n# A. the name of an operating system\n# B. a standard for encoding and handling texts\n# C. the name of a programming language\n# D. the name of a text processor\n\n# Lösung: B "
+  },
+  "303": {
+    "id": "303",
+    "text": "What is the expected output of the following snippet? ",
+    "code": "s = '*-*' \ns = 2 * s + s * 2 \nprint(s) ",
+    "options": {
+      "A": "*-**-**-**-*",
+      "B": "*-**-**-**-**-**-**-**-*",
+      "C": "*-*",
+      "D": "*-**-*"
+    },
+    "answer": "A",
+    "details": "# QUESTION 303\n# What is the expected output of the following snippet?\n\ns = '*-*'\ns = 2 * s + s * 2 # Punkt vor Strichrechnung auch für Strings !\n#   '*-**-*'+'*-**-*'\n\nprint(s)\n\n# A. *-**-**-**-*\n# B. *-**-**-**-**-**-**-**-*\n# C. *-*\n# D. *-**-*\n"
+  },
+  "304": {
+    "id": "304",
+    "text": "Which of the listed actions can be applied to the following tuple? (Choose two.) ",
+    "code": "tup = () ",
+    "options": {
+      "A": "tup[:]",
+      "B": "tup.append(0)",
+      "C": "tup[0]",
+      "D": "del tup"
+    },
+    "answer": "AD",
+    "details": "# QUESTION 304\n# Which of the listed actions can be applied to the following tuple? (Choose two.)\n\ntup = ()\n\n# A. tup[:] # Erstellt Kopie eines Tupels => möglich\n# B. tup.append(0) # Nicht möglich, da immutabel\n# C. tup[0] # Es gibt keinen Index 0, kein Wert an Stelle 0\n# D. del tup\n\n# Lösung: A, D\n\n\ntup = (8,9,10)\ndel tup[0]\n# wir dürfen den Inhalt des Tupels nicht ändern.\n# Traceback (most recent call last):\n#   File \"<stdin>\", line 1, in <module>\n# TypeError: 'tuple' object doesn't support item deletion\n\n# ABER: Das Tupel als solches (bzw. die Referenz auf das Tupel)\n# DARF gelöscht werden. \n#  Löschen der Referenz durch\ndel tup\n# Die Garbage colelction räumt dann nachrangig den Speicher des Tupels weg.\n# Dies passiert nur, wenn es keine weitere Referenz auf diesen Speicher gibt.\n# (z.B., wenn ich vorher ref = tup gesetzt habe, Kopie der Referenz)\n\nstr = (8,9,10)\nstr(2) # str(2) nicht nutzbar\n# Traceback (most recent call last):\n#   File \"<stdin>\", line 1, in <module>\n# TypeError: 'tuple' object is not callable\ndel str \nstr(2) # jetzt ist str(2) wieder nutzbar"
+  },
+  "305": {
+    "id": "305",
+    "text": "Executing the following snippet - ",
+    "code": "dct = {'pi': 3.14} \ndct['pi'] = 3.1415 ",
+    "options": {
+      "A": "to hold two keys named 'pi' linked to 3.14 and 3.1415 respectively",
+      "B": "to hold two key named 'pi' linked to 3.14 and 3.1415",
+      "C": "to hold one key named 'pi' linked to 3.1415",
+      "D": "to hold two keys named 'pi' linked to 3.1415"
+    },
+    "answer": "C",
+    "details": "# QUESTION 305\n# Executing the following snippet -\n\ndct = {'pi': 3.14}\ndct['pi'] = 3.1415 # dicts auch Zugriff mit [] subscription Operator\n\n# A. to hold two keys named 'pi' linked to 3.14 and 3.1415 respectively\n# nicht möglich, da es keine zwei Schlüssel mit demselben Namen geben kann.\n\n# B. to hold two key named 'pi' linked to 3.14 and 3.1415\n# ein Schlüssel kann nicht auf zwei Werte verweisen, man bekommt pro Schlüssel\n# nur einen Wert !\n\n# C. to hold one key named 'pi' linked to 3.1415\n# ein Schlüssel - ein Wert ! Zeile 5 überschreibt Zeile 4\n\n# D. to hold two keys named 'pi' linked to 3.1415\n# zwei Schlüssel - ein Wert nicht möglich\n\n# Lösung: C"
+  },
+  "306": {
+    "id": "306",
+    "text": "How many elements will the list1 list contain after execution of the following snippet?",
+    "code": "list1 = \"don't think twice, do it!\".split(',') ",
+    "options": {
+      "A": "two",
+      "B": "zero",
+      "C": "one",
+      "D": "three"
+    },
+    "answer": "A",
+    "details": "# QUESTION 306\n# How many elements will the list1 list contain after execution of\n#  the following snippet?\n\nlist1 = \"don't think twice, do it!\".split(',') # wegen don't werden \" verwendet\n# Split trennt einen String in eine Liste von Teilstrings auf. Hierfür wird\n# das angegebene Trennzeichen genutzt. Das Trennzeichen wird bei der \n# Listengenerierung nicht berücksichtigt.\n \n# [\"don't think twice\", ' do it!']\n\n# A. two\n# B. zero\n# C. one\n# D. three\n\n# Lösung: A"
+  },
+  "307": {
+    "id": "307",
+    "text": "Which of the equations are True? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "chr(ord(x)) == x",
+      "B": "ord(ord(x)) == x",
+      "C": "chr(chr(x)) == x",
+      "D": "ord(chr(x)) == x"
+    },
+    "answer": "AD",
+    "details": "# QUESTION 307\n# Which of the equations are True? (Choose two.)\n\n# A. \n# ord konvertiert einen string der Länge 1 (character) in eine code point Zahl. \n# chr konvertiert eine code point Zahl in einen Character.\n# chr(99) => 'c'\n# ord('c') => 99\nx = \"c\"\nchr(ord(x)) == x\n# B. \nord(ord(x)) == x\n# geht nicht, weil ord(x) 99 ist und ord(x) keine Ganzzahlen akzeptiert.\n# Traceback (most recent call last):\n#   File \"<stdin>\", line 1, in <module>\n# TypeError: ord() expected string of length 1, but int found\n# C. \nx = 99\nchr(chr(x)) == x\n# Traceback (most recent call last):\n#   File \"<stdin>\", line 1, in <module>\n# TypeError: 'str' object cannot be interpreted as an integer\n\n# D. \nx = 99\nord(chr(x)) == x"
+  },
+  "308": {
+    "id": "308",
+    "text": "If you want to transform a string into a list of words, what invocation would you use? (Choose two.)\nExpected output: \"The, Catcher, in, the, Rye, \"",
+    "code": "s = \"The Catcher in the Rye\" \nl = # put a proper invocation here\nfor w in l: \n\tprint(w, end=', ')\n# outputs: The, Catcher, in, the, Rye, ",
+    "options": {
+      "A": "s.split()",
+      "B": "split(s, ' ')",
+      "C": "s.split(' ')",
+      "D": "split(s)"
+    },
+    "answer": "AC",
+    "details": "# QUESTION 308\n# If you want to transform a string into a list of words, what invocation \n# would you use? (Choose two.)\n# Expected output:\n# The, Catcher, in, the, Rye,\n# Code:\n\ns = \"The Catcher in the Rye\"\nl = # s.split() put a proper invocation here\nfor w in l:\n    print(w, end=', ') # outputs: The, Catcher, in, the, Rye,\n\n# A. s.split() # split arbeitet mit einem Default-Parameter\n# B. split(s, ' ')\n# C. s.split(' ')\n# D. split(s)\n\n# Lösung: A, C # split ist keine builtin-Funktion, sondern eine Methode von String\n# builtin-Funktion: map, filter, sorted, ord, chr, isinstance, ...\n\n# Weil split keine Funktion, sondern eine Methode ist, \n# können wir B und D ausschließen.\n# split wird immer im Kontext von einem string-Objekt aufgerufen. "
+  },
+  "309": {
+    "id": "309",
+    "text": "Assuming that lst - is a four-element list. Is there any difference between these two statements? ",
+    "code": "del lst # the first line \ndellst[:] # the second line ",
+    "options": {
+      "A": "yes, there is, the first line empties the list, the second line deletes the list as a whole",
+      "B": "yes, there is, the first line deletes the list as a whole, the second line just empties the list",
+      "C": "no, there is no difference",
+      "D": "yes, there is, the first line deletes the list as a whole, the second line removes all the elements except the first one"
+    },
+    "answer": "B",
+    "details": "# QUESTION 309\n# Assuming that lst - is a four-element list. Is there any difference between\n# these two statements?\n\ndel lst # the first line\n# Hier wird die Referenz auf die Liste gelöscht. \n# Der Inhalt ist dann gelöscht, wenn es keine WEITERE Referenz auf diese Liste gibt.\n\ndel lst[:] # the second line\n# Hier wird der Inhalt der Liste gelöscht (durch slicing). \n# Diese Änderung sieht man dann über JEDE Referenz auf diese Liste.\n\n# A. yes, there is, the first line empties the list, the second line \n# deletes the list as a whole\n\n# B. yes, there is, the first line deletes the list as a whole, \n# the second line just empties the list\n\n# C. no, there is no difference \n# Nicht korrekt\n# D. yes, there is, the first line deletes the list as a whole, \n# the second line removes all the elements except\n# the first one\n# Nicht korrekt\n\n# Lösung: B"
+  },
+  "310": {
+    "id": "310",
+    "text": "What should you put instead of XXX to print out the module name? ",
+    "code": "if __name__ != \"XXX\":\n\tprint(name) ",
+    "options": {
+      "A": "main",
+      "B": "_main_",
+      "C": "__main__",
+      "D": "___main___"
+    },
+    "answer": "C",
+    "details": "# QUESTION 310\n# What should you put instead of XXX to print out the module name?\n\nif __name__ != \"XXX\":\n    print(__name__)\n\n# A. main\n# B. _main_\n# C. __main__ \n# D. ___main___\n\n# Lösung: C\n# Der Name von dem Modul ist __main__, wenn es direkt hier als Skript \n# ausgeführt wird. Bei einem import würde der richtige Name ausgegeben \n# werden. "
+  },
+  "311": {
+    "id": "311",
+    "text": "Files with the suffix.pyc contain: ",
+    "code": "",
+    "options": {
+      "A": "Python 4 source code",
+      "B": "backups",
+      "C": "temporary data",
+      "D": "semi-compiled Python code"
+    },
+    "answer": "D",
+    "details": "# QUESTION 311\n# Files with the suffix .pyc contain:\n\n# A. Python 4 source code # .py statt pyc\n# B. backups # keine spezifische Endung \n# C. temporary data # keine spezifische Endung (und wenn: eher tmp oder temp)\n# D. semi-compiled Python code # Zwischenkompilat, bevor es an die virtuelle Maschine\n# zur Ausführung weiter gegeben wird.\n\n# Lösung: D \n"
+  },
+  "312": {
+    "id": "312",
+    "text": "Package source directories/folders can be: ",
+    "code": "",
+    "options": {
+      "A": "converted into the so-called pypck format",
+      "B": "packed as a ZIP file and distributed as one file",
+      "C": "rebuilt to a flat form and distributed as one directory/folder",
+      "D": "removed as Python compiles them into an internal portable format"
+    },
+    "answer": "B",
+    "details": "# QUESTION 312\n# Package source directories/folders can be:\n\n# A. converted into the so-called pypck format\n# B. packed as a ZIP file and distributed as one file\n# C. rebuilt to a flat form and distributed as one directory/folder\n# D. removed as Python compiles them into an internal portable format\n\n# Lösung: B\n# Ansatz so ähnlich wie in java. Hier hat man .jar-Dateien für das Teilen von Paketen\n# und in Python sind es .zip.\n# In Java können .jars auch mit .zip geöffnet werden.\n\n# Verwenden von pip: Pakete werden als .zip heruntergeladen. \n"
+  },
+  "313": {
+    "id": "313",
+    "text": "What can you deduce from the line below? (Choose two.)",
+    "code": "x = a.b.c.f() ",
+    "options": {
+      "A": "import a.b.c should be placed before that line",
+      "B": "f() is located in module c of subpackage b of package a",
+      "C": "thelineisincorrect",
+      "D": "the function being invoked is called a.b.c.f()"
+    },
+    "answer": "AB",
+    "details": "# QUESTION 313\n# What can you deduce from the line below? (Choose two.)\n\nx = a.b.c.f()\n\n# a und b sind Pakete (Ordner und Unterordner), c ist das Modul und f()\n# eine Funktion in Modul c\n\n# A. import a.b.c should be placed before that line\n# B. f() is located in subpackage c of subpackage b of package a\n# C. the line is incorrect\n# D. the function being invoked is called a.b.c.f()\n\n# Lösung: A, B "
+  },
+  "314": {
+    "id": "314",
+    "text": "A two-parameter lambda function raising its first parameter to the power of the second parameter should be declared as: ",
+    "code": "",
+    "options": {
+      "A": "lambda (x, y) = x ** y",
+      "B": "lambda (x, y): x ** y",
+      "C": "def lambda (x, y): return x ** y",
+      "D": "lambda x, y: x ** y"
+    },
+    "answer": "D",
+    "details": "# QUESTION 314\n# A two-parameter lambda function raising its first parameter to \n# the power of the second parameter should\n# be declared as:\n\n# A. lambda (x, y) = x ** y\n# B. lambda (x, y): x ** y\n# C. def lambda (x, y): return x ** y\n# D. lambda x, y: x ** y\n\n# Lösung: D (Syntax)\n# lamdba Eingabe : Rechnung/Rückgabe"
+  },
+  "315": {
+    "id": "315",
+    "text": "What is the expected output of the following code?",
+    "code": "def f(n): \n\tif n == 1: \n\t\treturn 1 \n\treturn n + f(n - 1)\n\nprint(f(2)) ",
+    "options": {
+      "A": "21",
+      "B": "12",
+      "C": "3",
+      "D": "None"
+    },
+    "answer": "C",
+    "details": "# QUESTION 315\n# What is the expected output of the following code?\ndef f(n):\n    if n == 1:\n        return 1\n    return n + f(n - 1)\n\nprint(f(2)) \n\n# A. 21\n# B. 12\n# C. 3\n# D. None\n\n# Lösung: C, da int und das Ergebnis der Rechnung rekursiv\n# aufgelöst wird. "
+  },
+  "316": {
+    "id": "316",
+    "text": "A method for passing the arguments used by the following snippet is called:",
+    "code": "def fun(a, b): \n\treturn a + b\n\nres = fun(1, 2) ",
+    "options": {
+      "A": "sequential",
+      "B": "named",
+      "C": "positional",
+      "D": "keyword"
+    },
+    "answer": "C",
+    "details": "# QUESTION 316\n# A method for passing the arguments used by the following \n# snippet is called:\n\ndef fun(a, b):\n    return a + b\n\nres = fun(1, 2)\n\n# A. sequential\n# B. named\n# C. positional\n# D. keyword\n\n# Lösung: C \n# Zuordnung der übergebenden Argumente nach der Position (Reihenfolge)\n# in der Liste "
+  },
+  "317": {
+    "id": "317",
+    "text": "What is the expected behavior of the following code?",
+    "code": "def f(n): \n\tfor i in range(1, n + 1): \n\t\tyield i\n\nfor i in f(2): \n\tprint(i, end=' ') ",
+    "options": {
+      "A": "print 2 1",
+      "B": "print 1 2",
+      "C": "cause a runtime exception",
+      "D": "print <generator object f at (some hex digits)>"
+    },
+    "answer": "B",
+    "details": "# QUESTION 317\n# What is the expected behavior of the following code?\ndef f(n):\n    for i in range(1, n + 1):\n        yield i\n\nfor i in f(2): # f(2) ist immer gleich\n    print(i, end=' ') \n\n# f(2) ist ein iterable. Daher wird mit in f(2) next() ausgeführt. \n# Ein Generator ist auch ein iterable ! \n\n# A. print 2 1 # fällt raus, weil in Zeile 4 zuerst die 1 generiert wird.\n# B. print 1 2\n# C. cause a runtime exception\n# D. print <generator object f at (some hex digits)>\n# Ist auszuschließen, da i nicht das Generatorobjekt ist, \n# sondern das Ergebnis von yield\n\n# gen = f(10)\n# for i in range(3):\n#     print(next(gen))\n\n# count = 0\n# for i in f(10):\n#     if count > 3:\n#         break\n    \n#     print(next(gen))\n\n# print(next(f(10))) \n\n\n# def f(n):\n#     for i in range(1, n + 1):\n#         yield i\n\n# count = 0\n# for i in f(10):\n#     if count > 3:\n#         break\n\n#     print(i) # 0 1 2 3\n#     count += 1\n\n# # Führt zu Neuinitialisierung \n# print(next(f(10))) # 5? # exception? # 1\n\n\n\n# gen = f(10)\n# gen2 = gen\n\n# count = 0\n# for i in gen:\n#     print(i)\n#     if count > 3:\n#         break\n#     count += 1\n#      # 0 1 2 3\n    \n# # print(i) # 5\n\n# # Führt zu Neuinitialisierung \n# print(next(gen))\n# print(next(gen2)) # 5? # exception? # 1\n# print(next(gen))"
+  },
+  "318": {
+    "id": "318",
+    "text": "What is the expected output of the following code? ",
+    "code": "lst = [x for x in range(5)] \nlst = list(filter(lambda x: x % 2 == 0, lst)) \nprint(len(lst)) ",
+    "options": {
+      "A": "2",
+      "B": "The code will cause a runtime exception",
+      "C": "1",
+      "D": "3"
+    },
+    "answer": "D",
+    "details": "# QUESTION 318\n# What is the expected output of the following code?\n\nlst = [x for x in range(5)] # 0,1,2,3,4\nlst = list(filter(lambda x: x % 2 == 0, lst)) # 0,2,4\nprint(len(lst))\n\n# A. 2\n# B. The code will cause a runtime exception\n# C. 1\n# D. 3\n\n# Lösung: D "
+  },
+  "319": {
+    "id": "319",
+    "text": "What is the expected behavior of the following code?",
+    "code": "def unclear(x): \n\tif x % 2 == 1: \n\t\treturn 0\n\nprint(unclear(1) + unclear(2)) ",
+    "options": {
+      "A": "prints 0",
+      "B": "cause a runtime exception",
+      "C": "prints 3",
+      "D": "print an empty line"
+    },
+    "answer": "B",
+    "details": "# QUESTION 319\n# What is the expected behavior of the following code?\ndef unclear(x):\n    #print(\"Hallo\")\n    if x % 2 == 1: # 1 % 2:  0*2, Rest 1; 1 // 2 = 0, 1-0*2 = 1\n        # Modulo: 10 // 3 = 3 # Wie oft geht die 3 in die 10?\n        # Was bleibt dann als Rest? 10 - 3*3 (Teiler und wie oft er reingegangen ist)\n        return 0\n    # In Python können wir, müssen aber keinen Rückgabewert angeben.\n    # Wenn kein Rückgabewert angegeben ist, dann wird None zurückgegeben.\n    # Hier ist Python flexibel, andere Sprachen wie Java fordern einen Rückgabewert,\n    # wenn einer angegeben wird in der Signatur\n    # public int methode() { } => int \n\nprint(unclear(1) + unclear(2)) \n# 0 + None (Fehler)\n# Zur Laufzeit erfolgt erst die Typisierung, \n# in Python ist ein TypeError runtime exception \n\n# Ist 0 + None ein sinnvoller Wert?\n# Der Operator + nicht für int + None definiert\n\n# A. prints 0\n# B. cause a runtime exception\n# C. prints 3\n# D. print an empty line\n\n# Lösung: B"
+  },
+  "320": {
+    "id": "320",
+    "text": "If any of a class's components has a name that starts with two underscores (__), then: ",
+    "code": "",
+    "options": {
+      "A": "the class component's name will be mangled",
+      "B": "the class component has to be an instance variable",
+      "C": "the class component has to be a class variable",
+      "D": "the class component has to be a method"
+    },
+    "answer": "A",
+    "details": "# QUESTION 320\n# If any of a class's components has a name that starts with \n# two underscores (___), then:\n\n# A. the class component's name will be mangled\n# B. the class component has to be an instance variable\n# C. the class component has to be a class variable\n# D. the class component has to be a method\n\n# Lösung: A\n\nclass Auto:\n    def __init__(self, bezeichnung, ps):\n        self.__bezeichnung = bezeichnung # \"private\" Instanzvariable\n        self.__ps = ps\n\n    def setPS(self, ps):\n        if ps > 0:\n            self.__ps = ps \n        \n    def show_bezeichnung(self):\n        print(\"show bezeichnung\", self.__bezeichnung)\n        print(\"show bezeichnung\", self.hupe) # hupe wurde außen definiert\n        # und gehört nicht zum Standard der Klasse \n        # von innerhalb der Klasse kann ich nicht auf den in Zeile \n        # 27 gesetzten Wert zugreifen, weil wir hier __bezeichnung in der Klasse\n        # definiert haben.  \n\na = Auto(\"BMW Test\", 150)\na.__bezeichnung = \"BMW\" # eine neue Instanzvariable NUR FÜR a anlegen\na.hupe = \"MIIIEEEP\"\na.show_bezeichnung()\n\nprint(dir(a))\n\n# a._Auto__ps = -10 # Setzen eines nicht plausiblen Wertes. \na.setPS(-10) # saubere Lösung\nprint(a._Auto__ps)\n\nprint(a._Auto__bezeichnung) # name mangling (Verschleierung des Namens)\nprint(a.__bezeichnung)\n# valide, aber nicht empfehlenswert :-)\n# print(a.__bezeichnung) # _Auto__bezeichnung # Zugriff nicht möglich \n"
+  },
+  "321": {
+    "id": "321",
+    "text": "If you need to serve two different exceptions called Ex1 and Ex2 in one except branch, you can write: ",
+    "code": "",
+    "options": {
+      "A": "except Ex1 Ex2:",
+      "B": "except (Ex1, Ex2):",
+      "C": "except Ex1, Ex2:",
+      "D": "except Ex1+Ex2:"
+    },
+    "answer": "B",
+    "details": "# QUESTION 321\n# If you need to serve two different exceptions called Ex1 and Ex2 in \n# one except branch, you can write:\n# siehe exceptions.py\n\n# A. except Ex1 Ex2:\n# B. except (Ex1, Ex2): # except(TypeError, ValueError): \n# C. except Ex1, Ex2:\n# D. except Ex1+Ex2:\n\n# Lösung: B"
+  },
+  "322": {
+    "id": "322",
+    "text": "A function called issubclass(c1, c2) is able to check if: ",
+    "code": "",
+    "options": {
+      "A": "c1 and c2 are both subclasses of the same superclass",
+      "B": "c2 is a subclass of c1",
+      "C": "c1 is a subclass of c2",
+      "D": "c1 and c2 are not subclasses of the same superclass"
+    },
+    "answer": "C",
+    "details": "# QUESTION 322\n# A function called issubclass(c1, c2) is able to check if:\n\n# A. c1 and c2 are both subclasses of the same superclass\n# B. c2 is a subclass of c1\n# C. c1 is a subclass of c2\n# D. c1 and c2 are not subclasses of the same superclass\n\n# builtin-Funktion:\n# Man kann rausfinden, ob einer Klasse ein Kind einer anderen Klasse ist.\n\nclass G:\n    pass\n\nclass A(G):\n    def show(self):\n        print(\"Hallo von A\")\n    def func1(self):\n        print(\"func1 von A\")\n\nclass B:\n    def show(self):\n        print(\"Hallo von B\")\n    def func2(self):\n        print(\"func2 von B\")\n\nclass C(A, B):\n    # def run():\n    #     B.show()\n    pass\n\nclass D:\n    # def run():\n    #     B.show()\n    pass\n\n# Haben mehrere Elternklassen eine Methode mit demselben Namen\n# und ist diese in der Kindklasse NICHT überschrieben,\n# dann geht es nach der Reihenfolge, wie die Vererbung angegeben wurde.\nC().show() # Welches show() wird genommen? A\n# Werden func1() und func2() nicht überschrieben, kann man\n# in der Kindklasse beide Methoden verwenden (disjunkt)\nC().func1() \nC().func2()\n\nprint(issubclass(C, B)) # True\nprint(issubclass(C, D)) # False\nprint(issubclass(C, G)) # True\nprint(issubclass(G, C)) # False\n"
+  },
+  "323": {
+    "id": "323",
+    "text": "A class constructor (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "can return a value",
+      "B": "can not be invoked directly from inside the class",
+      "C": "can be invoked directly from any of the subclasses",
+      "D": "can be invoked directly from any of the superclasses"
+    },
+    "answer": "BC",
+    "details": "# QUESTION 323\n# A class constructor (Choose two.)\n\n# A. can return a value\n# B. cannot be invoked directly from inside the class\n# C. can be invoked directly from any of the subclasses\n# D. can be invoked directly from any of the superclasses\n\n# Lösung: BC"
+  },
+  "324": {
+    "id": "324",
+    "text": "The following class definition is given. We want the show() method to invoke the get() method, and then output the value the get() method returns. Which of the invocations should be used instead of XXX?",
+    "code": "class Class:\n\tdef __init__(self, val):\n\t\tself.val = val\n\n\tdef get(self):\n\t\treturn self.val\n\n\tdef show(self):\n\t\tXXX",
+    "options": {
+      "A": "print(get(self))",
+      "B": "print(self.get())",
+      "C": "print(get())",
+      "D": "print(self.get(val))"
+    },
+    "answer": "B",
+    "details": "# QUESTION 324\n# The following class definition is given. We want the show () method to \n# invoke the get () method, and then\n# output the value the get () method returns. Which of the \n# invocations should be used instead of XXX?\n\nclass Class:\n    def __init__(self, val):\n        self.val = val\n    def get(self):\n        return self.val\n    def show(self):\n        # print(self.get())\n        # XXX\n\n# A. print(get(self)) # Begründung wie bei C\n# B. print(self.get()) # Korrekt, Aufruf immer mit self., wenn eine\n# Klassenmethode aufgerufen werden soll. \n# # Es muss eine Unterscheidung, z.B. zu normalen Funktionen geben wie map()\n# In der Klasse kann es auch eine Methode map() geben, also anderer Namensraum.  \n# C. print(get()) # normaler Funktionsaufruf, builtin, eigene, ...\n# hat nix mit Klasse zu tun\n# D. print(self.get(val)) # self wird automatisch übergeben."
+  },
+  "325": {
+    "id": "325",
+    "text": "If s is a stream open for reading, what do you expect from the following invocation? ",
+    "code": "c = s.read() ",
+    "options": {
+      "A": "one line of the file will be read and stored in the string called c",
+      "B": "the whole file content will be read and stored in the string called c",
+      "C": "one character will be read and stored in the string called c",
+      "D": "one disk sector (512 bytes) will be read and stored in the string called c"
+    },
+    "answer": "B",
+    "details": "# QUESTION 325\n# If s is a stream open for reading, what do you expect from the following invocation?\n\nc = s.read()\n\n# A. one line of the file will be read and stored in the string called c\n# readline ist eine andere Methode\n\n# B. the whole file content will be read and stored in the string called c\n# Der gesamte Inhalt wird eingelesen\n\n# C. one character will be read and stored in the string called c\n# Mit einem Parameter legt man die Anzahl der zu lesenden character fest.\n# Falsch\n\n# D. one disk sector (512 bytes) will be read and stored in the string called c\n\n# Lösung: B"
+  },
+  "326": {
+    "id": "326",
+    "text": "You are going to read 16 bytes from a binary file into a bytearray called data. Which lines would you use? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "data = bytearray(16); bf.readinto(data)",
+      "B": "data = binfile.read(bytearray(16))",
+      "C": "bf.readinto(data = bytearray(16))",
+      "D": "data = bytearray(binfile.read(16))"
+    },
+    "answer": "AD",
+    "details": "# QUESTION 326\n# You are going to read 16 bytes from a binary file into a bytearray \n# called data. Which lines would you use?\n# (Choose two.)\n\n# A. data = bytearray(16); bf.readinto(data)\n# Wir legen erst ein bytearay der Größe 16 Bytes an.\n# bf ist der Stream\n\n# B. data = binfile.read(bytearray(16))\n# read arbeitet nicht mit einem bytearray als Argument\n# Führt zu TypeError\n# read erwartet einen int\n\n# print(a = 1)\n# C. bf.readinto(data = bytearray(16))\n# Zuweisung innerhalb eines Methodenaufrufs nicht erlaubt. \n# Daher muss data vorher angelegt werden oder bytearray(16) anonym eringesetzt werden.\n\n# D. data = bytearray(binfile.read(16))\n# Das Ergebnis des Einlesens mit binfile initialisiert das bytearray.\n\nbinfile = open('non_existing_file')\ndata = bytearray(binfile.read(16))\n\nbf = open('non_existing_file', 'b')\n\ndata = bytearray(16); \nbf.readinto(data)\n\n# Lösung: AD\n"
+  },
+  "327": {
+    "id": "327",
+    "text": "What is the expected output of the following snippet?",
+    "code": "class X:\n\tpass\n\nclass Y(X): \n\tpass\n\nclass Z(X):\n\tpass\n\t\nx = Z() \nz = Z() \nprint(isinstance(x, Z), isinstance(z, X)) ",
+    "options": {
+      "A": "True False",
+      "B": "True True",
+      "C": "False False",
+      "D": "False True"
+    },
+    "answer": "B",
+    "details": "# QUESTION 327\n# What is the expected output of the following snippet?\nclass X:\n    pass\nclass Y(X):\n    pass\nclass Z(X):\n    pass\nx = Z() # x und z sind zwei Instanzen (Synonym: Objekte)\nz = Z()\n# Introspection builtin\n# ist x eine Instanz von Z?\n# \"Ist-ein\" - Beziehung \n# Eine Instanz ist eine Ausprägung einer Klasse\n# z.B. eine Klasse Auto, viele unterschiedliche Autos (jeweils 1 Instanz)\n# Nehmen wir an, X ist Fahrzeug. Dann ist z auch eine Instanz von X, weil\n# ein Auto von Fahrzeug erbt. \nprint(isinstance(x, Z), isinstance(z, X))\n\n# A. True False\n# B. True True\n# C. False False\n# D. False True"
+  },
+  "328": {
+    "id": "328",
+    "text": "Assuming that the code below has been executed successfully, which of the following expressions will always evaluate to True?(Choose two.)",
+    "code": "import random \nrandom.seed(1) \nv1 = random.random()\nrandom.seed(1) \nv2 = random.random() ",
+    "options": {
+      "A": "v1>=1",
+      "B": "v1 == v2",
+      "C": "len(random.sample([1, 2, 3], 2)) > 2",
+      "D": "random.choice([1, 2, 3]) >= 1"
+    },
+    "answer": "BD",
+    "details": "# QUESTION 328\n# Assuming that the code below has been executed successfully,\n# which of the following expressions will\n# always evaluate to True? (Choose two.)\n\nimport random\n# Pseudozufallszahlen sind simulierte Zufallszahlen\n# Mit dem seed bestimmt man deterministisch (hier: berechnet) \n# und ist IMMER dieselbe Reihenfolge \nrandom.seed(1)\n# Zufallszahl ziehen zwischen 0 und 0.999999\nv1 = random.random()\n# neu initialisieren des seeds,\n# damit wird die Sequenz neu gestartet\nrandom.seed(1)\nv2 = random.random()\n\n# A. v1 >= 1\n# Ziehen der Fließkommazufallszahl zwiachen [0, 0.99999], daher wird die 1\n# nicht berücksichtigt. \n\n# B. v1 == v2\n# Trifft zu, da der Zufallsgenerator in Zeile 10 und 15 neu initialisiert wird.\n\n# C. len(random.sample([1, 2, 3], 2)) > 2\n# \"Lottoexperiment\", 6 aus 49\n# Falsch\n\n# D. random.choice([1, 2, 3]) >= 1 \n# Da alle Werte in der Liste >= 1 sind, trifft diese Bedingung immer zu.\n\n# Lösung: BD\n"
+  },
+  "329": {
+    "id": "329",
+    "text": "Which one of the platform module functions should be used to determine the underlying platform name? ",
+    "code": "",
+    "options": {
+      "A": "platform.python_version()",
+      "B": "platform.processor()",
+      "C": "platform.platform()",
+      "D": "platform.uname()"
+    },
+    "answer": "C",
+    "details": "# QUESTION 329\n# Which one of the platform module functions should be used to\n# determine the underlying platform name?\n\n# A. platform.python_version()\n# B. platform.processor()\n# C. platform.platform()\n# D. platform.uname()\n\nimport platform\nprint(platform.python_version())\nprint(platform.processor())\nprint(platform.platform())\nprint(platform.uname())\n\n# Lösung: C\n# D unserer Meinung nach auch möglich. \n\n# Windows-11-10.0.22631-SP0\n# uname_result(system='Windows', node='DESKTOP-FP4OP26',\n#  release='11', version='10.0.22631', machine='AMD64')\n"
+  },
+  "330": {
+    "id": "330",
+    "text": "What is the expected output of the following code? ",
+    "code": "import sys \nimport math \nb1 = type(dir(math)[0]) is str \nb2 = type(dir(sys.path)[-1])isstr\nprint(b1andb2) ",
+    "options": {
+      "A": "False",
+      "B": "None",
+      "C": "True",
+      "D": "0"
+    },
+    "answer": "C",
+    "details": "# QUESTION 330\n# What is the expected output of the following code?\nimport sys\nimport math\nb1 = type(dir(math)[0]) is str\nb2 = type(dir(sys.path)[-1]) is str\nprint(b1 and b2)\n\n# A. False\n# B. None\n# C. True\n# dir ist eine Liste von Strings\n# D. 0\n\n# Lösung: C"
+  },
+  "331": {
+    "id": "331",
+    "text": "With regards to the directory structure below, select the proper forms of the directives in order to import module_a. (Choose two.) ",
+    "code": "pypack (dir) \n| \n|--upper (dir) \n| | \n| |--lower (dir) \n| | | \n| | |_module_c.py(file) \n| | \n| |_ module_b.py (file) \n| \n|_ module_a.py (file) ",
+    "options": {
+      "A": "from pypack import module_a",
+      "B": "import module_a from pypack",
+      "C": "import module_a",
+      "D": "import pypack.module_a"
+    },
+    "answer": "AD",
+    "details": "# QUESTION 331\n# With regards to the directory structure below, select the proper forms of the directives in order to import\n# module_a. (Choose two.)\n# pypack (dir)\n# |\n# |-- upper (dir)\n# | |\n# | |-- lower (dir)\n# | | |\n# | | |_ module_c.py (file)\n# | |\n# | |_ module_b.py (file)\n# |\n# |_ module_a.py (file)\n\n# A. from pypack import module_a\n# B. import module_a from pypack\n# C. import module_a\n# D. import pypack.module_a\n\n# Lösung: AD"
+  },
+  "332": {
+    "id": "332",
+    "text": "A Python module named pymod.py contains a function named pyfun(). Which of the following snippets will let you invoke the function? (Choosetwo.) ",
+    "code": "",
+    "options": {
+      "A": "import pymod\npymod.pyfun() ",
+      "B": "from pymod import pyfun\npyfun() ",
+      "C": "from pymod import *\npymod.pyfun() ",
+      "D": "import pyfun from pymod\npyfun() "
+    },
+    "answer": "AB",
+    "details": "# QUESTION 332\n# A Python module named pymod.py contains a function named pyfun().\n# Which of the following snippets will let you invoke the function? (Choose two.)\n\n# A. import pymod\n# pymod.pyfun()\n# B. from pymod import pyfun\n# pyfun()\n# C. from pymod import *\n# pymod.pyfun()\n# D. import pyfun from pymod\n# pyfun()\n\n# Lösung: AB"
+  },
+  "333": {
+    "id": "333",
+    "text": "What is true about Python packages? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "a package is a single file whose name ends with the pa extension",
+      "B": "a package is a group of related modules",
+      "C": "the __name__ variable always contains the name of a package",
+      "D": "the pyc extension is used to mark semi-compiled Python packages"
+    },
+    "answer": "BD",
+    "details": "# QUESTION 333\n# What is true about Python packages? (Choose two.)\n\n# A. a package is a single file whose name ends with the pa extension\n# In Python sind Ordner Pakete mit mehreren Dateien\n# B. a package is a group of related modules\n# True :-)\n# C. the __name__ variable always contains the name of a package\n# if __name__ == 'main':\n# MODULebene\n\n# D. the pyc extension is used to mark semi-compiled Python packages\n# Vorkompilate, zur Interpretation an die virtual machine. \n\n# Lösung: BD"
+  },
+  "334": {
+    "id": "334",
+    "text": "What is the expected behavior of the following code?",
+    "code": "m = 0 \ndef foo(n):\n\tglobal m\n\tassert m==0\n\ttry: \n\t\treturn 1 / n \n\texcept ArithmeticError: \n\t\tm += 1 \n\t\traise\n\ntry: \n\tfoo(0) \nexcept ArithmeticError: \n\tm += 2 \nexcept: \n\tm += 1\n\t\nprint(m) ",
+    "options": {
+      "A": "it outputs 3",
+      "B": "it outputs 1",
+      "C": "the code is erroneous and it will not execute",
+      "D": "it outputs 2"
+    },
+    "answer": "A",
+    "details": "# QUESTION 334\n# What is the expected behavior of the following code?\nm = 1\ndef foo(n):\n    global m\n    # assert: Vergewisserung, Checkpoint\n    assert m == 0 # wenn m nicht 0 ist, wird eine AssertionError Exception ausgelöst. \n    try:\n        return 1 / n # ZeroDivisionException\n    # ZeroDivisionException erbt von ArtihmeticError\n    # Daher wird dieser Fehler in dem folgenden Block abgehandelt\n    except ArithmeticError:\n        m += 1\n        raise # ArithmeticError # \"re-raise\" löst nochmal einen ArithmeticError \n        # und das wird dann in Zeile 21 abgehandelt\n    # raise # Hier lösen wir als Programmierer eine BaseException aus\n\ntry:\n    foo(0)\n    # Bei Rückkehr aus foo(0) ist noch eine Excpetion da !\nexcept ArithmeticError:\n    m += 2\nexcept: # AssertionError wird hier abgehandelt. \n    m += 1\nprint(m)"
+  },
+  "335": {
+    "id": "335",
+    "text": "What is the expected behavior of the following code? ",
+    "code": "s = '2A' \ntry: \n\tn = int(s) \nexcept TypeError: \n\tn = 3 \nexcept LookupError: \n\tn = 2 \nexcept: \n\tn = 1 \nprint(n) ",
+    "options": {
+      "A": "it outputs 3",
+      "B": "the code is erroneous and it will not execute",
+      "C": "it outputs 1",
+      "D": "it outputs 2"
+    },
+    "answer": "C",
+    "details": "# QUESTION 335\n# What is the expected behavior of the following code?\n\ns = '2A'\ntry:\n    # n = int([8,9])\n    n = int(s) # '2A' ist keine gültige Ganzzahl\nexcept TypeError: # Der Datentyp, der an int() übergeben wurde, ist korrekt (string)\n    # Wenn der Wert, d.h. das Literal ungeeignet ist, haben wir einen ValueError. \n    n = 3\nexcept LookupError: # bezieht sich auf Zugriffe auf Listen. [] () \n    n = 2\nexcept:\n    n = 1\nprint(n)\n\n# TypeError: Ein falscher Datentyp wird an eine Fkt übergeben\n# ValueError: Datentyp richtig, aber Literal ungeeignet '2A' => ???\n# LookupError: Zugriffsverletzung auf Listen\n\n# A. it outputs 3 \n# B. the code is erroneous and it will not execute\n# C. it outputs 1\n# D. it outputs 2 # Falsch\n\nliste = [8,9]\ntry:\n    liste[2] = \"Hallo\"\nexcept IndexError as e:\n    print(isinstance(e, LookupError))"
+  },
+  "336": {
+    "id": "336",
+    "text": "Which of the following snippets will execute without raising any unhandled exceptions? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "try:\n\tprint(0/0)\nexcept:\n\t\tprint(0/1)\nelse:\n\tprint(0/2) ",
+      "B": "try:\n\tprint(int(\"0\"))\nexcept NameError:\n\tprint(\"0\")\nelse:\n\tprint(int(\"\"))",
+      "C": "import math\ntry:\n\tprint(math.sqrt(-1))\nexcept:\n\tprint(math.sqrt(0))\nelse:\n\tprint(math.sqrt(1))",
+      "D": "try:\n\tprint(float(\"1e1\"))\nexcept (NameError, SystemError):\n\tprint(float(\"1a1\"))\nelse:\n\tprint(float(\"1c1\")) "
+    },
+    "answer": "AC",
+    "details": "# QUESTION 336\n# Which of the following snippets will execute without\n# raising any unhandled exceptions? (Choose two.)\n# unbehandelte Exceptions werden durch den Code nicht abgesichert und laufen in\n# virtuelle Maschine\n# 1 / 0\n# Traceback (most recent call last):\n#   File \"<stdin>\", line 1, in <module>\n# ZeroDivisionError: division by zero\n\n# A - Korrekt\ntry:\n    print(0/0)\nexcept:\n    print(0/1)\nelse:\n    print(0/2)\n\n# B - unhandled exception\ntry:\n    print(int(\"0\"))\nexcept NameError:\n    print(\"0\")\nelse: # else, weil vorher keine Exception ausgelöst wurde.\n    print(int(\"\")) # hier wird eine Exception ausgelöst\n\n# C keine unhandled exception - Korrekt\nimport math\ntry:\n    print(math.sqrt(-1)) # Exception auslösen\nexcept:\n    print(math.sqrt(0)) # 0^2 geht auch, daher geht Wurzel 0 auch\nelse:\n    print(math.sqrt(1))\n\n# D - unhandled exception\ntry:\n    print(float(\"1e1\"))\nexcept (NameError, SystemError):\n    print(float(\"1a1\"))\nelse:\n    print(float(\"1c1\"))"
+  },
+  "337": {
+    "id": "337",
+    "text": "What is the expected behavior of the following code? ",
+    "code": "my_list = [1, 2, 3] \ntry: \n\tmy_list[3] = my_list[2] \nexcept BaseException as error: \n\tprint(error) ",
+    "options": {
+      "A": "it outputs error",
+      "B": "it outputs <class 'IndexError'>",
+      "C": "it outputs list assignment index out of range",
+      "D": "the code is erroneous and it will not execute"
+    },
+    "answer": "C",
+    "details": "# QUESTION 337\n# What is the expected behavior of the following code?\n\nmy_list = [1, 2, 3]\ntry:\n    my_list[3] = my_list[2] # IndexError\nexcept BaseException as error:\n    print(error)\n\n# A. it outputs error\n# zu unspezifisch\n# B. it outputs <class 'IndexError'>\n# Das wäre bei print(type(error))\n# C. it outputs list assignment index out of range\n# IndexError bleibt ein IndexError, auch wenn er im BaseException\n# abgehandelt wird. \n# D. the code is erroneous and it will not execute\n# zu unspezifisch\n\n# Lösung: C "
+  },
+  "338": {
+    "id": "338",
+    "text": "What is true about the following snippet? (Choose two.)",
+    "code": "class E(Exception): \n\tdef __init__(self, message): \n\t\tself.message = message \n\n\tdef __str__(self): \n\t\treturn \"it's nice to see you\"\n\ntry: \n\tprint(\"I feel fine\") \n\traise Exception(\"what a pity\")\nexcept E as e: \n\tprint(e)\nelse: \n\tprint(\"the show must go on\") ",
+    "options": {
+      "A": "the string it's nice to see you will beseen",
+      "B": "the string I feel fine will be seen",
+      "C": "the code will raise an unhandled exception",
+      "D": "the string what a pity will be seen"
+    },
+    "answer": "BC",
+    "details": "# QUESTION 338\n# What is true about the following snippet? (Choose two.)\nclass E(Exception):\n    def __init__(self, message):\n        self.message = message\n    # magische Methode für String-Repräsentation\n    def __str__(self):\n        return \"it's nice to see you\"\n\ntry:\n    print(\"I feel fine\")\n    raise Exception(\"what a pity\") # E ist Kind von Exception, also ist Exception kein E\n# Dieser Exception-Block passt nicht zu der Exception, die wir ausgelöst haben. \nexcept E as e:\n    print(e) # hier wird __str__()\nelse:\n    print(\"the schow must go on\")\n\n# A. the string it's nice to see you will be seen\n# Falsch, da except E nicht ausgeführt wird.\n# B. the string I feel fine will be seen\n# Wahr, da Ausführung der Zeile VOR dem Auslösen der Exception.\n# C. the code will raise an unhandled exception\n# Wahr, weil kein passender Exception-Block vorhanden ist. \n# D. the string what a pity will be seen\n# Falsch, da except E nicht ausgeführt wird.\n# String what a pity ist Bestandteil des Tracebacks in der VM\n\n# Lösung: BC\n# D ist schwächstes der Antwortmöglichkeiten \n"
+  },
+  "339": {
+    "id": "339",
+    "text": "Which of the following expressions evaluate to True? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "ord(\"Z\") - ord(\"z\") == ord(\"0\")",
+      "B": "chr(ord('A') + 1) == 'B'",
+      "C": "len('\\'') == 1 # ( ' \\ ' ' )",
+      "D": "len(\"\"\" \"\"\") == 0"
+    },
+    "answer": "BC",
+    "details": "# QUESTION 339\n# Which of the following expressions evaluate to True? (Choose two.)\n\n# A. \nord(\"Z\") - ord(\"z\") == ord(\"0\") # False, z und Z sind nicht im selben code point Bereich\n# B. \nchr(ord('A') + 1) == 'B' # True (siehe Caesar-Chiffre)\n# C. \nlen('\\'') == 1 # ( ' \\ ' ' ) # True, Escape-Character zählen als ein Zeichen \n# D. \nlen(\"\"\" \"\"\") == 0 # False, weil 1 Leerzeichen auch ein Zeichen ist.\n\n# Lösung: BC"
+  },
+  "340": {
+    "id": "340",
+    "text": "Which of the following invocations are valid?(Choosetwo.) ",
+    "code": "",
+    "options": {
+      "A": "\"python\".sort()",
+      "B": "sorted(\"python\")",
+      "C": "rfind(\"python\", \"r\")",
+      "D": "\"python\".index(\"th\")"
+    },
+    "answer": "BD",
+    "details": "# QUESTION 340\n# Which of the following invocations are valid? (Choose two.)\n\n# A. \n\"python\".sort() # Es gibt kein sort() auf Strings, da Strings immutabel sind\n# B. \nsorted(\"python\") # True, es wird eine Kopie der Daten erstellt und eine Liste zurückgegeben. \n# sorted hat keine Objektbindung und arbeitet mit Kopien als builtin-Funktion \n# C. \nrfind(\"python\", \"r\")\n# False, rfind ist eine Methode der Klasse string\n# \"python\".rfind('r'), read-only Operation unkritisch für immutable Datentypen \n# find von links, rfind von rechts\n# D. \n\"python\".index(\"th\") # True, gibt den Startindex des Teilstrings zurück (read-only)\n"
+  },
+  "341": {
+    "id": "341",
+    "text": "What is the expected behavior of the following code? ",
+    "code": "string = str(1 / 3) \ndummy = '' \nfor character in string: \n\tdummy = character + dummy \nprint(dummy[-1]) ",
+    "options": {
+      "A": "it raises an exception",
+      "B": "it outputs 0",
+      "C": "it outputs 3",
+      "D": "it outputs 'None'"
+    },
+    "answer": "B",
+    "details": "# QUESTION 341\n# What is the expected behavior of the following code?\n\nstring = str(1 / 3)\ndummy = ''\nfor character in string: # 0.3333333333333333\n    dummy = character + dummy # 3333333333333333.0, reverse\n    # dummy = dummy + character # hier wäre C richtig\nprint(dummy[-1])\n\n# A. it raises an exception\n# B. it outputs 0\n# C. it outputs 3\n# D. it outputs 'None'\n\n# Lösung: B\n"
+  },
+  "342": {
+    "id": "342",
+    "text": "Which of the following statements are true?(Choosetwo.) ",
+    "code": "",
+    "options": {
+      "A": "II in ASCII stands for Information Interchange",
+      "B": "a codepoint is a number assigned to a given character",
+      "C": "ACII is synonymous with UTF-8",
+      "D": "\\e is an escape sequence used to mark the end of lines"
+    },
+    "answer": "AB",
+    "details": "# QUESTION 342\n# Which of the following statements are true? (Choose two.)\n\n# A. II in ASCII stands for Information Interchange\n# True, American Standard Code for Information Interchange \n# B. a code point is a number assigned to a given character\n# True, siehe Caesar-Chiffre \n# C. ACII is synonymous with UTF-8\n# UTF-8 ist eine Erweiterung vn ASCII\n# D. \\e is an escape sequence used to mark the end of lines\n# \\n ist ein Zeilenumbruch, nicht \\e\n"
+  },
+  "343": {
+    "id": "343",
+    "text": "Which of the following expressions evaluate to True? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "str(1-1) in '0123456789'",
+      "B": "'dcb' not in 'abcde'[::-1]",
+      "C": "'phd' in 'alpha'",
+      "D": "'True' not in 'False'"
+    },
+    "answer": "AD",
+    "details": "# QUESTION 343\n# Which of the following expressions evaluate to True? (Choose two.)\n\n# A. \nstr(1-1) in '0123456789' # True\n# '0' in '0123456789'\n# B. \n'dcb' not in 'abcde'[::-1] # edcba  \n# False, da not in\n# C. \n'phd' in 'alpha'\n# False, es wird immer der gesamte String betrachtet\n# D. \n'True' not in 'False'\n# True"
+  },
+  "344": {
+    "id": "344",
+    "text": "What is the expected behavior of the following code?",
+    "code": "the_list = \"alpha;beta;gamma\".split(\":\") \nthe_string = ''.join(the_list)\nprint(the_string.isalpha()) ",
+    "options": {
+      "A": "it raises an exception",
+      "B": "it out puts True",
+      "C": "it out puts False",
+      "D": "it outputs nothing"
+    },
+    "answer": "C",
+    "details": "# QUESTION 344\n# What is the expected behavior of the following code?\n\nthe_list = \"alpha;beta;gamma\".split(\":\") # the_list = [ \"alpha;beta;gamma\" ]\n# Wir splitten nach :, es gibt aber keinen : in alpha;beta;gamma\nthe_string = ''.join(the_list) # whitespace ' '\n# Nimmt eine Liste von Strings und fügt zwischendrin ein Trennzeichen ein.\nprint(the_string.isalpha())\n\n# A. it raises an exception\n# B. it outputs True\n# C. it outputs False\n# D. it outputs nothing"
+  },
+  "345": {
+    "id": "345",
+    "text": "Which of the following expressions evaluate to True? (Choose two.)",
+    "code": "",
+    "options": {
+      "A": "121 + 1 != '1' + 2 * '2'",
+      "B": "'1' + '1' + '1' < '1' * 3",
+      "C": "'AbC'.lower() < 'AB'",
+      "D": "'3.14' != str(3.1415)"
+    },
+    "answer": "AD",
+    "details": "# QUESTION 345\n# Which of the following expressions evaluate to True? (Choose two.)\n# A. \n121 + 1 != '1' + 2 * '2' # True\n# 122 != '122', da * vor +\n# Wenn beide Operanden unterschiedliche Datentypen haben, kann == nie True ergeben.\n# In Python gibt es kein ===. Sprachen mit expliziter Typisierung\n# erlauben solche Vergleiche gar nicht.  \n\n# B. \n'1' + '1' + '1' < '1' * 3\n# False, da beides gleich\n# C. \n'AbC'.lower() < 'AB' # False\n# Weil code points der kleinen Buchstaben größer sind als die der Großbuchstaben. \n# Außerdem ist links der String länger. \n# Es wird Buchstabe für Buchstabe verglichen.\n# Beim ersten Unterschied wird anhand des code points entschieden.\n# Hier sind beide Teilstrings gleich:  \n# 'ab' < 'abc' liefert True, da 'ab' kürzer als 'abc' \n#D. \n'3.14' != str(3.1415)\n# True, da unterschiedliche Längen. \n# Beim Vergleich spielen Teilstrings keine Rolle. \n  "
+  },
+  "346": {
+    "id": "346",
+    "text": "Assuming that the snippet below has been executed successfully, which of the following expressions evaluate to True? ",
+    "code": "string = 'python'[::2] \nstring = string[-1] + string[-2] ",
+    "options": {
+      "A": "string[0] == 'o'",
+      "B": "string is None",
+      "C": "len(string) == 3",
+      "D": "string[0] == string [-1]"
+    },
+    "answer": "A",
+    "details": "# QUESTION 346\n# Assuming that the snippet below has been executed successfully, w\n# hich of the following expressions\n# evaluate to True?\n\nstring = 'python'[::2] # slicing 'pto'\n\nstring = string[-1] + string[-2]\n         # 'o'          't'\n\n# A. string[0] == 'o'\n# True \n# B. string is None\n# Falsch, da ein String zurückgegeben wird. \n# C. len(string) == 3\n# len ist 2, da 'ot'\n# D. string[0] == string [-1]\n# 'o' ist nicht 't'"
+  },
+  "347": {
+    "id": "347",
+    "text": "What is the expected behavior of the following code?",
+    "code": "class Super: \n\tdef make(self): \n\t\treturn 0 \n\n\tdef doit(self): \n\t\treturn self.make()\n\nclass Sub_A(Super): \n\tdef make(self): \n\t\treturn 1\n\nclass Sub_B(Super):\n\tpass\n\na = Sub_A() \nb = Sub_B()\nprint(a.doit() + b.doit()) ",
+    "options": {
+      "A": "it outputs 0",
+      "B": "it outputs 1",
+      "C": "it raises an exception",
+      "D": "it outputs 2"
+    },
+    "answer": "B",
+    "details": "# QUESTION 347\n# What is the expected behavior of the following code?\nclass Super:\n    def make(self):\n        return 0\n    def doit(self):\n        # self ist weiterhin vom Tyo Sub_A oder Sub_B\n        # für a wird Sub_A make aufgerufen\n        # für b make in der Klasse Super, weil kein  make in Sub_B implementiert ist. \n        return self.make() # a.make()\nclass Sub_A(Super):\n    # Überschriebene Methode von Super\n    def make(self):\n        return 1\nclass Sub_B(Super):\n    pass\na = Sub_A()\nb = Sub_B()\nprint(a.doit() + b.doit())\n        # 1          0\n# A. it outputs 0\n# B. it outputs 1\n# C. it raises an exception\n# D. it outputs 2\n\n# Lösung: B"
+  },
+  "348": {
+    "id": "348",
+    "text": "Assuming that the following inheritance set is in force, which of the following classes are declared properly?(Choose two.)",
+    "code": "class A:\n\tpass\n\nclass B(A):\n\tpass\n\nclass C(A):\n\tpass\n\nclass D(B):\n\tpass \n",
+    "options": {
+      "A": "class Class_4(D, A):\n\tpass ",
+      "B": "class Class_3(A, C):\n\tpass",
+      "C": "class Class_2(B, D):\n\tpass",
+      "D": "classClass_1(C,D):\n\tpass\n"
+    },
+    "answer": "AD",
+    "details": "# QUESTION 348\n# Assuming that the following inheritance set is in force, which of\n#  the following classes are declared properly?\n# (Choose two.)\nclass A:\n    pass\nclass B(A):\n    pass\nclass C(A):\n    pass\nclass D(B):\n    pass\n\n# Lösung: AD\n\n# A: Formell muss die spezfiischere Klasse zuerst bei der Vererbung stehen.\n# Sonst wäre es so, als wenn man priorität von seinen Großeltern erben wollen würde\n# => systemisch sinnlos.\n# Methoden und Eigenschaften A sind, sofern nicht überschrieben, sowieso direkt über \n# D verfügbar. Spezifisch kann man eine Methode aus A auch aufrufen \n# A. \nclass Class_4(D, A):\n    pass\n\nprint(Class_4.__mro__)\n\nclass Class_1(C, D):\n    pass\n\nprint(Class_1.__mro__)\n\nprint(help(D))\nprint(help(Class_1 ))\n\n# B. class Class_3(A, C):\n# pass\n# C. class Class_2(B, D):\n# pass\n# D. class Class_1(C, D):\n# pass\n# Mehrfachvererbung sinnvoll, Beispiel: Land (C), Wasser (D) \n# und Amphibienfahrzeuge (Class_1)\n# Hier erbt man aus verschiedenen Vererbungslinien ! \n\n\nclass A:\n    def show(self):\n        print(\"Hallo von A\")\n    def func1(self):\n        print(\"func1 von A\")\n\nclass B:\n    def show(self):\n        print(\"Hallo von B\")\n    def func2(self):\n        print(\"func2 von B\")\n\nclass C(A, B):\n    # def run():\n    #     B.show()\n    pass\n\n# Haben mehrere Elternklassen eine Methode mit demselben Namen\n# und ist diese in der Kindklasse NICHT überschrieben,\n# dann geht es nach der Reihenfolge, wie die Vererbung angegeben wurde.\nC().show() # Welches show() wird genommen? A\n# Werden func1() und func2() nicht überschrieben, kann man\n# in der Kindklasse beide Methoden verwenden (disjunkt)\nC().func1() \nC().func2()"
+  },
+  "349": {
+    "id": "349",
+    "text": "What is the expected output of the following snippet?",
+    "code": "class Upper: \n\tdef method(self): \n\t\treturn 'upper'\n\nclass Lower(Upper): \n\tdef method(self): \n\t\treturn 'lower'\n\nObject = Upper() \nprint(isinstance(Object, Lower), end=' ') \nprint(Object.method()) ",
+    "options": {
+      "A": "True upper",
+      "B": "True lower",
+      "C": "False upper",
+      "D": "False lower"
+    },
+    "answer": "C",
+    "details": "# QUESTION 349\n# What is the expected output of the following snippet?\n\n# Instanzen von Upper sind Instanzen NUR von Upper\n# Instanzen von lower sind Instanzen von Lower und Upper wg. Vererbung.\nclass Upper:\n    def method(self):\n        return 'upper'\n\nclass Lower(Upper):\n    def method(self):\n        return 'lower'\n    \nObject = Upper()\nObject2 = Lower()\n\nprint(isinstance(Object, Lower), end=' ') # False\nprint(isinstance(Object2, Upper), end=' ') # True\n\nprint(Object.method())\n\n# __bases__ enthält nur eine Liste der direkten Elternklassen \nprint(Lower.__bases__)\nprint(Upper.__bases__)\n\n# A. True upper\n# B. True lower\n# C. False upper (X)\n# D. False lower\n\n# Lösung: C "
+  },
+  "350": {
+    "id": "350",
+    "text": "Assuming that the code below has been placed inside a file named code.py and executed successfully, which of the following expressions evaluate to True? (Choose two.) ",
+    "code": "class ClassA:\n\tvar = 1 \n\tdef __init__(self,prop):\n\t\tprop1 = prop2 = prop \n\n\tdef __str__(self):\n\t\treturn 'Object'\n\nclass ClassB(ClassA):\n\tdef __init__(self,prop): \n\t\tprop3 = prop ** 2 \n\t\tsuper().__init__(prop)\n\nObject = ClassB(2) ",
+    "options": {
+      "A": "len(ClassA.__bases__) == 2",
+      "B": "ClassA.__module__ == '__main__'",
+      "C": "__name__== 'code.py'",
+      "D": "str(Object) == 'Object'"
+    },
+    "answer": "BD",
+    "details": "# QUESTION 350\n# Assuming that the code below has been placed inside a file named code.py and executed successfully,\n# which of the following expressions evaluate to True?\n# (Choose two.)\n\nclass ClassA:\n    var = 1\n    def __init__(self, prop):\n        prop1 = prop2 = prop # 3 LOKALE Variablen in __init__, die nach der Ausführung von __init__ weg sind.\n    def __str__(self):\n        return 'Object'\n\nclass ClassB(ClassA):\n    def __init__(self, prop):\n        prop3 = prop ** 2\n        super().__init__(prop)\n\nObject = ClassB(2)\n# Object.prop # NameError, da prop nicht existiert (lokale Variablen) \n\n# A. \nlen(ClassA.__bases__) == 2\n# __bases__ enthält eine Liste von DIREKTEN Elternklassen\n# B. \n# In welchem Module befindet sich diese Klasse?\nprint(ClassA.__module__ == '__main__') # True\n# Das Modul ist main, da die Datei (code.py) bzw. 350.py das Startmodul ist \n# Unterschied zu __name__: Das ist der Modulname, man kann aber auch Strukturen in dem\n# Modul nach dem jeweiligen Modul abfragen, siehe oben 8Ist die Klasse A Bestandteil von Modul __main__?\n\n# Modulnamen als Zahlen sind problematisch\n# Verstoß gegen Regeln für Variablennamen, wie hier:\n# 349 = 'Hallo'\nfrom threefournine import Upper\nprint(Upper.__module__ == '__main__') # False\nprint(Upper.__module__)\n\n# C. \n__name__ == 'code.py'\n# bei Start von code ist der Modulname __main__\n# wenn code import werden wprde, ist der Name code\n\n# D. \n# Es gibt keine magic Method __str__() für B.\n# Aber es gibt eine für A !\n# Bei der String-Konvertierung wird also die von A genommen.\n# Hätte A keine __str__(), würde diese von der Klasse object genommen (Elter ALLER Klassen).\nstr(Object) == 'Object' # True\n\n"
+  },
+  "351": {
+    "id": "351",
+    "text": "What is the expected behavior of the following code? ",
+    "code": "class Class: \n\t__Var = 0\n\tdef foo(self): \n\t\tClass._Class__Var += 1 \n\t\tself.__prop = Class._Class__Var \n\no1 = Class() \no1.foo() \no2 = Class() \no2.foo() \nprint(o2._Class__Var + o1._Class__prop) ",
+    "options": {
+      "A": "it outputs 1",
+      "B": "it outputs 3",
+      "C": "it outputs 6",
+      "D": "it raises an exception"
+    },
+    "answer": "B",
+    "details": "# QUESTION 351\n# What is the expected behavior of the following code?\nclass Class:\n    __Var = 0 # Klassenvariable: privat, auf __Var können alle Instanzen zugreifen\n    # Speicherbereich der KLASSE, nicht der Instanzen. Änderungen an diesen Variablen sind über alle\n    # Instanzen hinweg sichtbar.  \n    def foo(self):\n        # self.__Var = 0\n        # self._semi_priv = 123 # semi-privaate (protected), NUR KONVENTION \n        Class._Class__Var += 1\n        # Class.__Var += 1 # Zugriff auch so möglich, da innerhalb von Class\n        self.__prop = Class._Class__Var # Reihenfolge des Aufrufs wichtig \n\no1 = Class()\no1.foo() #:__Var = 1, # o1.__prop = 1\no2 = Class()\no2.foo() #:__Var = 2, keine Auswirkung auf o1\n# sowohl o1 und p2 schreiben in DIESELBE Variable (Klassenvariable)\n\n# o1._semi_priv\n\nprint(o2._Class__Var + o1._Class__prop) # hier MUSS name mangling \n# print(o2._Class__Var + o2._Class__prop) # Ausgabe 4, da __prop von __Var abhängt.\nprint(Class._Class__Var) # Zugriff über Klassenvariablen\nprint(o2._Class__Var) # Zugriff auf Klassenvariable über Objekt NUR möglich,\n# wenn es keine private Instanzvariable mit demselben Namen (__Var) gibt. \n\n# A. it outputs 1\n# B. it outputs 3\n# C. it outputs 6\n# D. it raises an exception\n\n# Lösung: B\n"
+  },
+  "352": {
+    "id": "352",
+    "text": "What is the expected behavior of the following code?",
+    "code": "class Class: \n\tVariable = 0 \n\tdef __init__(self): \n\t\tself.value = 0\n\nobject_1 = Class() \nobject_1.Variable = 1 \nobject_2 = Class() \nobject_2.value += 1 \nprint(object_2.Variable + object_1.value) ",
+    "options": {
+      "A": "it outputs 0",
+      "B": "it raises an exception",
+      "C": "it outputs 1",
+      "D": "it outputs 2"
+    },
+    "answer": "A",
+    "details": "# QUESTION 352\n# What is the expected behavior of the following code?\nclass Class:\n    Variable = 0\n    def __init__(self):\n        self.value = 0\n\nobject_1 = Class()\n# schreibender Zugriff !\n# Nur für object_1 wird eine Instanzvariable mit dem Namen Variable\n# angelegt. Im Speicher existieren jetzt hier 1 Klassenvariable mit de, Namen Variable\n# und eine Instanzvariable NUR FÜR object1 mit dem Namen Variable. \nobject_1.Variable = 1 # { Class.Variable, object_1.Variable, object_1.value  }\n# Class.var\nobject_2 = Class()\nobject_2.value += 1 # object2.value = 1, object1.value = 0 # { Class.Variable, object_2.value  }\n# Weil es keine Instanzvariable Variable für object2 gibt beim LESENDEN Zugriff\n# wird hier die Klassenvariable genommen.\n\nprint(\"Objekt 1: \", object_1.__dict__)\nprint(\"Objekt 2: \", object_2.__dict__)\nprint(\"Class: \", Class.__dict__)\n\n# Zugriff object_2 auf Class.Variable, da kein object_2.Variable existiert. \nprint(object_2.Variable + object_1.value) # 0\n#          0                     0\n\n# A. it outputs 0\n# B. it raises an exception\n# C. it outputs 1\n# D. it outputs 2\n\n"
+  },
+  "353": {
+    "id": "353",
+    "text": "What is true about Object-Oriented Programming in Python? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "each object of the same class can have a different set of methods",
+      "B": "a subclass is usually more specialized than its superclass",
+      "C": "if a real-life object can be described with a set of adjectives, they may reflect a Python object method",
+      "D": "the same class can be used many times to build a number of objects"
+    },
+    "answer": "BD",
+    "details": "# QUESTION 353\n# What is true about Object-Oriented Programming in Python? (Choose two.)\n\n# A. each object of the same class can have a different set of methods\n# False, Standardisierung von Methoden durch Klassen !\n# B. a subclass is usually more specialized than its superclass\n# True (Wasserfahrzeug ist spezieller als Fahrzeug)\n# C. if a real-life object can be described with a set of adjectives, they may reflect a Python object method\n# False, das sind Instanzvariablen, keine Methoden\n# D. the same class can be used many times to build a number of objects\n# True, man kann beliebig viele individuelle Fahrzeuge erzeugen. \n\n# Theoretisch kann man A aushebeln :-)\n# aber nur ohne self-Logik\ndef func():\n    print(\"Hallo aus Test\")\n\nclass Test:\n    def over(self):\n        print(\"Over\")\n    \n\nt = Test()\n# func existiert nur für t\nt.foo = func\nt.over = lambda x: x**x\nprint(t.over(10)) \n\nt.foo()"
+  },
+  "354": {
+    "id": "354",
+    "text": "What is true about Python class constructors? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "there can be more than one constructor in a Python class",
+      "B": "the constructor must return a value other than None",
+      "C": "the constructor is a method named __init__",
+      "D": "the constructor must have at least one parameter"
+    },
+    "answer": "CD",
+    "details": "# Question 354\n# What is true about Python class constructors? (Choose two.)\n\n# A. there can be more than one constructor in a Python class\n# False, es KANN NUR EINEN GEBEN \n# B. the constructor must return a value other than None\n# False, der Konstruktor gibt nichts zurück\n# C. the constructor is a method named __init__\n# True\n# D. the constructor must have at least one parameter\n# True, da self-Parameter / Argument\n"
+  },
+  "355": {
+    "id": "355",
+    "text": "Assuming that the following piece of code has been executed successfully, which of the expressions evaluate to True? (Choose two.) ",
+    "code": "class A: \n\tVarA = 1 \n\tdef __init__(self): \n\t\tself.prop_a = 1\n\nclass B(A): \n\tVarA = 2 \n\tdef __init__(self): \n\t\tsuper().__init__() \n\t\tself.prop_b = 2\n\nobj_a = A() \nobj_aa = A() \nobj_b = B() \nobj_bb = obj_b ",
+    "options": {
+      "A": "isinstance(obj_a, A)",
+      "B": "VarA == 1",
+      "C": "obj_a is obj_aa",
+      "D": "B.VarA == 1"
+    },
+    "answer": "AB",
+    "details": "# QUESTION 355\n# Assuming that the following piece of code has been executed successfully, which of the expressions\n# evaluate to True? (Choose two.)\nclass A:\n    VarA = 1\n    def __init__(self):\n        self.prop_a = 1\n\nclass B(A):\n    VarA = 2\n    def __init__(self):\n        super().__init__()\n        self.prop_b = 2\nobj_a = A()\nobj_aa = A()\nobj_b = B()\nobj_bb = obj_b\n\nprint(obj_a is obj_aa) # False\nprint(obj_b is obj_bb) # True, weil selbe Referenz !\n# A. isinstance(obj_a, A) # True, da Zeile 14\n# B. A.VarA == 1 # True\n# C. obj_a is obj_aa # False\n# D. B.VarA == 1 # False, man kann auch Klassenvariablen überschreiben"
+  },
+  "356": {
+    "id": "356",
+    "text": "Assuming that the code below has been executed successfully, which of the expressions evaluate to True? (Choose two.) ",
+    "code": "class Class: \n\tvar = data = 1 \n\tdef __init__(self, value): \n\t\tself.prop = value\n\nObject = Class(2) ",
+    "options": {
+      "A": "len(Class.__dict__) == 1",
+      "B": "'data' in Class.__dict__",
+      "C": "'var' in Class.__dict__",
+      "D": "'data' in Object.__dict__"
+    },
+    "answer": "BC",
+    "details": "# QUESTION 356\n# Assuming that the code below has been executed successfully, which of the expressions evaluate to True?\n# (Choose two.)\nclass Class:\n    var = data = 1\n    def __init__(self, value):\n        self.prop = value\nObject = Class(2)\n# mit dict kann man sehen, was Bestandteil der Klasse / Struktur ist.\n# A. \nprint(Class.__dict__)\n# Länge kann nie 1 sein\nlen(Class.__dict__) == 1\n# B.\nprint('data' in Class.__dict__) \n# data ist eine KLASSENVARIABLE, daher finden wir diese im dict von Class.\n'data' in Class.__dict__\n# True\n# C. \n# var ist eine KLASSENVARIABLE, daher finden wir diese im dict von Class.\n'var' in Class.__dict__\n# True\n# D. \n'data' in Object.__dict__\n# False, da data nicht Bestandteil des Objektes ist, sondern der Klasse. \n# data ist KEINE Instanzvariable und gehört somit nicht zu Object\n\n# Lösung: BC\n"
+  },
+  "357": {
+    "id": "357",
+    "text": "A property that stores information about a given class's super-classes is named: ",
+    "code": "",
+    "options": {
+      "A": "__upper__",
+      "B": "__super__",
+      "C": "__ancestors__",
+      "D": "__bases__"
+    },
+    "answer": "D",
+    "details": "# QUESTION 357\n# A property that stores information about a given class's super-classes is named:\n\n# A. __upper__\n# B. __super__\n# C. __ancestors__\n# D. __bases__\n\n# Lösung: D\n\nclass A:\n    pass\n\nprint(A.__bases__)"
+  },
+  "358": {
+    "id": "358",
+    "text": "Which of the following lines of code will work flawlessly when put independently inside the add_new() method in order to make the snippet's output equal to [0, 1, 2]? (Choose two.)",
+    "code": "class MyClass: \n\tdef __init__(self, size):\n\t\tself.queue = [i for i in range(size)] \n\n\tdef get(self): \n\t\treturn self.queue \n\n\tdef get_last(self): \n\t\treturn self.queue[-1] \n\n\tdef add_new(self): \n\t\t# insert the line of the code here\n\nObject = MyClass(2)\nObject.add_new() \nprint(Object.get()) ",
+    "options": {
+      "A": "self.queue.append(self.get_last() + 1)",
+      "B": "self.queue.append(get_last() + 1)",
+      "C": "self.queue.append(self.queue[-1] + 1)",
+      "D": "queue.append(self.get_last() + 1)"
+    },
+    "answer": "AC",
+    "details": "# QUESTION 358\n# Which of the following lines of code will work flawlessly when put independently inside the add_new()\n# method in order to make the snippet's output equal to [0,1, 2]? (Choose two.)\nclass MyClass:\n    def __init__(self, size):\n        self.queue = [i for i in range(size)]\n    def get(self):\n        return self.queue # ganze Liste geht zurück\n    def get_last(self):\n        return self.queue[-1] # letztes Listenelement geht zurück\n    def add_new(self):\n        pass\n        # insert the line of the code here\n\nObject = MyClass(2) # queue: [0,1]\nObject.add_new()\nprint(Object.get())\n\n# A. self.queue.append(self.get_last() + 1) # True\n# B. self.queue.append(get_last() + 1) # False, \n# da kein self (globale Funktion get_last würde man suchen)\n# C. self.queue.append(self.queue[-1] + 1) # True\n# D. queue.append(self.get_last() + 1) # False, vor queue fehlt self\n# queue ist eine Instanzvariable in MyClass und keine globale Datenstruktur."
+  },
+  "359": {
+    "id": "359",
+    "text": "What is the expected output of the following code? ",
+    "code": "mytu = ('a', 'b', 'c') \nm = tuple(map(lambda x: chr(ord(x) + 1), mytu)) \nprint(m[-2]) ",
+    "options": {
+      "A": "a",
+      "B": "c",
+      "C": "an exception is raised",
+      "D": "b"
+    },
+    "answer": "B",
+    "details": "# QUESTION 359\n# What is the expected output of the following code?\n\nmytu = ('a', 'b', 'c') \n# Tupel wird kopiert, die Kopie als map verändert und als map object zurückgeliefert.\n# Anschließend wird map wieder in tuple konvertiert. \nm = tuple(map(lambda x: chr(ord(x) + 1), mytu))\nprint(m[-2])\n\n# A. a\n# B. c\n# C. an exception is raised\n# D. b\n\n# Lösung: B"
+  },
+  "360": {
+    "id": "360",
+    "text": "What is the expected output of the following code if there is no file named non_existing_file inside the working directory?",
+    "code": "try: \n\tf = open('non_existing_file', 'w') \n\tprint(1, end=' ') \n\ts = f.readline() \n\tprint(2, end=' ') \nexcept IOError as error: \n\tprint(3, end=' ') \nelse: \n\tf.close()\n\tprint(4, end=' ') ",
+    "options": {
+      "A": "1 2 4",
+      "B": "1 2 3 4",
+      "C": "2 4",
+      "D": "1 3"
+    },
+    "answer": "D",
+    "details": "# QUESTION 360\n# What is the expected output of the following code if there is no file named\n# non_existing_file inside the\n# working directory?\ntry:\n    f = open('non_existing_file', 'w')\n    print(1, end=' ')\n    s = f.readline() # HIER WIRD DER FEHLER GEWORFEN, weil write Modus zum Lesen genutzt wird.\n    # ABER: Man kann auch eine leere, angelegte Datei lesen. \n    # Man kann Lesen und Schreiben gleichzeitig mit r+, dann geht es, aber nicht mit w alleine. \n    # print(s)\n    print(2, end=' ')\nexcept IOError as error:\n    print(3, end=' ')\nelse:\n    f.close()\n    print(4, end=' ')\n\n# A. 1 2 4\n# B. 1 2 3 4\n# C. 2 4\n# D. 1 3"
+  },
+  "361": {
+    "id": "361",
+    "text": "What is the expected output of the following code if the file named existing_text_file is a non-zero length textfile located inside the working directory?",
+    "code": "try: \n\tf = open('existing_text_file','w')\n\td = f.readline() \n\tprint(len(d)) \n\tf.close() \nexcept IOError: \n\tprint(-1) ",
+    "options": {
+      "A": "the length of the first line from the file",
+      "B": "-1",
+      "C": "the number of lines contained inside the file",
+      "D": "the length of the last line from the file"
+    },
+    "answer": "B",
+    "details": "# QUESTION 361\n# What is the expected output of the following code if the file named\n#  existing_text_file is a non-zero length\n# text file located inside the working directory?\n\ntry:\n    f = open('existing_text_file', 'w')\n    d = f.readline()\n    print(len(d))\n    f.close()\n# IOError evtl. outdated => OSError\n# Es wird eine Exception geworfen und hier gefangen\n# Wenn keine Exception passt, geht es an VM (unhandled exception). \nexcept IOError: # auch: OSError !\n    print(-1)\n\n# A. the length of the first line from the file\n# B. -1\n# C. the number of lines contained inside the file\n# D. the length of the last line from the file\n\n# Lösung: B (Lesen im Schreibmodus)"
+  },
+  "362": {
+    "id": "362",
+    "text": "What is the expected behavior of the following code? ",
+    "code": "my_list = [i for i in range(5)] \nm = [my_list[i] for i in range(4, 0, -1) if my_list[i] % 2 != 0] \nprint(m) ",
+    "options": {
+      "A": "it outputs [1, 3]",
+      "B": "the code is erroneous and it will not execute",
+      "C": "it outputs [3, 1]",
+      "D": "it outputs [4, 2, 0]"
+    },
+    "answer": "C",
+    "details": "# QUESTION 362\n# What is the expected behavior of the following code?\n\nmy_list = [i for i in range(5)] # [ 0,1,2,3,4 ]\n# Liste rückwärts durchgehen\nm = [my_list[i] for i in range(4, 0, -1) if my_list[i] % 2 != 0] \n# [3,1]\nprint(m)\n\n# A. it outputs [1, 3]\n# B. the code is erroneous and it will not execute\n# C. it outputs [3, 1]\n# D. it outputs [4, 2, 0]\n\n# Lösung: C "
+  },
+  "363": {
+    "id": "363",
+    "text": "Assuming that the following code has been executed successfully, which of the expressions evaluate to True? (Choose two.)",
+    "code": "def f(x, y): \n\tnom, denom = x, y\n\tdef g(): \n\t\treturn nom / denom\n\treturn g\n\na = f(1, 2) \nb = f(3, 4) ",
+    "options": {
+      "A": "b() == 4",
+      "B": "a != b",
+      "C": "a is not None",
+      "D": "a() == 4"
+    },
+    "answer": "BC",
+    "details": "# QUESTION 363\n# Assuming that the following code has been executed successfully, which of the\n#  expressions evaluate to True? (Choose two.)\n\ndef f(x, y):\n    # nom, denom und g sind lokale Variablen von f\n    nom, denom = x, y\n    # Jede Funktion hat einen Stack (Speicherbereich mit lokalen Variablen)\n    # g kann nach Beenden von f nicht gelöscht werden, da von außen referenziert durch a und b.\n    # a und b sind unterschiedlich, da g von nom und denom als lokale Variablen \n    # in g unterschedlich sind. Also: 2 unterschiedliche Funktionen.  \n    def g():\n        # nom = 9 # NEUE lokale Variable in g und nicht mehr das von f\n        # nonlocal nom # hier wird nom aus f beschrieben, da nonlocal\n        # nom = 9\n        return nom / denom\n    # Was bedeutet das? \n    # g wird als Funktionsreferenz zurückgegeben\n    # Hier wird nichts ausgeführt\n    return g\n\n# print(g) # kein Zugriff auf innere Funktionsreferenz\na = f(1, 2) # a ist g mit den Werten 1,2\nprint(type(a), a) # Funktion, Adresse\nb = f(3, 4) # b ist g mit den Werten 3,4\nprint(b()) # 0.75\n\n# A. b() == 4\n# False, da nom / denom 3 / 4\n# B. a != b \n# True\n# g ist eine Funktionsreferenz, die von nom und denom abhängt.\n# Beide Aufrufe von f erzeugen zwei unterschiedliche g\n# C. a is not None\n# True, da Funktionsreferenz zurückgegeben wird und die ist nicht None :-)\n# D. a() == 4 # False, da Ausgabe 0.5\n\na = 9\n\ndef test():\n    print(a)\n\ntest()"
+  },
+  "364": {
+    "id": "364",
+    "text": "What is the expected output of the following code? ",
+    "code": "def foo(x, y): \n\treturn y(x) + (x + 1) \n\nprint(foo(1, lambda x: x * x)) ",
+    "options": {
+      "A": "3",
+      "B": "5",
+      "C": "4",
+      "D": "an exception is raised"
+    },
+    "answer": "A",
+    "details": "# QUESTION 364\n# What is the expected output of the following code?\n\ndef foo(x, y):\n    print(type(y)) # class function\n\n    # y(x) + y(x + 1) \n    # 1 + y(2) = 5\n    return y(x) + (x + 1)\n\n    # y(1) 1 * 1 + ( 1 + 1)\n\nprint(foo(1, lambda x: x*x))\n\n# Die Benennung von den Variablen für lambda\n# hat nichts mit den anderen Variablen zu tun, diese sind intern für lambda !\n\n# A. 3\n# B. 5\n# C. 4\n# D. an exception is raised"
+  },
+  "365": {
+    "id": "365",
+    "text": "Which of the following lambda definitions are correct? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "lambda x, y: (x, y)",
+      "B": "lambda x, y: return x // y - x % y",
+      "C": "lambda x, y: x // y - x % y",
+      "D": "lambda x, y = x // y - x % y"
+    },
+    "answer": "AC",
+    "details": "# QUESTION 365\n# Which of the following lambda definitions are correct? (Choose two.)\n\n# A. lambda x,y: (x,y)\n# B. lambda x,y: return x//y - x%y\n# es gibt keinr eturn in Lambda \n# C. lambda x,y: x//y - x%y\n# D. lambda x,y = x//y - x%y\n# = statt :\n\n# Lösung: AC"
+  },
+  "366": {
+    "id": "366",
+    "text": "Which of the following statements are true? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "if invoking open() fails, an exception is raised",
+      "B": "open() requires a second argument",
+      "C": "open() is a function which returns an object that represents a physical file",
+      "D": "instd, outstd. errstd are the names of pre-opened streams"
+    },
+    "answer": "AC",
+    "details": "# QUESTION 366\n# Which of the following statements are true? (Choose two.)\n\n# A. if invoking open () fails, an exception is raised\n# True, wenn eine Datei im Lesemodus geöffnet wird, die nicht existiert. \n# B. open () requires a second argument\n# False, weil Default-Parameter für open ist rt (read text)\n# C. open () is a function which returns an object that represents a physical file\n# True \n# D. instd, outstd. errstd are the names of pre-opened streams\n# False, existiert in Python nicht. "
+  },
+  "367": {
+    "id": "367",
+    "text": "What is the expected behavior of the following code? ",
+    "code": "x = 3 % 1 \ny = 1 if x > 0 else 0\nprint(y) ",
+    "options": {
+      "A": "the code is erroneous and it will not execute",
+      "B": "it outputs 1",
+      "C": "it outputs -1",
+      "D": "it outputs 0"
+    },
+    "answer": "D",
+    "details": "# QUESTION 367\n# What is the expected behavior of the following code?\n\nx = 3 % 1 # x = 0\ny = 1 if x > 0 else 0 # conditional expression ;-)\nprint(y)\n\n# A. the code is erroneous and it will not execute\n# B. it outputs 1\n# C. it outputs -1\n# D. it outputs 0\n\n# Lösung: D\n"
+  },
+  "368": {
+    "id": "368",
+    "text": "Which of the following snippets will execute without raising any unhandled exceptions? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "try:\n\tprint(float(\"1e1\"))\nexcept (ValueError, NameError):\n\tprint(float(\"1a1\"))\nelse:\n\tprint(float(\"101\"))",
+      "B": "try:\n\tprint(1/1)\nexcept:\n\tprint(2/1)\nelse:\n\tprint(3/0)",
+      "C": "try:\n\tprint(1/0)\nexcept ValueError:\n\tprint(1/1)\nelse:\n\tprint(1/2)",
+      "D": "try:\n\tprint(0/1)\nexcept:\n\tprint(1/1)\nelse:\n\tprint(2/1)"
+    },
+    "answer": "AD",
+    "details": "# QUESTION 368\n# Which of the following snippets will execute without raising any unhandled\n# exceptions? (Choose two.)\n# A. \ntry:\n    print(float(\"1e1\")) # 10.0\nexcept (ValueError, NameError):\n    print(float(\"1a1\"))\nelse: # try ohne exception führt zur Ausführung von else\n    print(float(\"101\"))\n# Hier liegt keine unhandled excpetion vor. Bitte bei Bedarf else checken !\n# B. \ntry:\n    print(1/1)\nexcept:\n    print(2/1)\nelse:\n    print(3/0) # ZeroDivisonError \n# Hier haben wir eine unhandled exception !!! \n\n# C. \ntry:\n    print(1/0) # excpetion wird ausgelöst \n    # ZeroDivisionError\n# Dies würde nur ausgeführt werden, wenn ZeroDivisionError direkt oder indirekt von\n# ValueError erbt. \nexcept ValueError: # ZeroDivisionError erbt von ArithmeticError !\n    print(1/1)\n# Den folgenden Block kann man als Default setzen- \n# except ArithmeticError: # \"Ist-Ein\"-Beziehung zwischen ZeroDivisionError und ArtihmeticError\n#     pass\n# except Exception:\n#     pass\nelse:\n    print(1/2)\n# Es liegt eine unhandled exception vor. \n\n# D.\ntry:\n    print(0/1) # 0, es wird gar keine exception ausgelöst, die wir behandeln könnten\n    # Der Code läuft sauber durch (KEINE Exception)\nexcept:\n    print(1/1)\nelse:\n    print(2/1)\n\n# Es läuft alles sauber durch (man kann 0/1 teilen)\n\n\n\ntry:\n    print(0/1) # 0, es wird gar keine exception ausgelöst, die wir behandeln könnten\n    # Der Code läuft sauber durch (KEINE Exception)\nexcept:\n    print(1/1)\nelse:\n    print(2/1)\n\n# Es wird eine exception ausgelöst, aber abgehandelt\n# HANDLED exception\ntry:\n    print(1/0) # ZeroDivisionError wird ausgelöst\nexcept: # HIER wird die exception (bzw. alle möglichen) abgehandelt. \n    print(1/1)\nelse:\n    print(2/1)\n\n# unhandled exception:\n# Ein Fehler wird ausgelöst, aber durch KEIN passendes except abgefangen !\n# Das führt dazu, dass der Fehler nicht behandelt wird und dann in der VM landet.\ntry:\n    print(1/0) # ZeroDivisionError wird ausgelöst\nexcept ValueError: # HIER wird die exception (bzw. alle möglichen) abgehandelt. \n    print(1/1)\nelse:\n    print(2/1)\n\n# Exception == Fehler den das System mit  Fehlermeldung klar macht... ?!\n#  Unhandled == wenn nur das System mit default Behandlung reagiert,\n#  Handled == wenn du als Programmierer eine bestimmte Behandlungsvorschrift machst"
+  },
+  "369": {
+    "id": "369",
+    "text": "Which of the following expressions evaluate to True? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "'8' + '8' != 2 * '8'",
+      "B": "'xYz'.lower() > 'XY'",
+      "C": "float('3.14') == str('3.'+'14')",
+      "D": "121 + 1 == int('1' + 2 * '2')"
+    },
+    "answer": "BD",
+    "details": "# QUESTION 369\n# Which of the following expressions evaluate to True? (Choose two.)\n# A. \n'8' + '8' != 2 * '8' # '88' != '88' # False, da beide Strings gleich sind. \n# B. \n'xYz'.lower() > 'XY' # 'xyz' > 'XY' # True , weil code point 'x' > 'X'\n# C. \nfloat('3.14') == str('3.' + '14') # 3.14 == '3.14' # False, da unterschiedliche Datentypen\n# D. \n121 + 1 == int('1' + 2 * '2') # 122 == 122 # True, da Punkt vor Strich\n\n# Lösung. BD\n"
+  },
+  "370": {
+    "id": "370",
+    "text": "What is the expected behavior of the following code?",
+    "code": "class Class:\n\tVar = 0\n\tdef __foo(self):\n\t\tClass.Var += 1\n\t\treturn Class.Var\n\no = Class()\no.__Class_foo()\nprint(o.__Class_foo())",
+    "options": {
+      "A": "it raises an exception",
+      "B": "it outputs 3",
+      "C": "it outputs 1",
+      "D": "it outputs 6"
+    },
+    "answer": "A",
+    "details": "# QUESTION 370\n# What is the expected behavior of the following code?\n\nclass Class:\n    Var = 0\n    def __foo(self):\n        Class.Var += 1\n        return Class.Var\n\no = Class()\n# Zugriff auf private Methode in Zeile 12 korrekt\n# o._Class__foo() # name mangling\no.__Class_foo() # AttributeError \nprint(o.__Class_foo())\n\n# A. it raises an exception\n# B. it outputs 3\n# C. it outputs 1\n# D. it outputs 6\n\n# Lösung: A"
+  },
+  "371": {
+    "id": "371",
+    "text": "What is the expected behavior of the following code? ",
+    "code": "x = 8 ** (1 / 3) \ny = 2. if x < 2.3 else 3. \nprint(y) ",
+    "options": {
+      "A": "the code is erroneous and it will not execute",
+      "B": "it outputs 2.0",
+      "C": "it outputs 2.5",
+      "D": "it outputs 3.0"
+    },
+    "answer": "B",
+    "details": "# QUESTION 371\n# What is the expected behavior of the following code?\n\nx = 8 ** (1 / 3) # 3. Wurzel von 8, da 8^(1/3)\n# 4*4 = 16 (4^2) = 16. Wurzel ist Gegenoperation von Potenz\n# 16: Quadratwurzel : Welche Zahl hat sich mit sich selbst mutlipliziert, \n# um auf 16 zu kommen?\n# 3. Wurzel: \n# 2^3 = 2*2*2 = 8, 3. Wurzel aus 8 = 2\n# 3^3 = 3*3*3 = 27, 3. Wurzel aus 27 = 3\n# 4^3 = 4*4*4 = 64, 3. Wurzel aus 64 = 4\n\ny = 2. if x < 2.3 else 3. # 2. wird zu 2.0, Literal 2. gültig\nprint(y)\n\n# A. the code is erroneous and it will not execute\n# B. it outputs 2.0\n# C. it outputs 2.5\n# D. it outputs 3.0\n\n# Lösung: B"
+  },
+  "372": {
+    "id": "372",
+    "text": "What is the expected behavior of the following code?",
+    "code": "my_list = [i for i in range(5, 0, -1)] \nm = [my_list[i] for i in range(5) if my_list[i] % 2 == 0] \nprint(m) ",
+    "options": {
+      "A": "it outputs [4, 2]",
+      "B": "it outputs [2, 4]",
+      "C": "it outputs [0, 1, 2, 3, 4]",
+      "D": "the code is erroneous and it will not execute"
+    },
+    "answer": "A",
+    "details": "# QUESTION 372\n# What is the expected behavior of the following code?\n\nmy_list = [i for i in range(5, 0, -1)]\nm = [my_list[i] for i in range(5) if my_list[i] % 2 == 0]\nprint(m)\n\n# A. it outputs [4, 2]\n# B. it outputs [2, 4]\n# C. it outputs [0, 1, 2, 3, 4]\n# D. the code is erroneous and it will not execute"
+  },
+  "373": {
+    "id": "373",
+    "text": "The __bases__ property contains: ",
+    "code": "",
+    "options": {
+      "A": "base class location (addr)",
+      "B": "base class objects (class)",
+      "C": "base class names (str)",
+      "D": "base class ids (int)"
+    },
+    "answer": "B",
+    "details": "# QUESTION 373\n# The __bases__ property contains:\n\n# A. base class location (addr)\n# B. base class objects (class)\n# C. base class names (str)\n# D. base class ids (int)\n\n# Lösung: B\n\nclass Parent:\n    pass\n\nclass Super:\n    pass\n\nclass Test(Parent, Super): # Alle Klassen sind von object abgeleitet\n    pass\n\nprint(Test.__bases__) # NUR DIREKTE ELTERN\n\np = Parent()"
+  },
+  "374": {
+    "id": "374",
+    "text": "What is the expected behavior of the following code?",
+    "code": "class Super: \n\tdef make(self): \n\t\tpass \n\n\tdef doit(self): \n\t\treturn self.make()\n\nclass Sub_A(Super): \n\tdef make(self): \n\t\treturn 1\n\nclass Sub_B(Super): \n\tpass\n\na = Sub_A() \nb = Sub_B()\nprint(a.doit() + b.doit()) ",
+    "options": {
+      "A": "it outputs 0",
+      "B": "it raises an exception",
+      "C": "it outputs 1",
+      "D": "it outputs 2"
+    },
+    "answer": "B",
+    "details": "# QUESTION 374\n# What is the expected behavior of the following code?\nclass Super:\n    def make(self):\n        pass\n    def doit(self):\n        return self.make()\nclass Sub_A(Super):\n    def make(self):\n        return 1\nclass Sub_B(Super):\n    pass\n\na = Sub_A()\nb = Sub_B()\n\nprint(a.doit() + b.doit()) # \n    #    1     +    None\n\n# A. it outputs 0\n# B. it raises an exception\n# C. it outputs 1\n# D. it outputs 2\n\n# Lösung: B"
+  },
+  "375": {
+    "id": "375",
+    "text": "Which of the following statements are true? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "an escape sequence can be recognized by the / sign put in front of it",
+      "B": "II in ASCII stands for Internal Information",
+      "C": "ASCII is a subset of UNICODE",
+      "D": "a code point is a number assigned to a given character"
+    },
+    "answer": "CD",
+    "details": "# QUESTION 375\n# Which of the following statements are true? (Choose two.)\n\n# A. an escape sequence can be recognized by the / sign put in front of it\n# B. II in ASCII stands for Internal Information\n# C. ASCII is a subset of UNICODE\n# D. a code point is a number assigned to a given character\n\n# Lösung: CD "
+  },
+  "376": {
+    "id": "376",
+    "text": "What is the expected behavior of the following code? ",
+    "code": "string = '123' \ndummy = 0 \nfor character in reversed(string): \n\tdummy += int(character) \nprint(dummy) ",
+    "options": {
+      "A": "it outputs 321",
+      "B": "it outputs 123",
+      "C": "it outputs 6",
+      "D": "it raises an exception"
+    },
+    "answer": "C",
+    "details": "# QUESTION 376\n# What is the expected behavior of the following code?\n\nstring = '123'\ndummy = 0\nfor character in reversed(string): # '321'\n    dummy += int(character)\n\nprint(dummy)\n\n# \"Schreibtischtest\"\n# 6\n\n# A. it outputs 321\n# B. it outputs 123\n# C. it outputs 6\n# D. it raises an exception\n\n# Lösung: C\n"
+  },
+  "377": {
+    "id": "377",
+    "text": "A Python module named pymod.py contains a variable named pyvar. Which of the following snippets will let you access the variable? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "import pymod\npymod.pyvar = 1 ",
+      "B": "import pyvar from pymod\npyvar = 1 ",
+      "C": "from pymod import pyvar\npyvar() ",
+      "D": "from pymod import *\npyvar = 1 "
+    },
+    "answer": "AD",
+    "details": "# QUESTION 377\n# A Python module named pymod.py contains a variable named pyvar.\n# Which of the following snippets will let you access the variable? (Choose two.)\n\n# A. True\nimport pymod\npymod.pyvar = 1\n# B. False \nimport pyvar from pymod\npyvar = 1\n# C. False\nfrom pymod import pyvar\npyvar() # Funktionsaufruf statt Variable\n# pyvar = 3\n# D. True \nfrom pymod import *\npyvar = 1"
+  },
+  "378": {
+    "id": "378",
+    "text": "Which of the following expressions evaluate to True? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "ord('a') - ord('A') == ord('0')",
+      "B": "len(\"\"\" \"\"\") > 0",
+      "C": "chr(ord('a') + 1) == 'B'",
+      "D": "len('\\'') == 1 # ' \\' '"
+    },
+    "answer": "BD",
+    "details": "# QUESTION 378\n# Which of the following expressions evaluate to True? (Choose two.)\n\n# A. False\nord('a') - ord('A') == ord('0')\n# Ziffern ab 48, Kleinbuchstaben ab 97, Großbuchstaben ab 65\n# B. True\nlen(\"\"\" \"\"\") > 0 # \\n würde auch zählen\n# C. \nchr(ord('a') + 1) == 'B' # 'b'\n# D. True\nlen('\\'') == 1 # ' \\' '\n"
+  },
+  "379": {
+    "id": "379",
+    "text": "What is the expected output of the following code if the file named non_zero_length_existing_text_file is a non-zero length file located inside the working directory?",
+    "code": "try: \n\tf = open('non_zero_length_existing_text_file', 'rt') \n\td = f.read(1) \n\tprint(len(d)) \n\tf.close() \nexcept IOError: \n\tprint(-1) ",
+    "options": {
+      "A": "-1",
+      "B": "0",
+      "C": "an errno value corresponding to file not found",
+      "D": "1"
+    },
+    "answer": "D",
+    "details": "# QUESTION 379\n# What is the expected output of the following code if the file named \n# non_zero_length_existing_text_file is a\n# non-zero length file located inside the working directory?\n\ntry:\n    f = open('non_zero_length_existing_text_file', 'rt')\n    d = f.read(1) # 987654321, liest ein Zeichen und behält die Position in der Datei    \n    print(len(d)) # Länge: 1\n    f.close()\nexcept IOError:\n    print(-1)\n\n# 1\n\n# A. -1\n# B. 0\n# C. an errno value corresponding to file not found\n# D. 1\n\n# Lösung: D\n\ntry:\n    f = open('namensliste.txt', 'rt')\n    d = f.read() # komplette Datei auf einmal einlesen. \n    print(len(d)) # Länge: 1\n    f.close()\nexcept IOError:\n    print(-1)\n\n\n# try:\n#     f = open('namensliste.txt', 'rt')\n#     d = f.read(2,5) # komplette Datei auf einmal einlesen. \n#     print(d) \n#     f.close()\n# except IOError:\n#     print(-1)"
+  },
+  "380": {
+    "id": "380",
+    "text": "Assuming that the code below has been executed successfully, which of the expressions evaluate to True? (Choose two.)",
+    "code": "class Class: \n\tvar = 1 \n\tdef __init__(self, value): \n\t\tself.prop = value\n\nObject = Class(2) ",
+    "options": {
+      "A": "'var' in Class.__dict__",
+      "B": "'var' in Object.__dict__",
+      "C": "len(Object.__dict__ ) == 1",
+      "D": "'prop' in Class.__dict__"
+    },
+    "answer": "AC",
+    "details": "# QUESTION 380\n# Assuming that the code below has been executed successfully, which of the \n# expressions evaluate to True?\n# (Choose two.)\nclass Class:\n    var = 1 # Klassenvariable\n    def __init__(self, value):\n        self.prop = value\n\nObject = Class(2)\n\n# __dict__ liefert ein dictionary mit Klassen / Instanzvariablen\n# A. True\n'var' in Class.__dict__\nprint(Class.__dict__)\n# B. False\n'var' in Object.__dict__ # var ist eine Klassenvariable und KEINE Instanzvariable, sodass\n# wir diese im dict von Object nicht finden können\n# # C. True\nlen(Object.__dict__) == 1 # nur self.prop\nprint(Object.__dict__)\n# D. False # Instanzvariable gehört in das dict von Object, nicht Class\n'prop' in Class.__dict__\n\n\nclass A:\n    def __init__(self):\n        self.x = 1\n        self.y = 2\n    def test(self):\n        pass\n\nclass B(A):\n    def __init__(self):\n        # super() muss immer aufgerufen werden, damit das Objekt vollständig ist.\n        # Sonst taucht weder x, noch y im dict des Objekts auf.\n        # Zugriff auf x ohne super()\n        super().__init__()\n        self.z = 3\n\nb = B() \nb.test()\n# b.x = 8\n# print(b.x) # 1 ?\nprint(b.__dict__) # nur\n\n\n"
+  },
+  "381": {
+    "id": "381",
+    "text": "What is the expected behavior of the following code?",
+    "code": "the_list = \"1, 2, 3\".split() \nthe_string = ''.join(the_list) \nprint(the_string.isdigit()) ",
+    "options": {
+      "A": "it raises an exception",
+      "B": "it outputs nothing",
+      "C": "it outputs True",
+      "D": "it outputs False"
+    },
+    "answer": "D",
+    "details": "# QUESTION 381\n# What is the expected behavior of the following code?\n\nthe_list = \"1, 2, 3\".split() # ['1,','2,','3']\nthe_string = ''.join(the_list) # '1,2,3'\n\n# the_list2 = the_string.split(',') # ['1', '2', '3']\n# print(''.join(the_list2).isdigit()) # True\n# isdigit() schaut, ob in einem String nur Ziffern stehen. \n# the_string.isalnum() # Alle Ziffern und alle Buchstaben\n# the_string.isalpha() # nur Buchstaben\nprint(the_string.isdigit()) # isdigit() True, wenn '123', es ist aber '1,2,3'\n# print(the_string[0].isdigit()) # '1,2,3' \n\n# A. it raises an exception\n# B. it outputs nothing\n# C. it outputs True\n# D. it outputs False\n\n# Lösung: D\n"
+  },
+  "382": {
+    "id": "382",
+    "text": "Assuming that the code below has been executed successfully, which of the following expressions will always evaluate to True? (Choose two.)",
+    "code": "import random \nv1=random.random()\nv2 = random.random() ",
+    "options": {
+      "A": "v1 == v2",
+      "B": "v1 < 1",
+      "C": "random.choice([1, 2, 3]) > 0",
+      "D": "len(random.sample([1, 2, 3], 1)) > 2"
+    },
+    "answer": "BC",
+    "details": "# QUESTION 382\n# Assuming that the code below has been executed successfully,\n#  which of the following expressions will\n# always evaluate to True? (Choose two.)\n\nimport random\nv1 = random.random()\n# seed: [0.883654734, 0.3523462536, 0.16542736284572, ...]\n# seed generiert nach Algorithmus deterministisch (IMMER) dieselbe Sequenz von Zufallszahlen\n# Mit dem seed wählst du eine davon aus.\nv2 = random.random()\n# A. False, SEHR unwahrscheinlich, dass zweimal dieselbe Zahl gezogen wird. \n# Außerdem: Kein seed \nv1 == v2\n# B. True, weil bis 0.9999999999999\nv1 < 1\n# C. True, ein Element wird \"gewürfelt\"\nrandom.choice([1, 2, 3]) > 0 \n# D. False, weil nur ein Listenelement gezogen wird. \nlen(random.sample([1, 2, 3], 1)) > 2\n"
+  },
+  "383": {
+    "id": "383",
+    "text": "With regards to the directory structure below, select the proper forms of the directives in order to import module_b. (Choose two.)",
+    "code": "pypack (dir) \n| \n|-- upper (dir) \n| | \n| |-- lower (dir) \n| | | \n| | |_module_c.py(file) \n| | \n| |_ module_b.py (file) \n| \n|_ module_a.py (file) ",
+    "options": {
+      "A": "from pypack.upper import module_b",
+      "B": "import pypack.upper.module_b",
+      "C": "import upper_module_b",
+      "D": "import module_b"
+    },
+    "answer": "AB",
+    "details": "# QUESTION 383\n# With regards to the directory structure below, select the proper forms of the \n# directives in order to import\n# module_b. (Choose two.)\n\npypack (dir)\n|\n|-- upper (dir)\n| |\n| |-- lower (dir)\n| | |\n| | |_ module_c.py (file)\n| |\n| |_ module_b.py (file)\n|\n|_ module_a.py (file)\n\n# A. True, man muss immer den \"Pfad\" angeben\nfrom pypack.upper import module_b\n# B. True, Variante ohne from\nimport pypack.upper.module_b # as modb\n# pypack.upper.module_b.var\n# C. False\nimport upper_module_b\n# D. False\nimport module_b"
+  },
+  "384": {
+    "id": "384",
+    "text": "Which of the following lines of code will work flawlessly when out independently inside the inc() method in order to make the snippet's output equal to 3? (Choose two.)",
+    "code": "class MyClass: \n\tVar=0 \n\tdef __init__(self): \n\t\tMyClass.Var+=1\n\t\tself.prop = MyClass.Var\n\n\tdef get(self): \n\t\treturn self.prop\n\n\tdef put(self, val): \n\t\tself.prop = val\n\n\tdef inc(self, val):\n\t\t# insert the line of code here\n\nObject = MyClass() \nObject.inc(2) \nprint(Object.get()) ",
+    "options": {
+      "A": "put(self.prop + val)",
+      "B": "self.put(get() + val)",
+      "C": "self.put(self.get() + val)",
+      "D": "self.put(self.prop + val)"
+    },
+    "answer": "CD",
+    "details": "# QUESTION 384\n# Which of the following lines of code will work flawlessly when out independently inside 7\n# the inc() method in order to make the snippet's output equal to 3? (Choose two.)\n# def put(x):\n#     print(\"Hallo\")\n\nclass MyClass:\n    Var = 0\n    def __init__(self):\n        MyClass.Var += 1\n        self.prop = MyClass.Var\n    def get(self):\n        return self.prop\n    def put(self, val):\n        self.prop = val\n    def inc(self, val):\n        # insert the line of code here\n\nObject = MyClass()\nObject.inc(2)\nprint(Object.get())\n\n# A. put(self.prop + val) # False, keine self-Bindung\n# B. self.put(get() + val) # False, keine self-Bindung\n# C. self.put(self.get() + val)\n# D. self.put(self.prop + val)\n\n# Lösung: CD"
+  },
+  "385": {
+    "id": "385",
+    "text": "What is the expected output of the following code? ",
+    "code": "import sys \nb1 = type(dir(sys)) is str \nb2 = type(sys.path[-1]) is str \nprint(b1 and b2) ",
+    "options": {
+      "A": "False",
+      "B": "0",
+      "C": "None",
+      "D": "True"
+    },
+    "answer": "A",
+    "details": "# QUESTION 385\n# What is the expected output of the following code?\n\nimport sys\nb1 = type(dir(sys)) is str # list\nb2 = type(sys.path[-1]) is str # string\nprint(b1 and b2) # False, da list und string\n\n# A. False\n# B. 0\n# C. None\n# D. True\n\n# Lösung: A "
+  },
+  "386": {
+    "id": "386",
+    "text": "What is true about Python class constructors? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "there can be only one constructor in a Python class",
+      "B": "the constructor cannot be invoked directly under any circumstances",
+      "C": "the constructor cannot return a result other than None",
+      "D": "the constructor's first parameter must always be named self"
+    },
+    "answer": "AC",
+    "details": "# QUESTION 386\n# What is true about Python class constructors? (Choose two.)\n\n# A. there can be only one constructor in a Python class\n# True, es kann nur einen geben ;-)\n# B. the constructor cannot be invoked directly under any circumstances\n# False, klar kann der Konstruktor bei Erzeugung des Objektes aufgerufen werden.\n# False, z.B. Elternklasse kann einen Konstruktor einer Kindklasse nicht aufrufen.\n# Oder: Rekursionsprobleme, wenn man ihn aus eigener Klasse aufruft.\n# C. the constructor cannot return a result other than None\n# True, Konstruktor initialisiert eine leere Hülle, gibt aber nichts zurück.\n# D. the constructor's first parameter must always be named self\n# Nein, man kann ihn auch hirsebrei nennen. \n\n# Lösung: AC\n\n# class Test:\n#     def __init__(self):\n#         self.__init__()\n\n# t = Test()"
+  },
+  "387": {
+    "id": "387",
+    "text": "What is the expected behavior of the following code? ",
+    "code": "def foo(x,y): \n\treturn y(x) + y(x+1)\n\nprint(foo(1, lambda x: x*x)) ",
+    "options": {
+      "A": "4",
+      "B": "3",
+      "C": "an exception is raised",
+      "D": "5"
+    },
+    "answer": "D",
+    "details": "# QUESTION 387\n# What is the expected behavior of the following code?\n\ndef foo(x, y): # y ist lambda Funktion, Funktionen können ganz normal als Argument übergeben werden.\n    return y(x) + y(x+1) # 1*1 + 2*2, Funktion wird erst mit () ausgeführt. \n\nprint(foo(1, lambda x: x*x))\n\n# This makes me happy\n\n# A. 4\n# B. 3\n# C. an exception is raised\n# D. 5\n\n# Lösung: D\n"
+  },
+  "388": {
+    "id": "388",
+    "text": "Assuming that the following inheritance set is in force, which of the following classes are declared properly? (Choose two.)",
+    "code": "class A: \n\tpass\n\nclass B(A): \n\tpass\n\nclass C(A): \n\tpass\n\nclass D(B, C): \n\tpass ",
+    "options": {
+      "A": "class Class_3(A, C): pass",
+      "B": "class Class_4(C, B): pass",
+      "C": "class Class_1(D, A): pass",
+      "D": "class Class_2(A, B): pass"
+    },
+    "answer": "BC",
+    "details": "# QUESTION 388\n# Assuming that the following inheritance set is in force, which of the \n# following classes are declared properly?\n# (Choose two.)\n\nclass A:\n    pass\nclass B(A):\n    pass\nclass C(A):\n    pass\nclass D(B, C):\n    pass\n\n# A. False, da A Superklasse zuerst\nclass Class_3(A, C): pass\n# B. # True verschiedene Vererbungslinien\nclass Class_4(C, B): pass\n# C. True, da Subklasse prioritär \nclass Class_1(D, A): pass\n# D. False, da A allgemeiner \nclass Class_2(A, B): pass"
+  },
+  "389": {
+    "id": "389",
+    "text": "What is the expected behavior of the following code? ",
+    "code": "s = '2A' \ntry: \n\tn = int(s) \nexcept ValueError: \n\tn = 2 \nexcept ArithmeticError: \n\tn = 1 \nexcept: \n\tn = 0 \nprint(n) ",
+    "options": {
+      "A": "it outputs 0",
+      "B": "the code is erroneous and it will not execute",
+      "C": "it outputs 1",
+      "D": "it outputs 2"
+    },
+    "answer": "D",
+    "details": "# QUESTION 389\n# What is the expected behavior of the following code?\n\ns = '2A'\ntry:\n    n = int(s)\nexcept ValueError:\n    n = 2\nexcept ArithmeticError:\n    n = 1\nexcept:\n    n = 0\nprint(n)\n\n# A. it outputs 0\n# B. the code is erroneous and it will not execute\n# C. it outputs 1\n# D. it outputs 2\n\n# Lösung: D"
+  },
+  "390": {
+    "id": "390",
+    "text": "Which of the following expressions evaluate to True? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "'in' in 'Thames'",
+      "B": "'in' in 'in'",
+      "C": "'innot' in 'not'",
+      "D": "'t'.upper() in 'Thames'"
+    },
+    "answer": "BD",
+    "details": "# QUESTION 390\n# Which of the following expressions evaluate to True? (Choose two.)\n\n# A. False\n'in' in 'Thames'\n# B. True\n'in' in 'in'\n# C. False\n'in not' in 'not'\n# D. True\n't'.upper() in 'Thames'\n# 'T' in 'Thames' \n"
+  },
+  "391": {
+    "id": "391",
+    "text": "What is the expected behavior of the following code?",
+    "code": "class Class: \n\tVariable = 0 \n\tdef __init__(self): \n\t\tself.value = 0\n\nobject_1 = Class() \nClass.Variable += 1 \nobject_2 = Class() \nobject_2.value += 1 \nprint(object_2.Variable + object_1.value) ",
+    "options": {
+      "A": "it outputs 2",
+      "B": "it raises an exception",
+      "C": "it outputs 1",
+      "D": "it outputs 0"
+    },
+    "answer": "C",
+    "details": "# QUESTION 391\n# What is the expected behavior of the following code?\n\nclass Class:\n    Variable = 0\n    def __init__(self):\n        self.value = 0\n\nobject_1 = Class()\nClass.Variable += 1\n\n# object_1.Variable = 8 # Hier würde eine NEUE Instanzvariable angelegt werden.\n# object_1.Variable += 1 # Hier Zugriff auf Klassenvariable wie bei Zeile 21, wegen +=\n\nobject_2 = Class()\nobject_2.value += 1\n#             1                  0\n# object_2.Variable ist 1, da keine Instanzvariable \n# Variable existiert, dann nimmt er die Klassenvariable und die\n# ist für alle Objekte gleich. \nprint(object_2.Variable + object_1.value)"
+  },
+  "392": {
+    "id": "392",
+    "text": "Which of the following invocations are valid? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "sort(\"python\")",
+      "B": "\"python\".find(\"\")",
+      "C": "\"python\".rindex(\"th\")",
+      "D": "\"python\".sorted()"
+    },
+    "answer": "BC",
+    "details": "# QUESTION 392\n# Which of the following invocations are valid? (Choose two.)\n\n# A. \nsort(\"python\")\n# B. \n\"python\".find(\"\")\n# C. \n\"python\".rindex(\"th\")\n# D. \n\"python\".sorted()\n\n# sorted liefert Kopie ! als sortierte Liste\n# liste.sort() sortiert auf dem Original\n# sort() hat immer Objektbindung\n# sorted() ohne Objektbindung. \n\n# Lösung: BC"
+  },
+  "393": {
+    "id": "393",
+    "text": "What is the expected output of the following snippet?",
+    "code": "class Upper: \n\tdefinit(self): \n\t\tself.property = 'upper'\n\nclass Lower(Upper): \n\tdef __init__(self): \n\t\tsuper().__init__()\n\nObject = Lower() \nprint(isinstance(Object, Lower), end=' ') \nprint(Object.property) ",
+    "options": {
+      "A": "True lower",
+      "B": "True upper",
+      "C": "False upper",
+      "D": "False lower"
+    },
+    "answer": "B",
+    "details": "# QUESTION 393\n# What is the expected output of the following snippet?\n\nclass Upper:\n    def __init__(self):\n        self.property = 'upper'\n\nclass Lower(Upper):\n    def __init__(self):\n        super().__init__() # Alle Objekte vom Typ Lower bekommen dann\n        # die Properties von Upper mit, bei Weglassen dieses Aufrufs kommt es in\n        # Zeile 17 zu einem AttributeError ! \n        # pass\n\nObject = Lower()\nprint(isinstance(Object, Lower), end=' ') # True\nprint(Object.property) # upper\n\n# A. True lower\n# B. True upper\n# C. False upper\n# D. False lower"
+  },
+  "394": {
+    "id": "394",
+    "text": "Assuming that the snippet below has been executed successfully, which of the following expressions evaluate to True? (Choose two.) ",
+    "code": "string = 'SKY'[::-1] \nstring = string[-1] ",
+    "options": {
+      "A": "string[0] == 'Y'",
+      "B": "string[0] == string [-1]",
+      "C": "string is None",
+      "D": "len(string) == 1"
+    },
+    "answer": "BD",
+    "details": "# QUESTION 394\n# Assuming that the snippet below has been executed successfully, \n# which of the following expressions\n# evaluate to True? (Choose two.)\n\nstring = 'SKY'[::-1] # 'YKS'\nstring = string[-1] # 'S'\n\n# A. False, da Y != S\nstring[0] == 'Y'\n# B. True, da nur einen Buchstaben im String \nstring[0] == string [-1] \n# C. False\nstring is None\n# D. True \nlen(string) == 1\n\n# Lösung: BD\n"
+  },
+  "395": {
+    "id": "395",
+    "text": "Assuming that the code below has been placed inside a file named code.py and executed successfully, which of the following expressions evaluate to True?(Choosetwo.)",
+    "code": "classClassA:\n\tvar = 1 \n\tdef __init__(self, prop): \n\t\tprop1 = prop2 = prop\n\nclass ClassB(ClassA): \n\tdef __init__(self, prop): \n\t\tprop3 = prop ** 2 \n\t\tsuper().__init__(prop) \n\t\t\n\tdef __str__(self): \n\t\treturn 'Object'\n\nObject = ClassA(2)",
+    "options": {
+      "A": "ClassA.__module__ == '__main__'",
+      "B": "__name__ == '__main__'",
+      "C": "str(Object) == 'Object'",
+      "D": "len(ClassB.__bases__) == 2"
+    },
+    "answer": "AB",
+    "details": "# QUESTION 395\n# Assuming that the code below has been placed inside a file named code.py and \n# executed successfully, which of the following expressions evaluate to True? (Choose two.)\n\nclass ClassA:\n    var = 1\n    def __init__(self, prop):\n        prop1 = prop2 = prop\n\nclass ClassB(ClassA):\n    def __init__(self, prop):\n        prop3 = prop ** 2\n        super().__init__(prop)\n    def __str__(self):\n        return 'Object'\n\nObject = ClassA(2)\nprint(Object) # String-Repräsentation durch __str__() aus object\n# print(ClassA.__name__)\n# A. ClassA.__module__ == '__main__' # True, wenn code.py der Start des Programms\n# B. __name__ == '__main__' # True, __name__ ist nur für Klassen und Module\n# Namen eines Objektes / Instanz kann dann mit __str__() gesetzt werden. Und es gibt id()\n# C. str(Object) == 'Object' # False, da __str__() nur für Klasse B\n# D. len(ClassB.__bases__) == 2 # False, da len = 1 (nur direkte Eltern)\n\nstring1 = \"Hallo\"\nstring2 = \"Hallo\"\n# String-Pool in Python sorgt für die interne \n# Speicherverwaltung, sodass Strings mit demselben Inhalt\n# an derselben Stelle abgelegt werden. \nprint(id(string1) == id(string2))\nprint(string1 is string2)\n\n# eval()"
+  },
+  "396": {
+    "id": "396",
+    "text": "Which of the following expressions evaluate to True? (Select two answers)",
+    "code": "",
+    "options": {
+      "A": "11 == '011'",
+      "B": "3 * 'a' < 'a' * 2",
+      "C": "'abc'.upper() < 'abc'",
+      "D": "'1' + 2 * '2' != 2 * '12'"
+    },
+    "answer": "CD",
+    "details": "# QUESTION 396\n# Which of the following expressions evaluate to True? (Select two answers)\n\n# A. False, da zwei verschiedene Datentypen\n11 == '011'\n# B. False, da 'aaa' > 'aa' \n3 * 'a' < 'a' * 2\n# C. True, da 'A' < ' 'a'\n'abc'.upper() < 'abc' # __lt__() (<) in der Klasse String, code point, ...\n# D. True \n'1' + 2 * '2' != 2 * '12' # '122' != '1212'\n\n# \"ABCD\" < \"ABCDE\""
+  },
+  "397": {
+    "id": "397",
+    "text": "Which of the following invocations are valid? (Select two answers) ",
+    "code": "",
+    "options": {
+      "A": "sorted('python')",
+      "B": "'python'.sort()",
+      "C": "sort('python')",
+      "D": "'python'.find(' ')"
+    },
+    "answer": "AD",
+    "details": "# QUESTION 397\n# Which of the following invocations are valid? (Select two answers)\n\n# A. True \nsorted('python')\n# B. Die Klasse String enthält kein sort(), also False\n'python'.sort()\n# C. False \nsort('python')\n# D. True\n'python'.find(' ')"
+  },
+  "398": {
+    "id": "398",
+    "text": "What is the expected output of the following code? ",
+    "code": "def foo(x, y, z): \n\treturn x(y(z))\n\nprint(foo(lambda x: 2*x, lambda x: x//2, 2)) ",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "an exception is raised"
+    },
+    "answer": "A",
+    "details": "# QUESTION 398\n# What is the expected output of the following code?\ndef foo(x, y, z):\n    return x(y(z))\n\nprint(foo(lambda x: 2*x, lambda x: x//2, 2))\n\n# A. 2\n# B. 3\n# C. 4\n# D. an exception is raised\n\n# Lösung: A "
+  },
+  "399": {
+    "id": "399",
+    "text": "With regards to the directory structure below, select the proper forms of the directives in order to import module_c. (Select two answers)",
+    "code": "pypack (dir) \n| \n|-- upper (dir) \n| | \n| |-- lower (dir) \n| | | \n| | |_ module_c.py (file) \n| | \n| |_ module_b.py (file) \n| \n|_ module_a.py (file) ",
+    "options": {
+      "A": "from pypack.upper.lower import module_c",
+      "B": "import pypack.upper.lower.module_c",
+      "C": "import upper.module_c",
+      "D": "import upper.lower.module_c"
+    },
+    "answer": "AB",
+    "details": "# QUESTION 399\n# With regards to the directory structure below, select the proper forms of the directives \n# in order to import module_c. (Select two answers)\n\n# pypack (dir)\n# |\n# |-- upper (dir)\n# | |\n# | |-- lower (dir)\n# | | |\n# | | |_ module_c.py (file)\n# | |\n# | |_ module_b.py (file)\n# |\n# |_ module_a.py (file)\n\n# A. from pypack.upper.lower import module_c\n# B. import pypack.upper.lower.module_c\n# C. import upper.module_c\n# D. import upper.lower.module_c\n\n# Lösung: AB\n# Es muss immer der gesamte Pfad berücksichtigt werden.\n# Verwendung von Alias (as) bei B möglich.\n# Bei A:\n# hallo()\n# Bei B: Nutzung \n# pypack.upper.lower.module_c.hallo()"
+  },
+  "400": {
+    "id": "400",
+    "text": "Which of the following expression evaluate to True? (Select two answers) ",
+    "code": "",
+    "options": {
+      "A": "ord('0') - ord('9') == 10",
+      "B": "len('''12\n\t34''') == 4",
+      "C": "len(\"''\") == 2 # \" ' ' \"",
+      "D": "chr(ord('Z')-1) == 'Y'"
+    },
+    "answer": "CD",
+    "details": "# QUESTION 400\n# Which of the following expression evaluate to True? (Select two answers)\n\n# A. False, da 0 vor 9 in der Code-Point Logik liegt. \nord('0') - ord('9') == 10\n# B. False, da \\n Zeilenumbruch auch ein Zeichen ist\nlen('''12\n34''') == 4\n# C. True, da '' zwei Zeichen sind.\nlen(\"''\") == 2 # \" ' ' \"\n# D. True\nchr(ord('Z') - 1) == 'Y'\n\n# ... XYZ\n"
+  },
+  "401": {
+    "id": "401",
+    "text": "What is the expected output of the following code if existing_file is the name of a file located inside the working directory? ",
+    "code": "try: \n\tf = open('existing_file', 'w') \n\tprint(1, end=' ') \nexcept IOError as error: \n\tprint(error.errno, end=' ') \n\tprint(2, end=' ') \nelse: \n\tf.close()\n\tprint(3,end='') ",
+    "options": {
+      "A": "2 3",
+      "B": "1 3",
+      "C": "1 2",
+      "D": "1 2 3"
+    },
+    "answer": "B",
+    "details": "# QUESTION 401\n# What is the expected output of the following code if existing_file is the name of \n# a file located inside the working directory?\n\ntry:\n    f = open('existing_file', 'w') # bei 'w' wird eine neue Datei angelegt, \n    # SOLLTE sie nichte xistieren. Vorhandene Datei wird überschrieben. \n    # f.read() # auch bei w erzeugt Lesen eine Exception. \n    print(1, end=' ')\nexcept IOError as error: # auch: OSError\n    print(error.errno, end=' ')\n    print(2, end=' ')\nelse:\n    f.close()\n    print(3, end=' ')\n\n# 1 3 \n\n# r+ = rw\n# w+\n# rt = read text\n\n# A. 2 3\n# B. 1 3\n# C. 1 2\n# D. 1 2 3"
+  },
+  "402": {
+    "id": "402",
+    "text": "What is the expected output of the following code? ",
+    "code": "def foo(x,y,z): \n\treturn x(y) - x(z) \n\nprint(foo(lambda x: x % 2, 2, 1)) ",
+    "options": {
+      "A": "1",
+      "B": "-1",
+      "C": "an exception is raised",
+      "D": "0"
+    },
+    "answer": "B",
+    "details": "# QUESTION 402\n# What is the expected output of the following code?\n\ndef foo(x,y,z):\n    return x(y) - x(z)\n    #     2 % 2 - 1 % 2\n    #       0   -   1\n\nprint(foo(lambda x: x % 2, 2, 1))\n\n# A. 1\n# B. -1\n# C. an exception is raised\n# D. 0\n\n# Lösung: B"
+  },
+  "403": {
+    "id": "403",
+    "text": "Assuming that the math module has been successfully imported, which of the following expressions evaluate to True? (Select two answers) ",
+    "code": "",
+    "options": {
+      "A": "math.hypot(2,5) == math.trunc(2.5)",
+      "B": "math.floor(2.5) == math.trunc(2.5)",
+      "C": "math.ceil(2.5) == math.floor(2.5)",
+      "D": "math.hypot(3,4) == math.sqrt(25)"
+    },
+    "answer": "BD",
+    "details": "import math\n# QUESTION 403\n# Assuming that the math module has been successfully imported, which of the \n# following expressions evaluate to True? (Select two answers)\n\n# A. False\nmath.hypot(2,5) == math.trunc(2.5)\n# sqrt(2*2 + 5*5)     ==         2\n# B. True\nmath.floor(2.5) == math.trunc(2.5)\n#      2        ==       2\n# C. False\nmath.ceil(2.5) == math.floor(2.5)\n#      3        ==       2\n# D. True\nmath.hypot(3,4) == math.sqrt(25)\n# sqrt(3*3 + 4*4)     ==       sqrt(25)\n\n# Lösung: BD \n\nmath.ceil(3.3) # 4\nmath.ceil(-2.5) # -2\nmath.trunc(-5.8) # -5\nmath.trunc(99.8) # 99\nmath.floor(-7.2345) # -8\nmath.floor(9.542) # 9\n\n# This makes me happy ;-)\n"
+  },
+  "404": {
+    "id": "404",
+    "text": "Which of the following statements are true? (Select two answers) ",
+    "code": "",
+    "options": {
+      "A": "ASCII is the name of a character coding standard",
+      "B": "an escape sequence can be recognized by the # sign put in front of it.",
+      "C": "UTF-8 is one of the ways of representing UNICODE code points.",
+      "D": "a codepoint is a point inside the code when execution stops immediately"
+    },
+    "answer": "AC",
+    "details": "# QUESTION 404\n# Which of the following statements are true? (Select two answers)\n\n# A. ASCII is the name of a character coding standard\n# B. an escape sequence can be recognized by the # sign put in front of it.\n# Nein, da \\\n# C. UTF-8 is one of the ways of representing UNICODE code points.\n# True \n# D. a code point is a point inside the code when execution stops immediately\n# False, das heißt Breakpoint im Debugger \n\n# Lösung: AC\n"
+  },
+  "405": {
+    "id": "405",
+    "text": "Which of the following statement are true? (Select two answers) ",
+    "code": "",
+    "options": {
+      "A": "if open()'s second argument is 'w' and the invocation succeeds, the previous file's content is lost",
+      "B": "closing an open file is performed by the close file() function",
+      "C": "if open( )'s second argument is 'r' the file must exist or open will fail",
+      "D": "the second open( ) argument describes the open mode and defaults to 'w'"
+    },
+    "answer": "AC",
+    "details": "# QUESTION 405\n# Which of the following statement are true? (Select two answers)\n\n# A. if open( )'s second argument is 'w' and the invocation succeeds,\n# the previous file's content is lost\n# True, es gibt write (w) und append (a), write überschreibt ! \n# B. closing an open file is performed by the closefile( ) function \n# False, es heißt f.close()\n# C. if open( )'s second argument is 'r' the file must exist or open will fail\n# True\n# D. the second open( ) argument describes the open mode and defaults to 'w'\n# False, Default 'rt' "
+  },
+  "406": {
+    "id": "406",
+    "text": "What is true about Python packages? (Select two answers) ",
+    "code": "",
+    "options": {
+      "A": "a code designed to initialize a package's state should be placed inside a file named init.py",
+      "B": "a package contents can be stored and distributed as an mp3 file",
+      "C": "_pycache_is a folder that stores semi-completed Python modules",
+      "D": "the sys.path variable is a list of strings"
+    },
+    "answer": "CD",
+    "details": "# QUESTION 406\n# What is true about Python packages? (Select two answers)\n\n# A. a code designed to initialize a package's state should be placed inside \n# a file named init.py\n# __init__.py : Initialisierungsdatei für Pakete, um Konfigurationen, imports, etc. durchzuführen.\n# wird in dem Ordner des Paktes abgelegt. \n\n# B. a package contents can be stored and distributed as an mp3 file\n# False, mp3 ist Audio\n\n# C. _pycache_is a folder that stores semi-completed Python modules\n# True, enthält Bytecode-Dateien, die bei Bedarf neu übersetzt werden (zwischengespeichert)\n\n# D. the sys.path variable is a list of strings\n# True, sys.path[-1] ist ein String; sys.path enthält eine Liste von Strings\n"
+  },
+  "407": {
+    "id": "407",
+    "text": "What is the expected behavior of the following code?",
+    "code": "class Class: \n\t_Var = 1\n\t__Var = 2\n\tdef __init__(self):\n\t\tself._prop = 3\n\t\tself __ prop = 4\n\no = Class() \nprint(o._Class__Var + o._Class__prop) ",
+    "options": {
+      "A": "it raises an exception",
+      "B": "it outputs 1",
+      "C": "it outputs 3",
+      "D": "it outputs 6"
+    },
+    "answer": "D",
+    "details": "# QUESTION 407\n# What is the expected behavior of the following code?\n\nclass Class:\n    _Var = 1\n    __Var = 2\n    def __init__(self):\n        self._prop = 3\n        self.__prop = 4\n        # self.__Var\n\no = Class()\nprint(o._Class__Var + o._Class__prop)\n        # 2 + 4 = 6\n# richtiger: \n# print(Class._Class__Var + o._Class__prop)\n\n\n# A. it raises an exception\n# B. it outputs 1\n# C. it outputs 3\n# D. it outputs 6\n\n# Lösung: D"
+  },
+  "408": {
+    "id": "408",
+    "text": "Which of the following lines of code will work flawlessly when put independently inside the dup() method in order to make the snippet's output equal to [0, 1, 1] ? (Select two answers)",
+    "code": "classMyClass: \n\tdef __init__(self, initial): \n\t\tself.store = initial \n\n\tdef put(self, new): \n\t\tself.store.append(new) \n\n\tdef get(self): \n\t\treturn self.store \n\n\tdef dup(self): \n\t\t# Insert the line of code here\n\nObject=MyClass([0])\nObject.put(1)\nObject.dup()\nprint(Object.get()) ",
+    "options": {
+      "A": "put(self.store[1])",
+      "B": "self.put(self.store[1])",
+      "C": "self.put(self.get()[-1])",
+      "D": "self.put(store[1])"
+    },
+    "answer": "BC",
+    "details": "# QUESTION 408\n# Which of the following lines of code will work flawlessly when put independently\n# inside the dup() method in order to make the snippet's output equal to [0, 1, 1] ? \n# (Select two answers)\n\nclass MyClass:\n    def __init__(self, initial):\n        self.store = initial\n    def put(self, new):\n        self.store.append(new)\n    def get(self):\n        return self.store\n    def dup(self):\n        pass\n        # Insert the line of code here\nObject = MyClass([0])\nObject.put(1)\nObject.dup()\nprint(Object.get())\n# A. put(self.store[1])\n# B. self.put(self.store[1])\n# C. self.put(self.get()[-1])\n# D. self.put(store[1])\n\n# Lösung: BC, da self-Referenz fehlt, um Objektbindung herzustellen. "
+  },
+  "409": {
+    "id": "409",
+    "text": "What is the expected output of the following code if there is no file named non_existing_file inside the working directory?",
+    "code": "try: \n\tf = open('non_existing_file', 'r') \n\tprint(1, end=' ') \nexcept IOError as error: \n\tprint(error.errno, end=' ') \n\tprint(2, end=' ') \nelse: \n\tf.close() \n\tprint(3, end=' ') ",
+    "options": {
+      "A": "2 2",
+      "B": "1 3",
+      "C": "1 2 3",
+      "D": "2 2 3"
+    },
+    "answer": "A",
+    "details": "# QUESTION 409\n# What is the expected output of the following code if there is no file named non_existing_file \n# inside the working directory?\n\ntry:\n    f = open('non_existing_file2', 'r')\n    print(1, end=' ')\nexcept IOError as error: # OSError\n    print(error.errno, end=' ') # Error number 2\n    print(2, end=' ')\nelse:\n    f.close()\n    print(3, end=' ')\n\n\n# A. 2 2\n# B. 1 3\n# C. 1 2 3\n# D. 2 2 3"
+  },
+  "410": {
+    "id": "410",
+    "text": "Which of the following lambda function definitions are correct? (Select two answers) ",
+    "code": "",
+    "options": {
+      "A": "lambda x: None",
+      "B": "lambda: 3.1415",
+      "C": "lambda x: def fun(): return x",
+      "D": "lambda lambda: lambda * lambda"
+    },
+    "answer": "AB",
+    "details": "# QUESTION 410\n# Which of the following lambda function definitions are correct? (Select two answers)\n\n# A. lambda x: None # True\n# B. lambda: 3.1415 # True\n# C. lambda x: def fun(): return x # False, da Schlüsselwortverwendung in lambda\n# D. lambda lambda: lambda * lambda # False, weil Schlüsselwort lambda ;-)\n\npieeeeeh = lambda: 3.1415\npieeeeeh()\n\ndef pieeeeeh_func():\n    return 3.1415"
+  },
+  "411": {
+    "id": "411",
+    "text": "What is true about Python class constructors? (Select two answers) ",
+    "code": "",
+    "options": {
+      "A": "the constructor's first parameter identifies an object currently being created",
+      "B": "the constructor cannot use the default values of the parameters",
+      "C": "the constructor can be invoked directly under strictly defined circumstances",
+      "D": "super-class constructor is invoked implicitly during constructor execution"
+    },
+    "answer": "AD",
+    "details": "# QUESTION 411\n# What is true about Python class constructors? (Select two answers)\n\n# A. the constructor's first parameter identifies an object currently being created\n# True (self)\n# B. the constructor cannot use the default values of the parameters\n# False \n# C. the constructor can be invoked directly under strictly defined circumstances\n# False \n# D. super-class constructor is invoked implicitly during constructor execution\n# False \n\n# Lösung: AD\n# Diskussionsbedarf, da keine Eindeutigkeit besteht. C und D sind beide teilweise richtig. \n# __new__() ist in D gemeint.\n\nclass A:\n    def __init__(self):\n        self.x = 10\n    def meth(self):\n        print(\"Hi aus A\")\n\nclass B(A):\n    def __init__(self):\n        pass\n\n# print(B().x) # AttributeError: 'B' object has no attribute 'x'\nB().meth() # Nicht wegen Konstruktor, sondern wegen de class-Definition\n\n# __new__(self): Erzeugt einen neuen Speicherbereich (Hülle) für das Objekt \n# Hier der \"Konstruktor\"\n# __init__(self): Befüllt das Objekt mit konkreten Instanzvariablen \n# \"Initialisator\""
+  },
+  "412": {
+    "id": "412",
+    "text": "What is the expected behavior of the following code?",
+    "code": "class Class: \n\tVariable = 0 \n\tdef __init__(self): \n\t\tself.value = 0\n\nobject_1 = Class() \nobject_1.Variable += 1 \nobject_2 = Class() \nobject_2.value += 1 \nprint(object_2.Variable + object_1.value) ",
+    "options": {
+      "A": "it outputs 1",
+      "B": "it outputs 0",
+      "C": "it raises an exception",
+      "D": "it outputs 2"
+    },
+    "answer": "B",
+    "details": "# QUESTION 412\n# What is the expected behavior of the following code?\n\nclass Class:\n    Variable = 0\n    def __init__(self):\n        self.value = 0\n\nobject_1 = Class()\nobject_1.Variable += 1  # object_1.Variable = object_1.Variable+ 1 \n# object_1.Variable (neue Instanzvariable für object_1) = object_1.Variable (Klassenvariable!!) + 1\n# Klassenvariable deshalb, da zu dem Zeitpunkt object_1.Variable als Instanzvariable noch nicht existiert\n# hat, daher Auflösung in Klassenvariable. \nobject_2 = Class()\nobject_2.value += 1 \nprint(object_2.Variable + object_1.value)\n#           0           +       0\n\n# A. it outputs 1\n# B. it outputs 0\n# C. it raises an exception\n# D. it outputs 2\n\n# Lösung: B"
+  },
+  "413": {
+    "id": "413",
+    "text": "What is true about Python packages? (Select two answers) ",
+    "code": "",
+    "options": {
+      "A": "the __name__ variable content determines the way in which the module was run",
+      "B": "a package can be stored as a tree of sub-directories/sub-folders",
+      "C": "pycache is the name of a built-in variable",
+      "D": "hashbang is the name of a built-in Python function"
+    },
+    "answer": "AB",
+    "details": "# What is true about Python packages? (Select two answers)\n\n# A. the __name__ variable content determines the way in which the module was run\n\n# ist der name des moduls , wenn das modul von wonaders ausgeführt wurde sonst wird __main__ augegeben.\n\n# B. a package can be stored as a tree of sub-directories/sub-folders\n# C. __pycache__ is the name of a built-in variable\n# D. hashbang is the name of a built-in Python function \n# #! \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n# A. Der Inhalt der Variablen __name__ bestimmt, wie das Modul ausgeführt wurde.\n\n#     Wenn ein Modul direkt ausgeführt wird, ist __name__ gleich \"__main__\". Wenn es importiert wird, enthält __name__ den Modulnamen.\n\n# B. Ein Paket kann als ein Baum von Unterverzeichnissen/Unterordnern gespeichert werden.\n\n#     Ein Python-Paket besteht aus einem Verzeichnis, das eine Datei __init__.py und weitere Module oder Unterpakete enthalten kann.\n\n# Die anderen Optionen sind falsch:\n\n#     C. __pycache__ ist kein eingebautes Python-Variablenname, sondern ein Verzeichnis, in dem Python kompilierte Bytecode-Dateien speichert.\n#     D. \"Hashbang\" ist keine eingebaute Python-Funktion, sondern ein Begriff für den Shebang (#!), der häufig in Skripten verwendet wird, um den Pfad zum Python-Interpreter anzugeben."
+  },
+  "414": {
+    "id": "414",
+    "text": "What is true about Object-Oriented Programming in Python? (Select two answers) ",
+    "code": "",
+    "options": {
+      "A": "encapsulation allows you to protect some data from uncontrolled access",
+      "B": "the arrows on a class diagram are always directed from a superclass towards its subclass",
+      "C": "inheritance is the relation between a superclass and a subclass",
+      "D": "an object is a recipe for a class"
+    },
+    "answer": "AC",
+    "details": "# What is true about Object-Oriented Programming in Python? (Select two answers)\n\n# A. encapsulation allows you to protect some data from uncontrolled access True\n \n# B. the arrows on a class diagram are always directed from a superclass towards its subclass\n\n# A = superclass \n# B = sub klass\n\n#was b sagt A -> B\n\n#aber B -> A \n\n# C. inheritance is the relation between a superclass and a subclass true \n# D. an object is a recipe for a class"
+  },
+  "415": {
+    "id": "415",
+    "text": "What is the expected behavior of the following code? ",
+    "code": "the_string = ',,'.join(('alpha', 'omega')) \nthe_list = the_string.split(',') \nprint(',' in the_list) ",
+    "options": {
+      "A": "It outputs False",
+      "B": "It outputs nothing",
+      "C": "It outputs True",
+      "D": "It raises an exception"
+    },
+    "answer": "A",
+    "details": "# What is the expected behavior of the following code?\n\nthe_string = ',,'.join(('alpha', 'omega'))\nthe_list = the_string.split(',')\nprint(',' in the_list)\n\n# A. It outputs False (wahr)\n# B. It outputs nothing\n# C. It outputs True\n# D. It raises an exception\n\n\n\nprint(the_string)\nprint(the_list)\nprint(len(the_list))"
+  },
+  "416": {
+    "id": "416",
+    "text": "Assuming that the following code has been executed successfully, select the expressions which evaluate to True (Select two answers) ",
+    "code": "var = 1 \ndef f(): \n\tglobal var \n\tvar += 1 \n\tdef g(): \n\t\treturn var \n\n\treturn g\n\na = f() \nb = f() ",
+    "options": {
+      "A": "a is b",
+      "B": "b() > 2",
+      "C": "a() == 2",
+      "D": "a is not None"
+    },
+    "answer": "BD",
+    "details": "# QUESTION 416\n# Assuming that the following code has been executed successfully, select the expressions which evaluate to\n# True (Select two answers)\nvar = 1\n\ndef f():\n    global var\n    var += 1\n\n    def g():\n        return var # A. a is b \n                    # B. b() > 2\n                    # C. a() == 2\n                    # D. a is not None\n    return g\na = f() #() -> int \nprint(a())\nb = f()\nprint(b())\nc=f()\nprint(b())\nprint(a())\nprint(b())\nprint(a)\nprint(b)\nprint(a is b) #False\nprint(b()>2) #true\nprint(a()==2) #False\nprint(a is not None) #true\n\n# A. a is b\n# B. b() > 2\n# C. a() == 2\n# D. a is not None"
+  },
+  "417": {
+    "id": "417",
+    "text": "What is the expected output of the following code? ",
+    "code": "myli = range(-2,2) \nm = list(filter(lambda x: True if abs(x) < 1 else False, myli)) \nprint(len(m)) ",
+    "options": {
+      "A": "4",
+      "B": "16",
+      "C": "an exception is raised",
+      "D": "1"
+    },
+    "answer": "D",
+    "details": ""
+  },
+  "418": {
+    "id": "418",
+    "text": "Which of the following expressions evaluate to True? (Select two answers) ",
+    "code": "",
+    "options": {
+      "A": "'t'.upper() in 'Thames'",
+      "B": "'in not' in 'not'",
+      "C": "'not' not in 'in'",
+      "D": "'a' not in 'ABC'.lower()"
+    },
+    "answer": "AC",
+    "details": ""
+  },
+  "419": {
+    "id": "419",
+    "text": "Assuming that the following piece of code has been executed successfully, which of the expressions evaluate to True? (Select two answers)",
+    "code": "classA:\n\t__VarA = 1\n\tdef get(self):\n\t\treturn self.__VarA\n\nclass B(A):\n\t__VarA = 2\n\tdef get(self):\n\t\treturn self.__VarA\n\nclass C(B):\n\t__VarA = 3\n\nobj_a = A()\nobj_b = B()\nobj_c = C()",
+    "options": {
+      "A": "isinstance(obj_b, C)",
+      "B": "C._C__VarA == 2",
+      "C": "hasattr(B, 'get')",
+      "D": "obj_c.get() == 2"
+    },
+    "answer": "CD",
+    "details": ""
+  },
+  "420": {
+    "id": "420",
+    "text": "Assuming that the following piece of code has been executed successfully, which of the expressions evaluate to True? (Select two answers)",
+    "code": "class A: \n\tVarA = 1 \n\tdef __init__(self): \n\t\tself.prop_a = 1\n\nclass B(A): \n\tVarA = 2 \n\tdef __init__(self): \n\t\tself.prop_a = 2 \n\t\tself.prop_aa = 2\n\nclass C(B): \n\tVarA = 3 \n\tdef __init__(self):\n\t\tsuper().__init__()\n\nobj_a = A()\nobj_b = B()\nobj_c = C() ",
+    "options": {
+      "A": "obj_b.prop_a == 3",
+      "B": "hasattr(obj_b, 'prop_aa')",
+      "C": "isinstance(obj_c, A)",
+      "D": "B.VarA == 3"
+    },
+    "answer": "BC",
+    "details": ""
+  },
+  "421": {
+    "id": "421",
+    "text": "What is the expected output of the following code? ",
+    "code": "def foo(x): \n\treturn -x if x > 0 else x \nprint(foo(-2)) ",
+    "options": {
+      "A": "The code is erroneus and it will not execute",
+      "B": "it outputs 2.0",
+      "C": "it outputs -2",
+      "D": "it outputs 0.0"
+    },
+    "answer": "C",
+    "details": ""
+  },
+  "422": {
+    "id": "422",
+    "text": "Assuming that the following inheritance set is in force, which of the following classes is declared properly?",
+    "code": "class A: \n\tpass\n\nclass B(A): \n\tpass\n\nclass C(A): \n\tpass ",
+    "options": {
+      "A": "class Class_4(A,B): pass",
+      "B": "class Class_1(C,B): pass",
+      "C": "class Class_2(B,C): pass",
+      "D": "class Class_3(A,C): pass"
+    },
+    "answer": "BC",
+    "details": ""
+  },
+  "423": {
+    "id": "423",
+    "text": "What is the expected behavior of the following code? ",
+    "code": "my_tuple = (1, 2, 3) \ntry: \n\tmy_tuple[3] = my_tuple[2] \nexcept IndexError as error: \n\tx = error \nexcept Exception as exception: \n\tx = exception \nelse: \n\tx = None \n\tprint(x) ",
+    "options": {
+      "A": "it outputs list assignment index out of range",
+      "B": "it outputs tuple object does not support item assignment",
+      "C": "the code is erroneous and it will not execute",
+      "D": "it outputs None"
+    },
+    "answer": "B",
+    "details": ""
+  },
+  "425": {
+    "id": "425",
+    "text": "What is the expected output of the following code? ",
+    "code": "import sys\nimport math \nb1 = type(dir(math)[0]) is list \nb2 = type(dir(sys.path)[-1]) is list\nprint(b1 and b2) ",
+    "options": {
+      "A": "False",
+      "B": "None",
+      "C": "True",
+      "D": "0"
+    },
+    "answer": "A",
+    "details": ""
+  },
+  "426": {
+    "id": "426",
+    "text": "A Python package called pypack includes a module named pymod.py which contains a function named pyfun(). Which of the following snippets will let you invoke the function? (Choose two.) ",
+    "code": "",
+    "options": {
+      "A": "from pypack.pymod import pyfun\npyfun() ",
+      "B": "import pypack\npymod.pyfun() ",
+      "C": "from pypack import *\npyfun() ",
+      "D": "import pypack\nimport pypack.pymod\npypack.pymod.pyfun() "
+    },
+    "answer": "AB",
+    "details": ""
+  },
+  "427": {
+    "id": "427",
+    "text": "Assuming that the code below has been placed inside a file named code.py and executed successfully, which of the following expressions evaluate to True?(Choose two.)",
+    "code": "class ClassA:\n\tvar = 1 \n\tdef __init__(self, prop):\n\t\tprop1 = prop2 = prop\n\nclass ClassB(ClassA):\n\tdef __init__(self, prop): \n\t\tprop3 = prop ** 2\n\t\tsuper().__init__(prop) \n\n\tdef __str__(self):\n\t\treturn 'Object'\n\nObject = ClassA(2) ",
+    "options": {
+      "A": "ClassA.__module__== '__main__'",
+      "B": "len(ClassB.__bases__) == 2",
+      "C": "__name__ == '__main__'",
+      "D": "str(Object) == 'Object'"
+    },
+    "answer": "AC",
+    "details": ""
+  },
+  "430": {
+    "id": "430",
+    "text": "What is the expected output of the following snippet?",
+    "code": "class Upper: \n\tdef method (self): \n\t\treturn 'upper'\n\nclass Lower(Upper):\n\tdef method (self):\n\t\treturn 'lower'\n\nObject = Lower() \nprint(isinstance(Object, Upper), end=' ') \nprint(Object.method()) ",
+    "options": {
+      "A": "False lower",
+      "B": "True upper",
+      "C": "True lower",
+      "D": "False upper"
+    },
+    "answer": "C",
+    "details": ""
+  },
+  "431": {
+    "id": "431",
+    "text": "What is the expected behavior of the following code? ",
+    "code": "d = {'1': '1', '2': '2'} \ntry: \n\td['1'] = d['3'] \nexcept BaseException as error: \n\tprint(type(error)) ",
+    "options": {
+      "A": "it outputs <class 'KeyError'>",
+      "B": "it outputs <class 'BaseException'>",
+      "C": "the code is erroneous and it will not execute",
+      "D": "it outputs <class 'Exception'>"
+    },
+    "answer": "A",
+    "details": ""
+  },
+  "432": {
+    "id": "432",
+    "text": "Assuming that the following code has been executed successfully, select the expressions which evaluate to True (Select two answers) ",
+    "code": "def f(x): \n\tdef g(x): \n\t\treturn x * x \n\n\treturn g \n\na = f(2) \nb = f(3) ",
+    "options": {
+      "A": "b(1) == 4",
+      "B": "a is not None",
+      "C": "a(2) == 4",
+      "D": "a == b"
+    },
+    "answer": "BC",
+    "details": ""
+  },
+  "433": {
+    "id": "433",
+    "text": "What is the expected output of the following code? ",
+    "code": "myli = [1, 2, 4] \nm = list(map(lambda x: 2**x, myli))\nprint(m[-1]) ",
+    "options": {
+      "A": "an exception is raised",
+      "B": "16",
+      "C": "1",
+      "D": "4"
+    },
+    "answer": "B",
+    "details": ""
+  },
+  "434": {
+    "id": "434",
+    "text": "Assuming that the following inheritance set is in force, which of the following classes is declared properly?",
+    "code": "class A: \n\tpass \n\nclass B(A): \n\tpass\n\nclass C(A): \n\tpass\n\nclass D(B,C): \n\tpass ",
+    "options": {
+      "A": "class Class_1(D): pass",
+      "B": "class Class_3(A,C): pass",
+      "C": "class Class_4(C,B): pass",
+      "D": "class Class_2(A,B): pass"
+    },
+    "answer": "AC",
+    "details": ""
+  },
+  "435": {
+    "id": "435",
+    "text": "What is the expected output of the following code? ",
+    "code": "import sys\nimport math \nb1 = type(dir(math)[0]) is list \nb2 = type(dir(sys.path)[-1]) is list\nprint(b1 and b2) ",
+    "options": {
+      "A": "False",
+      "B": "None",
+      "C": "True",
+      "D": "0"
+    },
+    "answer": "A",
+    "details": ""
+  },
+  "437": {
+    "id": "437",
+    "text": "Assuming that the code below has been placed inside a file named code.py and executed successfully, which of the following expressions evaluate to True?(Choose two.)",
+    "code": "class ClassA:\n\tvar = 1 \n\tdef __init__(self, prop):\n\t\tprop1 = prop2 = prop\n\nclass ClassB(ClassA):\n\tdef __init__(self, prop): \n\t\tprop3 = prop ** 2\n\t\tsuper().__init__(prop) \n\n\tdef __str__(self):\n\t\treturn 'Object'\n\nObject = ClassA(2) ",
+    "options": {
+      "A": "ClassA.__module__== '__main__'",
+      "B": "len(ClassB.__bases__) == 2",
+      "C": "__name__ == '__main__'",
+      "D": "str(Object) == 'Object'"
+    },
+    "answer": "AC",
+    "details": ""
+  },
+  "439": {
+    "id": "439",
+    "text": "Assuming that the code below has been executed successfully, which of the expressions evaluate to True? (Choose two.)",
+    "code": "class Class: \n\tdata = 1 \n\tdef __init__ (self, value):\n\t\tself.prop = self.var = value\n\nObject = Class(2) \n# print('var' in Class.__dict__) \nprint(len(Object.__dict__ ) == 2) \n# print('data' in Object.__dict__) \nprint('var' in Object.__dict__) ",
+    "options": {
+      "A": "'var' in Class.__dict__",
+      "B": "len(Object.__dict__ ) == 2",
+      "C": "'data' in Object.__dict__",
+      "D": "'var' in Object.__dict__"
+    },
+    "answer": "BD",
+    "details": ""
+  },
+  "440": {
+    "id": "440",
+    "text": "What is the expected output of the following snippet?",
+    "code": "class Upper: \n\tdef method (self): \n\t\treturn 'upper'\n\nclass Lower(Upper):\n\tdef method (self): \n\t\treturn 'lower'\n\nObject = Lower() \nprint(isinstance(Object, Upper), end=' ') \nprint(Object.method()) ",
+    "options": {
+      "A": "False lower",
+      "B": "True upper",
+      "C": "True lower",
+      "D": "False upper"
+    },
+    "answer": "C",
+    "details": ""
+  },
+  "441": {
+    "id": "441",
+    "text": "The __bases__ property in Python contains: ",
+    "code": "",
+    "options": {
+      "A": "base class ids (int)",
+      "B": "base class locations (addr)",
+      "C": "base class names (str)",
+      "D": "base class objects (class)"
+    },
+    "answer": "C",
+    "details": ""
+  },
+  "442": {
+    "id": "442",
+    "text": "What is the expected behavior of the following code?",
+    "code": "class Super: \n\tdef make(self): \n\t\treturn 0 \n\n\tdef doit(self): \n\t\treturn self.make()\n\nclass Sub_A(Super): \n\tdef make(self): \n\t\treturn 1\n\nclass Sub_B(Super): \n\tdef make(self): \n\t\treturn 2\n\na = Sub_A() \nb = Sub_B() \nprint(a.doit() + b.doit()) ",
+    "options": {
+      "A": "it outputs 1",
+      "B": "it outputs 2",
+      "C": "it outputs 3",
+      "D": "it outputs 0"
+    },
+    "answer": "C",
+    "details": ""
+  },
+  "443": {
+    "id": "443",
+    "text": "Assuming that the code below has been placed inside a file named code.py and executed successfully, which expressions evaluate to True? (Select two answers)",
+    "code": "class ClassA: \n\tvar = 1 \n\tdef __init__(self, prop): \n\t\tself.prop1 = self.prop2 = prop \n\n\tdef __str__(self): \n\t\treturn 'Object'\n\nclass ClassB(ClassA): \n\tdef __init__(self, prop): \n\t\tself.prop3 = prop ** 2 \n\t\tsuper().__init__(prop)\n\nobject_instance = ClassB(2) ",
+    "options": {
+      "A": "ClassA.__module__ == '__main__'",
+      "B": "len(ClassB.__bases__) == 2",
+      "C": "__name__ == 'code.py'",
+      "D": "str(object_instance) == 'Object'"
+    },
+    "answer": "AD",
+    "details": ""
+  },
+  "444": {
+    "id": "444",
+    "text": "What is the expected behavior of the following code?",
+    "code": "my_list = [matrix for matrix in range(5, 0, -1)]\nm = [my_list[i] for i in range(5) if my_list[i] % 2 == 0]\nprint(m)",
+    "options": {
+      "A": "the code is erroneos and it will not execute",
+      "B": "it outputs [0, 1, 2, 3, 4]",
+      "C": "it outputs [2, 4]",
+      "D": "it outputs [4, 2]"
+    },
+    "answer": "D",
+    "details": ""
+  },
+  "445": {
+    "id": "445",
+    "text": "What is true about lambda functions? (Select two answers) ",
+    "code": "",
+    "options": {
+      "A": "they must have a non-zero number of parameters",
+      "B": "they are called anonymous functions",
+      "C": "they must contain the return keyword",
+      "D": "they cannot return the None value as a result"
+    },
+    "answer": "AB",
+    "details": ""
+  }
+}
