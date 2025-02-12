@@ -573,8 +573,8 @@
   },
   "299": {
     "id": "299",
-    "text": "Which line can be used instead of the comment to cause the snippet to produce the following expected output? (Choose two.) ",
-    "code": "Expected output: \n123 \nCode: \nc, b, a = 1, 3, 2 \n# put line here \nprint(a, b, c) ",
+    "text": "Which line can be used instead of the comment to cause the snippet to produce the following expected output? (Choose two.)\nExpected output:\n123",
+    "code": "c, b, a = 1, 3, 2 \n# put line here \nprint(a, b, c) ",
     "options": {
       "A": "c, b, a = b, a, c",
       "B": "c, b, a = a, c, b",
@@ -704,7 +704,7 @@
   "309": {
     "id": "309",
     "text": "Assuming that lst - is a four-element list. Is there any difference between these two statements? ",
-    "code": "del lst # the first line \ndellst[:] # the second line ",
+    "code": "del lst # the first line \ndel lst[:] # the second line ",
     "options": {
       "A": "yes, there is, the first line empties the list, the second line deletes the list as a whole",
       "B": "yes, there is, the first line deletes the list as a whole, the second line just empties the list",
@@ -977,7 +977,7 @@
   "330": {
     "id": "330",
     "text": "What is the expected output of the following code? ",
-    "code": "import sys \nimport math \nb1 = type(dir(math)[0]) is str \nb2 = type(dir(sys.path)[-1])isstr\nprint(b1andb2) ",
+    "code": "import sys \nimport math \nb1 = type(dir(math)[0]) is str \nb2 = type(dir(sys.path)[-1]) is str\nprint(b1 and b2) ",
     "options": {
       "A": "False",
       "B": "None",
@@ -1216,7 +1216,7 @@
       "A": "class Class_4(D, A):\n\tpass ",
       "B": "class Class_3(A, C):\n\tpass",
       "C": "class Class_2(B, D):\n\tpass",
-      "D": "classClass_1(C,D):\n\tpass\n"
+      "D": "classClass_1(C,D):\n\tpass"
     },
     "answer": "AD",
     "details": "# QUESTION 348\n# Assuming that the following inheritance set is in force, which of\n#  the following classes are declared properly?\n# (Choose two.)\nclass A:\n    pass\nclass B(A):\n    pass\nclass C(A):\n    pass\nclass D(B):\n    pass\n\n# Lösung: AD\n\n# A: Formell muss die spezfiischere Klasse zuerst bei der Vererbung stehen.\n# Sonst wäre es so, als wenn man priorität von seinen Großeltern erben wollen würde\n# => systemisch sinnlos.\n# Methoden und Eigenschaften A sind, sofern nicht überschrieben, sowieso direkt über \n# D verfügbar. Spezifisch kann man eine Methode aus A auch aufrufen \n# A. \nclass Class_4(D, A):\n    pass\n\nprint(Class_4.__mro__)\n\nclass Class_1(C, D):\n    pass\n\nprint(Class_1.__mro__)\n\nprint(help(D))\nprint(help(Class_1 ))\n\n# B. class Class_3(A, C):\n# pass\n# C. class Class_2(B, D):\n# pass\n# D. class Class_1(C, D):\n# pass\n# Mehrfachvererbung sinnvoll, Beispiel: Land (C), Wasser (D) \n# und Amphibienfahrzeuge (Class_1)\n# Hier erbt man aus verschiedenen Vererbungslinien ! \n\n\nclass A:\n    def show(self):\n        print(\"Hallo von A\")\n    def func1(self):\n        print(\"func1 von A\")\n\nclass B:\n    def show(self):\n        print(\"Hallo von B\")\n    def func2(self):\n        print(\"func2 von B\")\n\nclass C(A, B):\n    # def run():\n    #     B.show()\n    pass\n\n# Haben mehrere Elternklassen eine Methode mit demselben Namen\n# und ist diese in der Kindklasse NICHT überschrieben,\n# dann geht es nach der Reihenfolge, wie die Vererbung angegeben wurde.\nC().show() # Welches show() wird genommen? A\n# Werden func1() und func2() nicht überschrieben, kann man\n# in der Kindklasse beide Methoden verwenden (disjunkt)\nC().func1() \nC().func2()"
@@ -2039,19 +2039,6 @@
     },
     "answer": "AD",
     "details": "# QUESTION 411\n# What is true about Python class constructors? (Select two answers)\n\n# A. the constructor's first parameter identifies an object currently being created\n# True (self)\n# B. the constructor cannot use the default values of the parameters\n# False \n# C. the constructor can be invoked directly under strictly defined circumstances\n# False \n# D. super-class constructor is invoked implicitly during constructor execution\n# False \n\n# Lösung: AD\n# Diskussionsbedarf, da keine Eindeutigkeit besteht. C und D sind beide teilweise richtig. \n# __new__() ist in D gemeint.\n\nclass A:\n    def __init__(self):\n        self.x = 10\n    def meth(self):\n        print(\"Hi aus A\")\n\nclass B(A):\n    def __init__(self):\n        pass\n\n# print(B().x) # AttributeError: 'B' object has no attribute 'x'\nB().meth() # Nicht wegen Konstruktor, sondern wegen de class-Definition\n\n# __new__(self): Erzeugt einen neuen Speicherbereich (Hülle) für das Objekt \n# Hier der \"Konstruktor\"\n# __init__(self): Befüllt das Objekt mit konkreten Instanzvariablen \n# \"Initialisator\""
-  },
-  "412": {
-    "id": "412",
-    "text": "What is the expected behavior of the following code?",
-    "code": "class Class: \n\tVariable = 0 \n\tdef __init__(self): \n\t\tself.value = 0\n\nobject_1 = Class() \nobject_1.Variable += 1 \nobject_2 = Class() \nobject_2.value += 1 \nprint(object_2.Variable + object_1.value) ",
-    "options": {
-      "A": "it outputs 1",
-      "B": "it outputs 0",
-      "C": "it raises an exception",
-      "D": "it outputs 2"
-    },
-    "answer": "B",
-    "details": "# QUESTION 412\n# What is the expected behavior of the following code?\n\nclass Class:\n    Variable = 0\n    def __init__(self):\n        self.value = 0\n\nobject_1 = Class()\nobject_1.Variable += 1  # object_1.Variable = object_1.Variable+ 1 \n# object_1.Variable (neue Instanzvariable für object_1) = object_1.Variable (Klassenvariable!!) + 1\n# Klassenvariable deshalb, da zu dem Zeitpunkt object_1.Variable als Instanzvariable noch nicht existiert\n# hat, daher Auflösung in Klassenvariable. \nobject_2 = Class()\nobject_2.value += 1 \nprint(object_2.Variable + object_1.value)\n#           0           +       0\n\n# A. it outputs 1\n# B. it outputs 0\n# C. it raises an exception\n# D. it outputs 2\n\n# Lösung: B"
   },
   "413": {
     "id": "413",

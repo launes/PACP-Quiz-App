@@ -6,7 +6,8 @@
     "code": "",
     "options": {
       "a": "You can mark the entity with the __ (double underscore) prefix.",
-      "b": "Nothing - all module entities are private by default.\nc; You can mark the entity with the # (hashtag) prefix.",
+      "b": "Nothing - all module entities are private by default.",
+      "c": "You can mark the entity with the # (hashtag) prefix.",
       "d": "You can mark the entity with the _ (single underscore) prefix."
     },
     "answer": "ad",
@@ -261,7 +262,7 @@
     "id": "217",
     "type": "Functions",
     "text": "What is the expected output of the following code?",
-    "code": "data = {}\n \ndef func(d, key, value):\n    d[key] = value\n \n \nprint(func(data, '1', 'Peter'))",
+    "code": "data = {}\ndef func(d, key, value):\n    d[key] = value\n\nprint(func(data, '1', 'Peter'))",
     "options": {
       "a": "value",
       "b": "The code is erroneous",
@@ -478,7 +479,7 @@
       "c": "3",
       "d": "4"
     },
-    "answer": "1",
+    "answer": "a",
     "details": ""
   },
   "238": {
@@ -619,7 +620,7 @@
       "c": "1 2 3 4 5 6",
       "d": "1 1 2 3 4 5"
     },
-    "answer": "a",
+    "answer": "b",
     "details": ""
   },
   "214": {
@@ -635,7 +636,7 @@
       "e": "test(a=1, b=2, c=3, 4)",
       "f": "test(1, 2, 3, d=4)"
     },
-    "answer": "a",
+    "answer": "bdf",
     "details": ""
   },
   "202": {
@@ -705,7 +706,7 @@
       "c": "0",
       "d": "False"
     },
-    "answer": "d",
+    "answer": "a",
     "details": ""
   },
   "208": {
@@ -803,7 +804,7 @@
       "c": "The lambda function can evaluate multiple expressions.",
       "d": "The lambda function can accept a maximum of two arguments."
     },
-    "answer": "b",
+    "answer": "ab",
     "details": ""
   },
   "205": {
@@ -859,7 +860,7 @@
       "c": "The arrows on a class diagram are always directed from a superclass towards its subclass.",
       "d": "An object is a recipe for a class."
     },
-    "answer": "bd",
+    "answer": "ab",
     "details": ""
   },
   "292": {
